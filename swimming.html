@@ -1,677 +1,77 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The era of the tech swimsuit is something of the past.</title>
-    <link rel="icon" href="images/rain.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Rise and Fall of tech revolution in swimming.</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="style.css"
 
     <style>
-        .container {
-            /* Remove the line below if you want a wider page */
-          max-width: 700px !important;
-          color: #000000;
-          font-family: Georgia;
-        }
 
-        img {
-          display: block;
-          width:700px;
-          margin: 0 auto;
-          transition: 0.3s;
-        }
+      @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 
-        a {
-          color: deepskyblue;
-        }
+      @font-face{
+        font-family: 'Crimson Pro';
+				font-style: normal;
+				font-weight: 200 900;
+				font-display: swap;
+				src: url(https://fonts.gstatic.com/s/crimsonpro/v21/q5uDsoa5M_tv7IihmnkabARboYE.woff2) format('woff2');
+				unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
 
-        p {
-          margin-bottom:1.5em;
-          font-size: 18px;
-          font-family: Georgia;
-          color: #000000;
-        }
-
-        .graph-title {
-          font-family: Source Sans Pro;
-          font-weight: 600;
-          font-size: 24px;
-          color: #000000;
-        }
-
-        .graph-subtitle {
-          font-family: Source Sans Pro;
-          font-weight: 600;
-          font-size: 16px;
-        }
-
-        h1.title {
-          font-size: 3rem;
-          line-height: 1.1;
-          margin-bottom: 0.4rem;
-          margin-top: 0.4rem;
-          font-weight: 800;
-          color: #2d2d2d;
-          max-width: 800px;
-        }
-
-        h1.title span {
-          background-color: white;
-          padding: 0 1.2rem 0.6rem;
-          -webkit-box-decoration-break: clone;
-          -ms-box-decoration-break: clone;
-          -o-box-decoration-break: clone;
-          box-decoration-break: clone;
-        }
-
-        h2.subtitle {
-          font-weight: bold;
-          font-size: 20px;
-          color: #2d2d2d;
-          padding-top: 40px; 
-        }
-
-        h2.subtitle  span {
-          background-color: white;
-          padding: 0 1.3rem 0.3rem;
-          -webkit-box-decoration-break: clone;
-          -ms-box-decoration-break: clone;
-          -o-box-decoration-break: clone;
-          box-decoration-break: clone;
-        }
-
-        .has-bg-img { 
-          background: url('images/image1.png');
-          center center; 
-          background-size:cover; 
-        }
-
-        .hero {
-          max-height: 100vh;
-        }
-
-        .byline {
-          padding-top: 0px;
-          padding-bottom: 0px;
-          font-size: 18px;
-        }
-
-        .bottomleft {
-          position: absolute;
-          bottom: 8px;
-          left: 16px;
-          font-size: 18px;
-          color: white;
-          
-          font-size: 12px;
-        }
-
-        .date {
-          font-size: 14px;
-          padding-top: 5px;
-          padding-bottom: 25px;
-
-        }
-
-        .row-container {
-          display: flex;
-          flex-direction: row;
-          max-width: 960px;
-          margin: 0 auto;
-          gap: 2em;
-        }
-        
-        .column-container {
-          flex-grow: 1;
-          flex-shrink: 1;
-          flex-basis: 1;
-        }
-        
-        @media (max-width: 800px) {
-          .row-container {
-            flex-direction: column;
-          }
-        }
-
-    </style>
-
-
-<script type="text/javascript">
-    (function() {
-        // only want one resizer on the page
-        if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
-        document.documentElement.className += " g-resizer-v3-init";
-        // require IE9+
-        if (!("querySelector" in document)) return;
-        function resizer() {
-            var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
-                widthById = {};
-            elements.forEach(function(el) {
-                var parent = el.parentNode,
-                    width = widthById[parent.id] || parent.getBoundingClientRect().width,
-                    minwidth = el.getAttribute("data-min-width"),
-                    maxwidth = el.getAttribute("data-max-width");
-                widthById[parent.id] = width;
-                if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
-                    el.style.display = "block";
-                } else {
-                    el.style.display = "none";
-                }
-            });
-            try {
-                if (window.parent && window.parent.$) {
-                    window.parent.$("body").trigger("resizedcontent", [window]);
-                }
-                if (window.require) {
-                    require(['foundation/main'], function() {
-                        require(['shared/interactive/instances/app-communicator'], function(AppCommunicator) {
-                            AppCommunicator.triggerResize();
-                        });
-                    });
-                }
-            } catch(e) { console.log(e); }
-        }
-        document.addEventListener('DOMContentLoaded', resizer);
-        // feel free to replace throttle with _.throttle, if available
-        window.addEventListener('resize', throttle(resizer, 200));        
-        function throttle(func, wait) {
-            // from underscore.js
-            var _now = Date.now || function() { return new Date().getTime(); },
-                context, args, result, timeout = null, previous = 0;
-            var later = function() {
-                previous = _now();
-                timeout = null;
-                result = func.apply(context, args);
-                if (!timeout) context = args = null;
-            };
-            return function() {
-                var now = _now(), remaining = wait - (now - previous);
-                context = this;
-                args = arguments;
-                if (remaining <= 0 || remaining > wait) {
-                    if (timeout) {
-                        clearTimeout(timeout);
-                        timeout = null;
-                    }
-                    previous = now;
-                    result = func.apply(context, args);
-                    if (!timeout) context = args = null;
-                } else if (!timeout && options.trailing !== false) {
-                    timeout = setTimeout(later, remaining);
-                }
-                return result;
-            };
-        }
-       
-    })();
-</script>
-
-    <!-- Insert script from ai2html output -->
-    <!-- ai file: cph_rain_desktop.ai -->
-    <style media="screen,print">
-      #g-cph_rain_desktop-box ,
-      #g-cph_rain_desktop-box .g-artboard {
-        margin:0 auto;
-      }
-      #g-cph_rain_desktop-box p {
-        margin:0;
-      }
-      #g-cph_rain_desktop-box .g-aiAbs {
-        position:absolute;
-      }
-      #g-cph_rain_desktop-box .g-aiImg {
-        position:absolute;
-        top:0;
-        display:block;
-        width:100% !important;
-      }
-      #g-cph_rain_desktop-box .g-aiSymbol {
-        position: absolute;
-        box-sizing: border-box;
-      }
-      #g-cph_rain_desktop-box .g-aiPointText p { white-space: nowrap; }
-      #g-cph_rain_desktop-Artboard_1 {
-        position:relative;
-        overflow:hidden;
-      }
-      #g-cph_rain_desktop-Artboard_1 p {
-        font-family:Source Sans Pro;
-        font-weight:600;
-        line-height:17px;
-        height:auto;
-        opacity:1;
-        letter-spacing:0em;
-        font-size:14px;
-        text-align:left;
-        color:rgb(77,77,77);
-        text-transform:none;
-        padding-bottom:0;
-        padding-top:0;
-        mix-blend-mode:normal;
-        font-style:normal;
-        position:static;
-      }
-      #g-cph_rain_desktop-Artboard_1 .g-pstyle0 {
-        font-weight:400;
-        height:17px;
-      }
-      #g-cph_rain_desktop-Artboard_1 .g-pstyle1 {
-        height:17px;
-        text-align:center;
-      }
-      #g-cph_rain_desktop-Artboard_1 .g-pstyle2 {
-        line-height:14px;
-        height:14px;
-        font-size:12px;
-        text-align:center;
-        color:rgb(40,40,40);
-      }
-      #g-cph_rain_desktop-Artboard_1 .g-pstyle3 {
-        font-weight:400;
-        line-height:14px;
-        height:14px;
-        font-size:12px;
-        color:rgb(112,112,112);
-      }
-      #g-cph_rain_desktop-Artboard_1 .g-pstyle4 {
-        font-weight:400;
-        height:17px;
-        color:rgb(104,104,104);
-      }
-      #g-cph_rain_desktop-Artboard_2 {
-        position:relative;
-        overflow:hidden;
-      }
-      #g-cph_rain_desktop-Artboard_2 p {
-        font-family:Source Sans Pro;
-        font-weight:400;
-        line-height:17px;
-        height:auto;
-        opacity:1;
-        letter-spacing:0em;
-        font-size:14px;
-        text-align:left;
-        color:rgb(77,77,77);
-        text-transform:none;
-        padding-bottom:0;
-        padding-top:0;
-        mix-blend-mode:normal;
-        font-style:normal;
-        position:static;
-      }
-      #g-cph_rain_desktop-Artboard_2 .g-pstyle0 {
-        font-weight:600;
-        line-height:14px;
-        height:14px;
-        font-size:12px;
-        text-align:right;
-        color:rgb(40,40,40);
-      }
-      #g-cph_rain_desktop-Artboard_2 .g-pstyle1 {
-        line-height:14px;
-        height:14px;
-        font-size:12px;
-        color:rgb(112,112,112);
-      }
-      #g-cph_rain_desktop-Artboard_2 .g-pstyle2 {
-        height:17px;
-      }
-      #g-cph_rain_desktop-Artboard_2 .g-pstyle3 {
-        font-weight:600;
-        line-height:14px;
-        height:14px;
-        font-size:12px;
-        text-align:center;
-      }
-      #g-cph_rain_desktop-Artboard_2 .g-pstyle4 {
-        height:17px;
-        color:rgb(104,104,104);
-      }
-      #g-cph_rain_desktop-Artboard_7 {
-        position:relative;
-        overflow:hidden;
-      }
-      #g-cph_rain_desktop-Artboard_7 p {
-        font-family:Source Sans Pro;
-        font-weight:400;
-        line-height:17px;
-        height:auto;
-        opacity:1;
-        letter-spacing:0em;
-        font-size:14px;
-        text-align:left;
-        color:rgb(77,77,77);
-        text-transform:none;
-        padding-bottom:0;
-        padding-top:0;
-        mix-blend-mode:normal;
-        font-style:normal;
-        position:static;
-      }
-      #g-cph_rain_desktop-Artboard_7 .g-pstyle0 {
-        height:17px;
-      }
-      #g-cph_rain_desktop-Artboard_7 .g-pstyle1 {
-        font-weight:600;
-        height:17px;
-        text-align:center;
-      }
-      #g-cph_rain_desktop-Artboard_7 .g-pstyle2 {
-        font-weight:600;
-        line-height:14px;
-        height:14px;
-        font-size:12px;
-        text-align:center;
-        color:rgb(40,40,40);
-      }
-      #g-cph_rain_desktop-Artboard_7 .g-pstyle3 {
-        line-height:14px;
-        height:14px;
-        font-size:12px;
-        color:rgb(112,112,112);
-      }
-      #g-cph_rain_desktop-Artboard_7 .g-pstyle4 {
-        font-weight:600;
-        height:17px;
-        letter-spacing:-0.019em;
-      }
-      #g-cph_rain_desktop-Artboard_7 .g-pstyle5 {
-        height:17px;
-        color:rgb(104,104,104);
-      }
-
-    </style>
-
-    <!-- ai file: month_rain.ai -->
-    <style media="screen,print">
-      #g-month_rain-box ,
-      #g-month_rain-box .g-artboard {
-        margin:0 auto;
-      }
-      #g-month_rain-box p {
-        margin:0;
-      }
-      #g-month_rain-box .g-aiAbs {
-        position:absolute;
-      }
-      #g-month_rain-box .g-aiImg {
-        position:absolute;
-        top:0;
-        display:block;
-        width:100% !important;
-      }
-      #g-month_rain-box .g-aiSymbol {
-        position: absolute;
-        box-sizing: border-box;
-      }
-      #g-month_rain-box .g-aiPointText p { white-space: nowrap; }
-      #g-month_rain-Artboard_1 {
-        position:relative;
-        overflow:hidden;
-      }
-      #g-month_rain-Artboard_1 p {
-        font-family:Source Sans Pro;
-        font-weight:600;
-        line-height:19px;
-        height:auto;
-        opacity:1;
-        letter-spacing:0em;
-        font-size:16px;
-        text-align:left;
-        color:rgb(0,0,0);
-        text-transform:none;
-        padding-bottom:0;
-        padding-top:0;
-        mix-blend-mode:normal;
-        font-style:normal;
-        position:static;
-      }
-      #g-month_rain-Artboard_1 .g-pstyle0 {
-        height:19px;
-      }
-      #g-month_rain-Artboard_1 .g-pstyle1 {
-        font-weight:400;
-        height:19px;
-        color:rgb(77,77,77);
-      }
-      #g-month_rain-Artboard_1 .g-pstyle2 {
-        line-height:16px;
-        height:16px;
-        font-size:13px;
-        color:rgb(240,240,240);
-      }
-      #g-month_rain-Artboard_1 .g-pstyle3 {
-        line-height:14px;
-        height:14px;
-        font-size:12px;
-        color:rgb(240,240,240);
-      }
-      #g-month_rain-Artboard_1 .g-pstyle4 {
-        font-weight:400;
-        line-height:17px;
-        height:17px;
-        font-size:14px;
-        color:rgb(104,104,104);
-      }
-      #g-month_rain-Artboard_7 {
-        position:relative;
-        overflow:hidden;
-      }
-      #g-month_rain-Artboard_7 p {
-        font-family:Source Sans Pro;
-        font-weight:400;
-        line-height:17px;
-        height:auto;
-        opacity:1;
-        letter-spacing:0em;
-        font-size:14px;
-        text-align:left;
-        color:rgb(104,104,104);
-        text-transform:none;
-        padding-bottom:0;
-        padding-top:0;
-        mix-blend-mode:normal;
-        font-style:normal;
-        position:static;
-      }
-      #g-month_rain-Artboard_7 .g-pstyle0 {
-        font-weight:600;
-        line-height:19px;
-        height:19px;
-        font-size:16px;
-        color:rgb(0,0,0);
-      }
-      #g-month_rain-Artboard_7 .g-pstyle1 {
-        font-weight:600;
-        height:17px;
-        color:rgb(0,0,0);
-      }
-      #g-month_rain-Artboard_7 .g-pstyle2 {
-        line-height:18px;
-        height:18px;
-        font-size:15px;
-        color:rgb(77,77,77);
-      }
-      #g-month_rain-Artboard_7 .g-pstyle3 {
-        line-height:12px;
-        height:12px;
-        letter-spacing:-0.006em;
-        font-size:10px;
-        color:rgb(240,240,240);
-      }
-      #g-month_rain-Artboard_7 .g-pstyle4 {
-        line-height:13px;
-        height:13px;
-        letter-spacing:-0.006em;
-        font-size:11px;
-        color:rgb(240,240,240);
-      }
-      #g-month_rain-Artboard_7 .g-pstyle5 {
-        line-height:8px;
-        height:8px;
-        letter-spacing:-0.006em;
-        font-size:11px;
-        color:rgb(240,240,240);
-      }
-      #g-month_rain-Artboard_7 .g-pstyle6 {
-        height:17px;
-      }
-
-    </style>
-    <!-- ai file: rain_computer.pdf -->
-    <style media="screen,print">
-      #g-rain_computer_pdf-box ,
-      #g-rain_computer_pdf-box .g-artboard {
-        margin:0 auto;
-      }
-      #g-rain_computer_pdf-box p {
-        margin:0;
-      }
-      #g-rain_computer_pdf-box .g-aiAbs {
-        position:absolute;
-      }
-      #g-rain_computer_pdf-box .g-aiImg {
-        position:absolute;
-        top:0;
-        display:block;
-        width:100% !important;
-      }
-      #g-rain_computer_pdf-box .g-aiSymbol {
-        position: absolute;
-        box-sizing: border-box;
-      }
-      #g-rain_computer_pdf-box .g-aiPointText p { white-space: nowrap; }
-      #g-rain_computer_pdf-Artboard_1 {
-        position:relative;
-        overflow:hidden;
-      }
-      #g-rain_computer_pdf-Artboard_1 p {
-        font-family:Source Sans Pro;
-        font-weight:400;
-        line-height:17px;
-        height:auto;
-        opacity:1;
-        letter-spacing:0em;
-        font-size:14px;
-        text-align:left;
-        color:rgb(104,104,104);
-        text-transform:none;
-        padding-bottom:0;
-        padding-top:0;
-        mix-blend-mode:normal;
-        font-style:normal;
-        position:static;
-      }
-      #g-rain_computer_pdf-Artboard_1 .g-pstyle0 {
-        height:17px;
-        color:rgb(77,77,77);
-      }
-      #g-rain_computer_pdf-Artboard_1 .g-pstyle1 {
-        font-weight:600;
-        height:17px;
-        color:rgb(77,77,77);
-      }
-      #g-rain_computer_pdf-Artboard_1 .g-pstyle2 {
-        height:17px;
-      }
-      #g-rain_computer_pdf-Artboard_2 {
-        position:relative;
-        overflow:hidden;
-      }
-      #g-rain_computer_pdf-Artboard_2 p {
-        font-family:Source Sans Pro;
-        font-weight:400;
-        line-height:17px;
-        height:auto;
-        opacity:1;
-        letter-spacing:0em;
-        font-size:14px;
-        text-align:left;
-        color:rgb(104,104,104);
-        text-transform:none;
-        padding-bottom:0;
-        padding-top:0;
-        mix-blend-mode:normal;
-        font-style:normal;
-        position:static;
-      }
-      #g-rain_computer_pdf-Artboard_2 .g-pstyle0 {
-        height:17px;
-        color:rgb(77,77,77);
-      }
-      #g-rain_computer_pdf-Artboard_2 .g-pstyle1 {
-        font-weight:600;
-        height:17px;
-        color:rgb(77,77,77);
-      }
-      #g-rain_computer_pdf-Artboard_2 .g-pstyle2 {
-        height:17px;
-      }
-      #g-rain_computer_pdf-Artboard_3 {
-        position:relative;
-        overflow:hidden;
-      }
-      #g-rain_computer_pdf-Artboard_3 p {
-        font-family:Source Sans Pro;
-        font-weight:400;
-        line-height:17px;
-        height:auto;
-        opacity:1;
-        letter-spacing:0em;
-        font-size:14px;
-        text-align:left;
-        color:rgb(104,104,104);
-        text-transform:none;
-        padding-bottom:0;
-        padding-top:0;
-        mix-blend-mode:normal;
-        font-style:normal;
-        position:static;
-      }
-      #g-rain_computer_pdf-Artboard_3 .g-pstyle0 {
-        height:17px;
-        color:rgb(77,77,77);
-      }
-      #g-rain_computer_pdf-Artboard_3 .g-pstyle1 {
-        font-weight:600;
-        height:17px;
-        color:rgb(77,77,77);
-      }
-      #g-rain_computer_pdf-Artboard_3 .g-pstyle2 {
-        height:17px;
-      }
-
-    </style>
-
-
+			@font-face {
+				font-family: 'Adelle Sans';
+				font-style: normal;
+				font-weight: 200 900;
+				font-display: swap;
+				src: url(https://fonts.gstatic.com/s/crimsonpro/v21/q5uDsoa5M_tv7IihmnkabARboYE.woff2) format('woff2');
+				unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+	
+		</style>
 
   </head>
+
   <body>
-    <h1>After more than a decade, the swimming technological revolution is a thing of the past. </h1>
-    <p>“Here, take this and see if it really works!” my swim coach told me one day, tossing a swimsuit unlike anything I had ever seen before. It covered my entire body, from my legs to my upper body, and at first glance, it resembled something a woman would wear.</p>
-    <p>Puttig it on was a lengthy and arduous process. Once I wore it, it clung to my body like a second skin. Out of the water, it restricted my movements, and the thought of swimming four kilometers with that thing on seemed unimaginable.</p>
-    <p>Reluctanlty, I donned the new swimsuit. At first, I didn't notice any immediate changes. Lap after lap, my coach started timing me with his stopwatch and recording the results in his notebook. Eventually, the evidence became clear: I was going faster.</p>
-    <p>That was the beginning of the tech swimsuit revolution. In the early 2000s, Olympic athletes started using them, and the trend spread throughout the entire swimming community. By 2007, competing in a race without one of these suits was inconceivable.</p>
-    <p></p>
-    <p>But tech-swimsuit era has a year zero, at the 2000 Sydney Olympics, and no athlete better exemplified this trend than Ian Thorpe, the Australian "Thorpedo" (as he was nicknamed), who raced with a full-body suit that covered him from wrists to ankles. In the 4x100 freestyle relay, he was the first to touch the wall, beating the US champion and record-holder Gary Hall Jr., who had confidently predicted on his blog that the US team would "smash the Aussies like guitars."</p>
-    <p>But that was only the beginning. While these swimsuits did contribute to make those swimmers go faster, it wasn't until 2008 that what seemed like a normal technological advancement became revolution.</p>
+    <div class="intro">
+      <p class="big">After more than a decade, the swimming technological revolution is a thing of the past.</p>
+      <p class="byline">By Marco Dalla Stella</p>
+      </div>
 
+      <div class="opener">
+      <div class="prose-container">
 
+        <p>“Here, take this and see if it really works!” my swim coach told me one day, tossing a swimsuit unlike anything I had ever seen before. It covered my entire body, from my legs to my upper body, and at first glance, it resembled something a woman would wear.</p>
+        <p>Puttig it on was a lengthy and arduous process. Once I wore it, it clung to my body like a second skin. Out of the water, it restricted my movements, and the thought of swimming four kilometers with that thing on seemed unimaginable.</p>
+        <p>Reluctanlty, I donned the new swimsuit. At first, I didn't notice any immediate changes. Lap after lap, my coach started timing me with his stopwatch and recording the results in his notebook. Eventually, the evidence became clear: I was going faster.</p>
+        <p>That was the beginning of the tech swimsuit revolution. In the early 2000s, Olympic athletes started using them, and the trend spread throughout the entire swimming community. By 2007, competing in a race without one of these suits was inconceivable.</p>
+        <p></p>
+        <p>But tech-swimsuit era has a year zero, at the 2000 Sydney Olympics, and no athlete better exemplified this trend than Ian Thorpe, the Australian "Thorpedo" (as he was nicknamed), who raced with a full-body suit that covered him from wrists to ankles. In the 4x100 freestyle relay, he was the first to touch the wall, beating the US champion and record-holder Gary Hall Jr., who had confidently predicted on his blog that the US team would "smash the Aussies like guitars."</p>
+        <p>But that was only the beginning. While these swimsuits did contribute to make those swimmers go faster, it wasn't until 2008 that what seemed like a normal technological advancement became revolution.</p>
+
+      </div>
+      </div>
+    </div>
+  
+    <div class="chart-section">
+      <div class="flourish-embed flourish-chart" data-src="visualisation/14200309"><script src="https://public.flourish.studio/resources/embed.js">
+      </script>
+      </div>
+    </div>
+
+    <div class=""section">
+    <div>
       <p>He threw at me something a swimsuit unlike any I had ever seen in real life. It covered the entirely of legs and the whole upper body. To my eyes, it resembled something like women would wear.
-      Wearing was a long and laborious process. Once wore, it adhered like a second skin. Out of the water it constrained my movements and the though of having to swim four kilometers with that thing on seemed unconceivable.
-      I reluctantly put that new swimsuit on. I didn’t notice any change immediately Lap after lap, my coach started taking times with his stopwatch and noting them in his notebook. Eventually, the evidence was clear. I was going faster.
-      That was the beginning of the revolution of tech swimsuits. In the early 2000s, Olypic athletes started using them and the trend trickled down to the whole swimming community. By 2007, it was unconceivable to compete in a race without one of those things on.
-      </p>
+      <p>Wearing was a long and laborious process. Once wore, it adhered like a second skin. Out of the water it constrained my movements and the though of having to swim four kilometers with that thing on seemed unconceivable.</p>
+      <p>I reluctantly put that new swimsuit on. I didn’t notice any change immediately Lap after lap, my coach started taking times with his stopwatch and noting them in his notebook. Eventually, the evidence was clear. I was going faster.</p>
+      <p>That was the beginning of the revolution of tech swimsuits. In the early 2000s, Olypic athletes started using them and the trend trickled down to the whole swimming community. By 2007, it was unconceivable to compete in a race without one of those things on.</p>
       <p>The tech-swimsuit era was inaugurated at the Sydney Olympics and no other athlete better exemplified this trend Ian Thorpe, the australian thorpedo (that was his nickname) who raced with a full body suit covering his whole body, from the wrists to his ankles. He was the one touching the wall before the US champion and recordman Gary Hall Jr, who before the race wrote on his blog that the US relay was going to smash the aussies like guitars.</p>
       <p>But that was only the beginnig. While those swimsuits gave a noticeable contribution to the lowering of average times in the sport, it wasn’t until 2008 that this technologically advancement really started become a revolution.</p>
-      <p>The Speedo LZR was unveiled in New York City in February 2008. That marked the introduction of a new material, polyurethan.
-          At the Beijing Summer Olympics, the Speedo LZR proved its possibility setting 25 new world records and 65 new Olympic records. With that swimsuit on, an already legendary swimmer like Michael Phelps won eight gold medals.
-          But it was really the Rome Olympics that convinced the World Aquatics (then FINA) to change the rules.
-          In rome, 43 world records were set. This convinced FINA to change the regulations to ban any polyurethane in swimsuits.
-          </p>
-          <div class="flourish-embed flourish-chart" data-src="visualisation/14200309"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+      <p>The Speedo LZR was unveiled in New York City in February 2008. That marked the introduction of a new material, polyurethan. At the Beijing Summer Olympics, the Speedo LZR proved its possibility setting 25 new world records and 65 new Olympic records. With that swimsuit on, an already legendary swimmer like Michael Phelps won eight gold medals. But it was really the Rome Olympics that convinced the World Aquatics (then FINA) to change the rules. In rome, 43 world records were set. This convinced FINA to change the regulations to ban any polyurethane in swimsuits.</p>
+  
+    </div>
+    </div>
+
+  </body>
+</html>
