@@ -9,8 +9,33 @@
     .hero a {
       text-decoration: underline;
     }
+
+    .hero {
+      background-color: #3a4367 !important;
+    }
+
     img {
       border-radius: 5px;
+    }
+
+    body {
+      font-family: Trebuchet MS, sans-serif;
+    }
+
+
+    .tags-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .tags {
+      margin-right: 10px;
+    }
+
+    .buttons-container {
+      margin-left: 0px;
+      margin-right: 10px;
     }
   </style>
   <title>Marco Dalla Stella's Portfolio</title>
@@ -46,20 +71,29 @@
             <a href="/swimming.html">After more than ten years, tech swimsuits are a thing of the past.</a>
           </h3>
           <h3 class="subtitle is-6">
-            When in 2010 FINA banned tech swimsuits, people in the swimming community thought that it was going to
-            take
-            forever for swimmers to be that fast, again. It did not.</h3>
-          <div class="tags">
-            <span class="is-light is-success tag">Python</span>
-            <span class="is-light is-success tag">Pandas</span>
-            <span class="is-light is-success tag">API</span>
-            <span class="is-light is-success tag">Flourish</span>
+            <time datetime="2023-06-24">June 24, 2023 - When in 2010 FINA banned tech swimsuits, people in the swimming
+              community thought that it was going to
+              take
+              forever for swimmers to be that fast, again. It did not.
+            </time>
+          </h3>
+
+          <div class="tags-container">
+            <div class="buttons-container">
+              <a class="button is-success is-small" href="/swimming.html" target="_blank">Read the story</a>
+              <a class="button is-success is-warning is-small"
+                href="https://github.com/marcodallastella/LEDE-Project-1-Swimming" target="_blank">GitHub</a>
+            </div>
+            <div class="tags">
+              <span class="is-light is-success tag">Python</span>
+              <span class="is-light is-success tag">Pandas</span>
+              <span class="is-light is-success tag">API</span>
+              <span class="is-light is-success tag">Flourish</span>
+            </div>
           </div>
-          <a class="button is-success is-small" href="/swimming.html" target="_blank">Read the story</a>
-          <a class="button is-success is-warning is-small" href="https://github.com/marcodallastella/LEDE-Project-1-Swimming" target="_blank">GitHub</a>
         </div>
+
       </div>
-    </section>
   </div>
 </body>
 
