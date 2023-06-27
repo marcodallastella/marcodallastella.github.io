@@ -6,71 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <style>
-    .hero.is-primary {
-      background-color: rgb(0, 49, 83);
-    }
-
-    .content figure {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    a {
-      color: rgb(218, 165, 32);
-    }
-
     .hero a {
       text-decoration: underline;
     }
 
-    body {
-      font-family: 'Trebuchet MS', sans-serif;
+    .hero {
+      background-color: #3a4367 !important;
     }
+
+    img {
+      border-radius: 5px;
+    }
+
+    body {
+      font-family: Trebuchet MS, sans-serif;
+    }
+
 
     .tags-container {
       display: flex;
+      justify-content: space-between;
       align-items: center;
     }
 
-    .tags-container .tags {
-      margin-left: 10px;
+    .tags {
+      margin-right: 10px;
     }
 
-    .tags-container a {
-      margin-right: 20px;
-    }
-
-    .read-more-button {
-      background-color: rgb(135, 206, 235);
-      color: black;
-      font-family: 'Trebuchet MS', sans-serif;
-      font-weight: bold;
-      padding: 10px 20px;
-      border-radius: 5px;
-      border: none;
-      outline: none;
-      cursor: pointer;
-    }
-
-    .notebook-button {
-      background-color: rgb(41, 36, 33);
-      color: #ffffff;
-      font-family: 'Trebuchet MS', sans-serif;
-      font-weight: bold;
-      padding: 10px 20px;
-      border-radius: 5px;
-      border: none;
-      outline: none;
-      cursor: pointer;
+    .buttons-container {
+      margin-left: 0px;
+      margin-right: 10px;
     }
   </style>
   <title>After more than ten years, tech swimsuits are a thing of the past.</title>
 </head>
-
 <body>
+
   <section class="hero is-primary">
     <div class="container">
       <div class="hero-body">
+        <nav class="navbar" role="navigation" aria-label="main-navigation">
+          <div class="navbar-brand">
+            <a class=""navbar-item" href="/index.html">
+           Home
+        </nav>
         <h1 class="is-1 title">After more than ten years, tech swimsuits are a thing of the past.</h1>
         <p class="is-4 subtitle">Marco Dalla Stella</p>
       </div>
@@ -104,8 +83,8 @@
         </div>
       </div>
       <div class="tags-container">
-        <a href="https://github.com/marcodallastella/LEDE-Project-1-Swimming" target="_blank">
-          <button class="notebook-button">GitHub Repository</button>
+        <a class="button is-success is-warning is-small"
+                href="https://github.com/marcodallastella/LEDE-Project-1-Swimming" target="_blank">GitHub</a>
         </a>
       </div>
     </section>
