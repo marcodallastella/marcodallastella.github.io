@@ -137,6 +137,7 @@ nav a:hover {
   font-size: 18px;
   }
 
+
 .tool {
   font-size:10px;
   display: inline-block;
@@ -150,6 +151,10 @@ nav a:hover {
 
 .pandas {
   background-color: #ff6f00;
+}
+
+.api {
+  background-color: #ffd336;
 }
 
 .data {
