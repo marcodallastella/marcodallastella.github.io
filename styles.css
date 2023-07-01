@@ -135,6 +135,8 @@ nav a:hover {
   margin-right: auto;
   padding: 0 20px;
   font-size: 18px;
+  justify-content:center;
+  display: flex;
   }
 
 
@@ -182,7 +184,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 60vh;
 }
 
 
