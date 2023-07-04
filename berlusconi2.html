@@ -10,9 +10,8 @@
             align-items: center;
             height: 100vh;
             margin: 90px;
-            overflow: auto; // allows scrolling
             padding: 20px;
-            padding-bottom: 100vh; // artificial padding to make the page scrollable
+            padding-bottom: 100vh; /* artificial padding to make the page scrollable */
             box-sizing: border-box;
             font-family: serif;
             font-weight: bold;
@@ -24,7 +23,7 @@
             opacity: 0;
             transform: translateY(-50px);
             transition: all 0.5s;
-            margin-bottom: 5px; // spacing between headlines
+            margin-bottom: 5px; /* spacing between headlines */.
         }
 
         .headline.show {
@@ -51,7 +50,7 @@
 
 
     <script>
-        d3.csv('headlines.csv').then(data => {
+        d3.csv('berlusconi/headlines.csv').then(data => {
             // Store all headlines in an array and initialize a counter for the current headline
             let headlines = data;
             let currentHeadline = 0;
