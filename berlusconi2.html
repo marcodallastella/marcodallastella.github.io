@@ -10,9 +10,9 @@
             align-items: center;
             height: 100vh;
             margin: 90px;
-            overflow: auto;  // allows scrolling
+            overflow: auto; // allows scrolling
             padding: 20px;
-            padding-bottom: 100vh;  // artificial padding to make the page scrollable
+            padding-bottom: 100vh; // artificial padding to make the page scrollable
             box-sizing: border-box;
             font-family: serif;
             font-weight: bold;
@@ -24,17 +24,32 @@
             opacity: 0;
             transform: translateY(-50px);
             transition: all 0.5s;
-            margin-bottom: 5px;  // spacing between headlines
+            margin-bottom: 5px; // spacing between headlines
         }
 
         .headline.show {
             opacity: 1;
             transform: translateY(0);
         }
+
+        #date-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 20px;
+        }
     </style>
 </head>
 
 <body>
+
+    <div id="date-bar"></div>
+
+
     <script>
         d3.csv('headlines.csv').then(data => {
             // Store all headlines in an array and initialize a counter for the current headline
@@ -59,6 +74,10 @@
                     // Add the headline to the body of the document
                     document.body.appendChild(headline);
 
+                    // Update the date bar
+                    document.getElementById('date-bar').textContent = `Date: ${d.Date}`;
+
+
                     // Reduce the body's bottom padding by the height of the headline
                     document.body.style.paddingBottom = `calc(100vh - ${headline.offsetHeight}px)`;
 
@@ -68,6 +87,34 @@
                     }, 10);
                 }
             }
+
+            let lastScrollTop = 0;  // keep track of the last scroll position
+
+            function checkScroll() {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;  // get current scroll position
+
+                if (scrollTop > lastScrollTop) {  // if scrolling down
+                    appendHeadline();
+                } else if (scrollTop < lastScrollTop) {  // if scrolling up
+                    removeHeadline();
+                }
+
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;  // update last scroll position
+            }
+
+            function removeHeadline() {
+                if (currentHeadline > 0) {
+                    let d = headlines[--currentHeadline];
+
+                    // Remove the last headline element
+                    document.body.removeChild(document.body.lastChild);
+
+                    // Update the date bar
+                    document.getElementById('date-bar').textContent = `Date: ${d.Date}`;
+                }
+            }
+
+            window.addEventListener('scroll', checkScroll);
 
             // Append a new headline every time the user scrolls to the bottom
             window.onscroll = function () {
