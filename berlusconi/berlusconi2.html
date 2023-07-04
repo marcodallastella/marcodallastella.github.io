@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 90px;
+            overflow: auto;  // allows scrolling
+            padding: 20px;
+            padding-bottom: 100vh;  // artificial padding to make the page scrollable
+            box-sizing: border-box;
+            font-family: serif;
+            font-weight: bold;
+            background-color: #f0f0f0;
+        }
+
+        .headline {
+            text-align: center;
+            opacity: 0;
+            transform: translateY(-50px);
+            transition: all 0.5s;
+            margin-bottom: 5px;  // spacing between headlines
+        }
+
+        .headline.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        d3.csv('headlines.csv').then(data => {
+            // Store all headlines in an array and initialize a counter for the current headline
+            let headlines = data;
+            let currentHeadline = 0;
+
+            // Function to append a new headline
+            function appendHeadline() {
+                if (currentHeadline < headlines.length) {
+                    let d = headlines[currentHeadline++];
+
+                    // Create a new headline element
+                    let headline = document.createElement('div');
+                    headline.classList.add('headline');
+                    headline.textContent = d.headline;
+
+                    let minSize = 15;
+                    let maxSize = 30;
+                    let randomSize = Math.floor(Math.random() * (maxSize - minSize) + minSize);
+                    headline.style.fontSize = `${randomSize}px`;
+
+                    // Add the headline to the body of the document
+                    document.body.appendChild(headline);
+
+                    // Reduce the body's bottom padding by the height of the headline
+                    document.body.style.paddingBottom = `calc(100vh - ${headline.offsetHeight}px)`;
+
+                    // Start the animation
+                    setTimeout(() => {
+                        headline.classList.add('show');
+                    }, 10);
+                }
+            }
+
+            // Append a new headline every time the user scrolls to the bottom
+            window.onscroll = function () {
+                if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                    appendHeadline();
+                }
+            };
+
+            // Append the first headline
+            appendHeadline();
+        });
+    </script>
+</body>
+
+</html>
