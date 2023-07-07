@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <!-- google fonts: Open Sans (sans-serif) and Lora (serif) -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <title>Forty years of Berlusconi in the headlines.</title>
+
+    <style>
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            padding: 10px;
+            background: #f9f9f9;
+            border: 0px solid #333;
+            border-radius: 5px;
+            pointer-events: none;
+            /* Ignore mouse events */
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a class='nav' href="../index.html">Home</a></li>
+        </ul>
+    </nav>
+    <section class="header">
+        <p class="kicker">Politics</p>
+        <h1 class="headline">Forty years of Berlusconi in the headlines.</h1>
+        <h2 class="subhead">A review of 31,805 headlines of Italian recent history.</h2>
+        <p class="byline">By Marco Dalla Stella</p>
+        <p class="date">July 6, 2023</p>
+    </section>
+
+    <section class="main-body">
+        <div class="story-body">
+            <p class="body-text">"31,805 headlines. This is the quantity of headlines that italian newspaper la
+                Repubblica dedicated to former prime Minister Silvio Berlusconi between February 1, 1984 and July 1,
+                2023. From his business expansions in the 80s, to its first political campaign of the 90s when he
+                presented himself as the 'self-made man' who came to bring his success to Italy after a period of
+                corruption scandals."</p>
+            <p class="body-text">"Over the years, the preponderance of Berlusconi over the Italian political scene
+                became so huge that the entire country could have been divided into factions of pro and against
+                Berlusconi. The extreme personalization of politics made that no matter the topic, Berlusconi was always
+                the cause of, or the solution to, all of Italy's problems."</p>
+            <p class="body-text">"The obsession of Italian progressives over Berlusconi increased over the years,
+                peaking in 2013 when in a single year, la Repubblica published more than three thousands articles having
+                either Berlusconi or Silvio in their headline. That makes an average of 8.58 articles every single day."
+            </p>
+        </div>
+
+        <div class="chart-section" id="my_dataviz">
+            <script src="../assets/scripts/graph_repubblica.js"></script>
+        </div>
+
+        <div class="story-body">
+            <p class="body-text">
+            <ul>The articles peaked on the day of Berlusconi's passing, on June 12, 2023, with 71
+                articles published on a single day (71 the day after). </ul>
+            <ul>November 27, 2013: 43 articles. After being sentenced to four years of detention and prevention from
+                official charges for four years due to fiscal evasion, Berlusconi loses his seat as senator.</ul>
+            <ul>April 15, 2014. 34 headlines. Berlusconi is assigned to social services and meets with progressive
+                leader Matteo Renzi</ul>
+            <ul>18 September, 2013: 33 articles. Berlusconi comments about his sentencing for financial fraud</ul>
+            <ul>September 29, 2010. 28 headlines. Berlusconi's government manages to mantain control over the Parliament
+            </ul>
+            <ul>November 12, 2011. 27 headlines. Berlusconi resigned because of economic crisis</ul>
+            <ul></ul>
+
+            </p>
+            <h3>Verbs</h3>
+            <p class="body-text">But the amount of data included in the historical data regarding Berlusconi shows interesting patterns in terms of the verbs being used. As articles including his name increased greately between 2005 and 2013, the increasing amount of scandals - both political and legal - can be observed by the verbs most commonly used.
+            </p>
+            <p class="body-text">More than 900 headlines included the verb <b>attack</b>, and another 400 the verb <b>challenges</b>.</p>
+        </div>
+
+        <div class="chart-section">
+            <div class="chart-row">
+                <div class="chart">
+                    <iframe class="chart-frame" src="verbs.html" frameborder="0"
+                        alt="Chart of Berlusconi headlines"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="story-body">
+            <h3>People</h3>
+            <p class="body-text">From this massive amount of data, we can extrapolate a lot of information about forty
+                years of recent Italian history, of the relationship between media and politics, and the variou phases
+                of the Berlusconi's saga.</p>
+            <p class="body-text">For example</p>
+        </div>
+
+        <div class="chart-section">
+            <div class="chart-row">
+                <div class="chart">
+                    <iframe class="chart-frame" src="names.html" frameborder="0"
+                        alt="Chart of Berlusconi headlines"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <div class="chart-row">
+                <div class="chart">
+                    <div id="my-svg-chart"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+</body>
+
+</html>
