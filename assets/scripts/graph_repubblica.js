@@ -10,12 +10,15 @@ d3.csv("../data/headlines_days.csv").then(function (data) {
         width = 960 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom;
 
-    var svg = d3.select("#my_dataviz")
+        var svg = d3.select("#my_dataviz")
         .append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 500 500")
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    
 
     var x = d3.scaleTime().domain(d3.extent(data, function (d) {
         return d.days;
