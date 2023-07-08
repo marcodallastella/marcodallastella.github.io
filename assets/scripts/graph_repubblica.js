@@ -32,38 +32,50 @@ d3.csv("../data/headlines_days.csv").then(function (data) {
     })]).range([height, 0]);
     svg.append("g").call(d3.axisLeft(y));
 
-    var line = d3.line().x(function (d) {
-        return x(d.days);
-    }).y(function (d) {
-        return y(d.count);
+
+    svg.selectAll(".timeline-rect")
+    .data(data)
+    .enter()
+    .append("rect")
+    .attr("class", "timeline-rect")
+    .attr("x", function (d) { return x(d.days); })
+    .attr("y", function (d) { return y(d.count); })
+    .attr("width", 2) // Adjust the width of each rectangle as per your preference
+    .attr("height", function (d) { return height - y(d.count); })
+    .style("fill", function (d) {
+        // You can define a color scale based on the count value
+        // Here's an example using a linear color scale
+        var colorScale = d3.scaleLinear()
+            .domain([0, d3.max(data, function (d) { return d.count; })])
+            .range(["#FFFFFF", "#FF0000"]); // Adjust the color range as per your preference
+        return colorScale(d.count);
     });
 
-    var path = svg.append("path")
-        .datum(data)
-        .attr("class", "line")
-        .attr("d", line)
-        .style("fill", "none")
-        .style("stroke", "#8C4593")
-        .style("stroke-width", 1.5);
 
-    const zoom = d3.zoom()
-        .scaleExtent([0.5, 20])
-        .on("zoom", zoomed);
 
-    svg.call(zoom);
 
-    function zoomed(event) {
-        var newX = event.transform.rescaleX(x);
-        xAxis.scale(newX);
-        svg.select(".x-axis").call(xAxis);
-        path.attr("d", line.x(function(d) { return newX(d.days) }));
-    }
+
+    // var line = d3.line().x(function (d) {
+    //     return x(d.days);
+    // }).y(function (d) {
+    //     return y(d.count);
+    // });
+
+    // var path = svg.append("path")
+    //     .datum(data)
+    //     .attr("class", "line")
+    //     .attr("d", line)
+    //     .style("fill", "none")
+    //     .style("stroke", "#8C4593")
+    //     .style("stroke-width", 1.5);
+
+    
 
     svg.append("text")
         .attr("x", (width / 6))
         .attr("y", 20 - (margin.top / 2))
         .attr("text-anchor", "middle")
         .style("font-size", "24px")
-        .style("text-decoration", "underline")
-        .text("Daily headlines");
+        .style("font-family", "Garamond")
+        .text("Berlusconi in the headlines");
 });
