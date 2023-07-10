@@ -10,12 +10,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
 
     <style>
-        
-        .svg-container{
+        .svg-container {
             display: inline-block;
-            margin: 0 auto;
+            margin: 0vh;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+
         }
-        
+
         .tooltip {
             position: absolute;
             text-align: center;
@@ -151,10 +154,8 @@
                 const myChart = d3
                     .select('#my-svg-chart')
                     .append('svg')
-                    .attr('width', 800)
+                    .attr('width', 1000)
                     .attr('height', 500)
-
-
 
                 // Step 6. create SVG elements binded with data
                 const Years = myChart
@@ -200,8 +201,8 @@
                             .duration(50)
                             .style("opacity", 1);
                         tooltip.html("Year: " + d.Years + "<br/> Value: " + d.Value_tot)
-                            .style("left", (d3.pointer(event)[0]) + "px")
-                            .style("top", (d3.pointer(event)[1]) + "px");
+                            .style("left", (event.pageX) + "px")
+                            .style("top", (event.pageY) + "px");
 
                     })
                     .on('mouseout', function (event, d) {
@@ -229,7 +230,10 @@
 
                 greyToColor();
 
+
             });
+
+
 
     </script>
 
@@ -279,10 +283,12 @@
                     scoured
                     La Repubblica’s website for every article that mentioned the former Prime Minister in the
                     headline.
-                    More information can be found <a
-                    href="https://github.com/marcodallastella/la-Repubblica-Berlusconi" target="_blank">Github
+                    More information can be found <a href="https://github.com/marcodallastella/la-Repubblica-Berlusconi"
+                        target="_blank">Github
                     </a></p>
                 <div class="svg-container">
+                    <p style="font-size:16px; font-style: italic;">Articles from laRepubblica mentioning Berlusconi in
+                        the headline (1984-2023)</p>
                     <div id="my-svg-chart"></div>
                 </div>
                 <div class="container">
