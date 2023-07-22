@@ -352,4 +352,8 @@ nav a:hover {
   background-color: #333;
 }
 
+.article.p-3 p {
+  font-family: Arial;
+}
+
 </style>
