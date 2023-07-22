@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <!-- some basic stuff  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SVG with D3</title>
+    <link rel="stylesheet" href="../assets/styles/style_venice.css">
+
+    <!-- add your d3 script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    
+
+    <!-- add your d3 script -->
+    <script>
+
+        // Step 4. load your data with d3.csv()
+        d3.csv("veniced3.csv")
+        // d3.json("happiness-sample-data.json")
+          .then(data => {
+  
+            // check if the data is loaded:
+            console.log(data)
+  
+            // == your code happens below ==
+            
+            // Step 5. create an SVG container inside #my-svg-chart using d3.select().append()
+            const myChart = d3
+              .select('#my-svg-chart')
+              .append('svg')
+              .attr('width', 500)
+              .attr('height', 500)
+  
+            // Step 6. create SVG elements binded with data
+            const people = myChart
+              .selectAll('circle')
+              .data(data)
+              .join('circle');
+  
+  
+            // Step 7. Position the SVG shapes at the right places
+            const gridSize = 40, gap = 50;
+  
+            people
+              // SVG circle specific attributes
+              .attr('cx', (d,i) => {
+                return Math.floor(i%9)*(gridSize+ gap) / 2 + gridSize / 2;;
+              })
+              .attr('cy', (d,i) => {
+                return Math.floor(i/9)*(gridSize+ gap) / 2 + gridSize / 2;;
+              })
+              .attr('r', gridSize / 2)
+
+
+  
+            // Step 8. Encode data onto the SVG shapes
+            people.style('fill', d=> {
+              if (d.Count > '0') {return 'blue'}
+            })
+  
+  
+            // 
+  
+  
+          })
+  
+      </script>
+
+</head>
+
+<body>
+    <h1>100 days of Venice</h1>
+    <p>Venice over the years</p>
+    <div id="my-svg-chart"></div>
+</body>
+
+</html>

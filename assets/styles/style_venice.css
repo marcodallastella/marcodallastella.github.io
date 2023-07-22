@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    position: relative;
+}
+
+
+
+/* Body general settings */
+body {
+    min-height: 100vh;
+    background-color: rgb(250, 247, 247);
+}
+
+/* HERO */
+
+
+.has-bg-img {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../../articles/venice-0.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+    color: #c80815;
+    font-family: "Old Standard TT";
+    font-size: 120px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.subtitle {
+    color: #c80815;
+    font-family: "Old Standard TT";
+    font-size: 30px;
+    text-align: center;
+}
+
+/* TEXT */
+
+.section {
+    align-items: center;
+}
+
+.content{
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.content{
+    font-family: 'Garamond', serif;
+    font-size: 18px;
+}
+
+
+
+/* SCROLLY */
+#scrolly {
+    position: relative;
+    background-color: #f3f3f3;
+    padding: 0rem;
+  }
+
+  article {
+    position: relative;
+    padding: 0;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+
+  .sticky-thing {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 0;
+    top: 0;
+    height: 100vw;
+
+  }
+
+  .sticky-thing img {
+    max-width: 100%;
+    max-height: 90%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+  }
+
+  .step {
+    margin: 30rem auto 50rem auto;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .step:last-child {
+    margin-bottom: 5;
+  }
+
+  .step.is-active p {
+    background-color: rgb(250, 247, 247);
+    color: #c80815;
+  }
+
+  .step p {
+    text-align: center;
+    padding: 2rem;
+    font-family: "Old Standard TT";
+    font-size: 1.5rem;
+    color:#c80815;
+    background-color: rgb(250, 247, 247);
+  }
+
+  #outro {
+    height: 140px;
+  }
+
+</style>
