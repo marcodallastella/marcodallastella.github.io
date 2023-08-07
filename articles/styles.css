@@ -7,16 +7,16 @@
 }
 
 .is-text {
+    margin-left: 50vh;
+    margin-right: 50vh;
+}
+
+.is-graph {
     margin-left: 30vh;
     margin-right: 30vh;
 }
 
-.is-graph {
+.is-table {
     margin-left: 20vh;
     margin-right: 20vh;
-}
-
-.is-table {
-    margin-left: 10vh;
-    margin-right: 10vh;
 }
