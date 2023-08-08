@@ -30,15 +30,17 @@
 
     <section class="section">
         <div class="container is-text">
-            <p>Poovandaren Chetty is a South African businessman who went to court on accuses of fraud, theft and money laundering. However, if you search for his name on Google what you are going to see is almost entirely positive articles. But you are also going to find a strange message.</p>
+            <p>Poovandaren Chetty is a South African businessman who went on trial on accuses of fraud, theft and money laundering. However, if you search for his name on Google what you are going to see is almost entirely positive articles. And a strange message.</p>
             <br>
             <p><i>In response to a complaint we received under the US Digital Millennium Copyright Act, we have removed 1 result(s) from this page. If you wish, you may read the DMCA complaint that caused the removal(s) at LumenDatabase.org.</i></p>
             <br>
-            <p>The warning informs us that one content was removed from our search's results due to the US law on copyright rights. In other words, the content was labeled as being plagiarized or stolen from the original publisher, who filed a complaint to Google that proceeded removing the content.</p>
+            <p>The message informs us that one result was removed from our search due to the US law on copyright rights. In other words, the content was labeled as plagiarized by the original author, who filed a complaint to Google that proceeded removing the content.</p>
             <br>
-            <p>The details of the complaint reveals that it was very likely fraudulent - meaning that someone (such as a reputation management company) copied the content of the story on a blog and then backdated it to the scope of making Google believe that the article had been plagiarized. This is a simple trick for which Google is still falling, sometimes hiding truthful journalism from readers on the internet.</p>
+            <p>The details of the complaint reveals that it was very likely fraudulent. It was filed by an anonymous blog registered on tumblr, while the content being removed was published by a reputable South African news site.</p>
             <br>
-            <p>Filing a copyright infringement claim to Google is a common practice for whoever wants to maintain control over their materials on the internet. Since 2011, more than 19 million requests have been filed to Google for copyright infringement. The number has been increasing at a steady pace.</p>
+            <p>What happened is an old trick used by shady reputation management companies to launder the reputation of their clients. They copy the content of the story on a blog and then backdated it to the scope of making Google believe that the article had been plagiarized. Incredibly, Google is still falling for this.</p>
+            <br>
+
         </div>
     </section>
 
@@ -55,10 +57,11 @@
 
     <section class="section">
         <div class="container is-text">
+            <p>Filing a copyright infringement claim to Google is a common practice for whoever wants to maintain control over their materials on the internet. Since 2011, more than 19 million requests have been filed to Google for copyright infringement. The number has been increasing at a steady pace.</p>
             <p>But making a takedown request to Google does not automatically result in the removal of the content. Google claims paying particular attention to evaluate whether a removal request is legit or not, which involves both automatic and human intervention.
             </p>
             <br>
-            <p>Over the years, the removal requests presented to Google resulted in more than four billion pages removed from the search engine's results. This number peaked in 2016, with almost one billion links removed in a single year, and has since then decreased staying between 200 and 300 million removed links per year.
+            <p>Over the years, the removal requests presented to Google resulted in more than four billion pages removed from the search engine's results. This number peaked in 2016, with almost one billion links removed in a single year, and has since then decreased staying between 200 and 300 million removed links per year. It's unclear the reason why removals decreased suddently despite the increase in requests.
 
             </p>
         </div>
@@ -74,19 +77,7 @@
         </div>
     </section>
 
-    <section class="section">
-        <div class="container is-text">
-            <p>Of course, not all requests are approved by Google. A process that is described by Google as both
-                automatized and human reviews the requests and decide wheter to accept them.
-            </p>
-            <br>
-            <p>Interestingly, removals peaked in 2016 when Google removed more than 900 million webpages from its search
-                results based on copyright infringment notices. Perhaps, that was an year in which Google started paying
-                more attention on what is was removing. However, if we focus on 2023, we can see something interesting.
-            </p>
-            <br>
-        </div>
-    </section>
+
     <section class="section">
         <div class="container is-text">
             <h1 class="title">Truthful, accurate journalism is being hidden from readers.</h1>
@@ -286,10 +277,22 @@
         </div>
     </section>
 
+    <div class="carrusel-observable-quico" id="carrusel-proveedores-CarouselEmbed-269"></div>
+
 
     <footer class="footer">
         <div class="content has-text-centered">
             <p><strong>To know more about the project, visit the <a href="https://github.com/marcodallastella/Project-4-DMCAs">GitHub Repository.</a></strong></p>
         </div>
     </footer>
+
+    <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/a5367e79bc297646.js?v=3";
+        const main = new Runtime().module(define, name => {
+          if (name === "CarouselEmbed") return new Inspector(document.querySelector("#carrusel-proveedores-CarouselEmbed-269"));
+        });
+        
+      </script>
 </body>
+</html>
