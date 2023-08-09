@@ -286,13 +286,6 @@
         </div>
     </footer>
 
-    <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/a5367e79bc297646.js?v=3";
-        const main = new Runtime().module(define, name => {
-          if (name === "CarouselEmbed") return new Inspector(document.querySelector("#carrusel-proveedores-CarouselEmbed-269"));
-        });
-        
-      </script>
+
 </body>
 </html>
