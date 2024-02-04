@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forty years of Berlusconi in the headlines.</title>
+    <link rel="icon" href="../assets/images/hd.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+
+    <style>
+        .svg-container {
+            display: inline-block;
+            margin: 0vh;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+
+        }
+
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            padding: 5px;
+            background: white;
+            border: 1px solid;
+            border-radius: 5px;
+            pointer-events: none;
+            font-family: Georgia, serif;
+            color: black;
+        }
+
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            padding: 5px;
+            background: white;
+            border: 1px solid;
+            border-radius: 5px;
+            pointer-events: none;
+            font-family: Georgia, serif;
+            color: black;
+        }
+
+        .container {
+            /* Remove the line below if you want a wider page */
+            max-width: 700px !important;
+            color: #000000;
+            font-family: Georgia;
+        }
+
+        .chart-container {
+            max-width: 100% !important;
+            margin: 0 auto;
+        }
+
+        .chart-frame {
+            width: 100%;
+            height: 100vh;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            transition: 0.3s;
+        }
+
+        #my_dataviz {
+            width: 70%;
+            /* for example, adjust as necessary */
+            margin: 0 auto;
+        }
+
+        #names {
+            height: 1200px;
+        }
+
+        a {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #331ed4;
+        }
+
+        h1.title {
+            font-size: 2rem;
+            line-height: 1.1;
+            margin-bottom: 0.25rem;
+            margin-top: 0.4rem;
+            font-weight: 800;
+            color: rgb(0, 0, 0);
+            max-width: 800px;
+        }
+
+        h2.subtitle {
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .byline {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .bottomleft {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            font-size: 18px;
+            color: white;
+            text-shadow: black 1px 0 10px;
+            font-size: 12px;
+        }
+
+        .date {
+            font-size: 14px;
+            padding-top: 5px;
+            padding-bottom: 25px;
+        }
+
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            padding: 10px;
+            background: #f9f9f9;
+            border: 0px solid #333;
+            border-radius: 5px;
+            pointer-events: none;
+            /* Ignore mouse events */
+        }
+    </style>
+
+    <!-- your JS code that uses d3 to manipulate data -->
+
+    <script>
+
+        // Step 4. load your data with d3.csv()
+        d3.csv("../data/headlines_years_d3.csv")
+
+            // d3.json("happiness-sample-data.json")
+            .then(data => {
+
+                // check if the data is loaded:
+                console.log(data)
+
+                // == your code happens below ==
+
+                // Step 5. create an SVG container inside #my-svg-chart using d3.select().append()
+                const myChart = d3
+                    .select('#my-svg-chart')
+                    .append('svg')
+                    .attr('width', 1000)
+                    .attr('height', 500)
+
+                // Step 6. create SVG elements binded with data
+                const Years = myChart
+                    .selectAll('rect')
+                    .data(data)
+                    .join('rect');
+
+                // Step 7. Position the SVG shapes at the right places
+                const gridSize = 60, gap = 4;
+
+                Years
+                    // SVG rectangle specific attributes
+                    .attr('x', (d, i) => {
+                        return Math.floor(i % 6) * (gridSize + gap);
+                    })
+                    .attr('y', (d, i) => {
+                        return Math.floor(i / 6) * (gridSize + gap);
+                    })
+                    .attr('width', 0)
+                    .attr('height', 0)
+
+                // Define a color scale
+
+                const colorScale = d3.scaleLinear()
+                    .domain([0, 3130])
+                    .range(["#add8e6", "#00008b"])
+
+                // Additional step: labels tobe appended in the body section
+                const tooltip = d3.select("body").append("div")
+                    .attr("class", "tooltip")
+                    .style("opacity", 0);
+
+                // Step 8. Encode data onto the SVG shapes
+                Years
+                    .style('fill', 'lightgrey')
+                    // hover effects
+                    .on('mouseover', function (event, d) {
+                        console.log(d)
+                        d3.select(this).transition()
+                            .duration('50')
+                            .attr('opacity', '.50');
+                        tooltip.transition()
+                            .duration(50)
+                            .style("opacity", 1);
+                        tooltip.html("Year: " + d.Years + "<br/> Value: " + d.Value_tot)
+                            .style("left", (event.pageX) + "px")
+                            .style("top", (event.pageY) + "px");
+
+                    })
+                    .on('mouseout', function (event, d) {
+                        d3.select(this).transition()
+                            .duration('50')
+                            .attr('opacity', '1');
+                        // Hide tooltip
+                        tooltip.transition()
+                            .duration(50)
+                            .style("opacity", 0);
+                    });
+
+                const greyToColor = function () {
+                    Years
+                        .transition()
+                        .duration(2000)
+                        .style('fill', d => {
+                            return colorScale(d.Value_tot)
+                        })
+                        .attr('width', gridSize)
+                        .attr('height', gridSize)
+
+                }
+
+
+                greyToColor();
+
+
+            });
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+    <section class="container">
+        <div class="content">
+            <h1 class="title"> Forty years of Berlusconi in the headlines.</h1>
+            <h2 class="subtitle">A review of 31,805 headlines of Italian recent history.</h2>
+            <div class="byline">
+                <p><b>By Marco Dalla Stella</b></p>
+            </div>
+            <div class="date">July 8, 2023</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="content">
+
+                <p>A staggering total of 31,805 headlines – this is the measure of the Italian newspaper La
+                    Repubblica’s
+                    coverage of Silvio Berlusconi, the former Prime Minister of Italy, spanning four decades from
+                    February 1, 1984, to July 1, 2023. These years saw Berlusconi’s rise from a finance mogul to a
+                    controversial political figure, up until his demise.</p>
+                <p>Berlusconi first took a plungo into politics in 1994, projecting himself as a reformer with a
+                    mandate
+                    to alleviate Italy’s persistent issues of corruption and misgovernance. However, his tenure was
+                    marred by numerous scandals, self-serving laws, and frequent economical and political
+                    instability.
+                </p>
+                <p>Berlusconi’s personal life was just as contentious, if not more. His affairs – including with
+                    alleged
+                    underage prostitutes became a frequent subject of press coverage. His close affiliations with
+                    leaders like Libya’s Muammar Gaddafi and Russia’s Vladimir Putin were also subject of high
+                    controversy. His personal friendship with Marcello Dell’Utri – sentenced for conspiracy with the
+                    Sicilian Mafia, and receveid ten million euros from Berlusconi’s will – also marked his life.
+                </p>
+                <p>Although Berluconi was convicted for financial fraud in 2013, marking a perceived end to his
+                    political life, he retained a powerful influence within Italy’s political landscape up until his
+                    passing last month.</p>
+                <p>La Repubblica’s extensive coverage of Berlusconi’s life serves as a rich resource to delve into
+                    this
+                    extraordinary piece of Italian recent history. To compile these forty years of headlines, we
+                    scoured
+                    La Repubblica’s website for every article that mentioned the former Prime Minister in the
+                    headline.
+                    More information can be found <a href="https://github.com/marcodallastella/la-Repubblica-Berlusconi"
+                        target="_blank">Github
+                    </a></p>
+                <div class="svg-container">
+                    <p style="font-size:16px; font-style: italic;">Articles from laRepubblica mentioning Berlusconi in
+                        the headline (1984-2023)</p>
+                    <div id="my-svg-chart"></div>
+                </div>
+                <div class="container">
+                    <div class="content">
+                        <p>Silvio Berlusconi made his debut on the pages of La Repubblica in early 1984. An article
+                            headlined
+                            “Berlusconi Expands His Financial Activity” introduced him to the Italian public,
+                            setting the stage
+                            for his transformation from a successful real estate entrepreneur to a dominant national
+                            figure.
+                            Over the latter half of the 1980s and into the early ‘90s, Berlusconi leveraged his
+                            wealth to ammass
+                            control over television stations, newspapers, insurance firms, and even popular football
+                            teams,
+                            thereby cementing his status as one of Italy’s most influential individuals. </p>
+                        <p>Berlusconi’s political ambitions took center stage in 1994 when he declared his candidacy
+                            for the
+                            position of Prime Minister. Following this announcement, his name began to appear with
+                            increasing
+                            frequency in headlines. In the year of his first election, over 600 articles featured
+                            his name in
+                            the headline.</p>
+                        <p>As Berlusconi solidified his grasp on right-wing politics in Italy and navigated a sea of
+                            mounting
+                            scandals, his presence in the headlines ballooned. This coverage peaked on November 27,
+                            2013, the
+                            day when Berlusconi was stripped of his senatorial position following a conviction for
+                            tax evation
+                            that carried a four-yer prison sentence. On that day, La Repubblica published an
+                            unprecedented 43
+                            articles on him.</p>
+
+                        <p>Considering the tumultuous trajectory of Berlusconi’s personal and political journey,
+                            it’s perhaps
+                            unsurprising that the verbs most often linked with his name in headlines tend to be
+                            adversarial.
+                            Terms like “attack” (900 headlines), “challenge” (400) and accuse (250) have
+                            consistently
+                            characterized Berlusconi’s portrayal in one of the major Italian news outlet.
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="chart-container">
+                    <div class="chart-section">
+                        <iframe class="chart-frame" src="verbs.html" frameborder="0" width="800" height="800"
+                            alt="Chart of Berlusconi headlines"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="content">
+                    <p>During four decades of Italian history – nine years of which he held the office of Prime
+                        Minister –
+                        Silvio Berlusconi met and was associated with a vast array of figures from very different
+                        spheres.
+                    </p>
+                    <p>A review of the most frequently cited names in La Repubblica’s headlines underscores the
+                        predominance
+                        of national politics. Notably, Matteo Salvini, the leader of the right-wing party, Northern
+                        League,
+                        and Matteo Renzi, the former leader of the Democratic Party, feature prominently, with
+                        mentiones in
+                        800 and 770 headlines, respectively.
+                    </p>
+                    <p>International politics also played a significant role in Berlusconi’s career narrative. The
+                        Italian
+                        tycoon maintained a close personal relationship with Vladimir Putin, whom he continued to
+                        defend
+                        even after Russia’s invasion of Ukraine. Putin’s name appears 238 times in
+                        Berlusconi-related
+                        headlines. American president George W. Bush and Libyan leader Muammar Gaddafi were also
+                        frequently
+                        referenced, featuring 115 and 81 times, respectively.</p>
+                    <p>When it comes to Berlusconi’s political scandals, one name dominates the headlines: Ruby, a
+                        17-year
+                        old alleged prostitute claimed to have been given $10,000 by Berlusconi, who claimed having
+                        helped
+                        her out of conviction she was the niece of Egyptian president Hosni Mubarak (she wasn’t).
+                        Ruby –
+                        whose true name is Karima El Mahroug – appeared in 413 headlines.</p>
+                    <p>Lastly, Berlusconi’s right hand and personal friend, Marcello Dell’Utri, appeared in 178
+                        headlines.
+                        In 2014, Dell’Utri was convicted for a number of felonies including complicity in conspiracy
+                        with
+                        the Sicilian Mafia. In his final will, Berlusconi left to Dell’Utri ten million euros of his
+                        fortune.</p>
+                </div>
+            </div>
+
+            <div class="chart-section">
+                <div class="chart-row">
+                    <div class="chart">
+                        <iframe id="names" class="chart-frame" src="names.html" frameborder="0"
+                            alt="Chart of Berlusconi headlines"></iframe>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <br>
+
+    <div class="container">
+        <div class="content">
+            <p>This article was written by Marco Dalla Stella. For more information, visit the <a
+                    href="https://github.com/marcodallastella/la-Repubblica-Berlusconi" target="_blank">Github
+                    repository</a>. To read additional stories, visit the website <a
+                    href="https://marcodallastella.github.io/" target="_blank">here.</a></p>
+            </section>
+
+</body>
+
+</html>
