@@ -1,0 +1,22 @@
+.is-centered {
+    text-align: center;
+}
+
+.hero-body {
+    font-family: Georgia, serif
+}
+
+.is-text {
+    margin-left: 50vh;
+    margin-right: 50vh;
+}
+
+.is-graph {
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+
+.is-table {
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
