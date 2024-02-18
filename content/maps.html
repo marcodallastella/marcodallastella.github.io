@@ -13,6 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+
+
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js"></script>
+
+
     <style>
         body {
             margin: 0;
@@ -109,6 +116,21 @@
             }
         }
 
+        #map {
+            position: relative;
+            /* Change from absolute to relative */
+            height: 800px;
+            /* Set a fixed height for the map box */
+            margin: auto;
+            /* Center the map box horizontally */
+            margin-top: 20px;
+            /* Add some top margin for spacing */
+            width: 80%;
+            /* Set the width of the map box */
+            max-width: 800px;
+            /* Set a maximum width for larger screens */
+            padding-bottom: 2em;
+        }
     </style>
 </head>
 
@@ -137,6 +159,30 @@
     </div>
 
 
+
+
+    <div class="content">
+
+        <div class="content">
+            <p>A Mapbox map of areas in New York City that are more than a 15-minute walk from a subway station. Made using
+                QGIS and Mapbox.
+            </p>
+        </div>
+
+    </div>
+    <div id="map"></div>
+    <div class="content">
+
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoibWRhbGxhc3RlbGxhIiwiYSI6ImNrYmhzdTFsbTA4aW0ycG1iZWhodm1yc2UifQ.2V7nARXQydCN0tlmdM4fSA';
+            const map = new mapboxgl.Map({
+                container: 'map', // container ID
+                style: 'mapbox://styles/mdallastella/clsqmujbr04i701qseceshjyu', // style URL
+                center: [-73.9855, 40.74886], // starting position [lng, lat]
+                zoom: 10, // starting zoom
+            });
+        </script>
+    </div>
 
     <div class="footer">
         <div class="content">
