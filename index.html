@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Marco Dalla Stella</title>
-    <link rel="icon" href="content/images/hd.png">
+    <link rel="icon" href="images/hd.png">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
     <script src="https://kit.fontawesome.com/8a06a298d0.js" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
         href="https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
         rel="stylesheet">
     <style>
-        .section {
+        #container {
             background-image: linear-gradient(#f4f4f4, #c2d4e1);
         }
 
@@ -117,15 +117,19 @@
         .contact-info {
             text-align: justify;
         }
+
+        hr {
+           background-color: grey;
+            height: 1px;
+        }
     </style>
 
 </head>
 
 <body>
-    <div class="container.is-fullhd">
+    <div id=container class="container.is-fullhd">
 
         <!-- Introductory paragraph -->
-
         <section id="about" class="hero is-halfheight">
             <div class="hero-body">
                 <div class="column is-two-thirds-desktop is-half-tablet is-offset-one-fifth">
@@ -166,7 +170,8 @@
                 </div>
             </div>
         </section>
-
+    </div>
+<div id="container">
         <!-- Links to journalistic work -->
 
         <section id="investigations" class="section">
@@ -186,7 +191,7 @@
                                 aria-label="Go to and read the article about how felons are erasing compromising news online"
                                 target="_blank">
                                 <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="cover clip" src="content/images/md-portada.png">
+                                    <img alt="cover clip" src="images/md-portada.png">
                                 </figure>
                                 <div class="article-title">Clean Slate: how felons are erasing compromising news
                                     online</div>
@@ -204,7 +209,7 @@
                                 aria-label="Go to and read the article about a crazy multi-level marketing scheme mixing greenwashing and cryptocurrencies."
                                 target="_blank">
                                 <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="image of corsair group" src="content/images/corsair.png">
+                                    <img alt="image of corsair group" src="images/corsair.png">
                                 </figure>
                                 <div class="article-title">MOT investigation finds suspicious details behind plastic
                                     waste company's big promises</div>
@@ -223,7 +228,7 @@
                                 aria-label="Go to and read the article about Brazil receiving illegally trafficked waste from the US"
                                 target="_blank">
                                 <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="illegally trafficked waste" src="content/images/waste.png">
+                                    <img alt="illegally trafficked waste" src="images/waste.png">
                                 </figure>
                                 <div class="article-title">What Will Brazil Do With Illegally Trafficked American
                                     Garbage?</div>
@@ -242,7 +247,7 @@
         <section id="lede" class="section">
             <div class="subtitle">
                 <div class="category-title">
-                    Lede Program
+                    Data
                 </div>
             </div>
             <hr>
@@ -252,11 +257,11 @@
                 <div id="dmca" class="column is-one-third">
                     <div class="article p-3">
                         <h4>
-                            <a class="link" href="content/dmca.html"
+                            <a class="link" href="articles/dmca/dmca.html"
                                 aria-label="Go to and read the article Google's removal of legit journalism from its search results."
                                 target="_blank">
                                 <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="google" src="content/images/google.gif">
+                                    <img alt="google" src="articles/dmca/images/google.gif">
                                 </figure>
                                 <div class="article-title">Google is still falling for an old trick.</div>
                         </h4>
@@ -266,14 +271,31 @@
                         <div class="tags"><strong>Language:</strong>&nbsp;English</div>
                     </div>
                 </div>
+                <div id="prisons" class="column is-one-third">
+                    <div class="article p-3">
+                        <h4>
+                            <a class="link" href="articles/carceri/carceri.html"
+                                aria-label="Go to and read the article about prison overcrowding in Italy"
+                                target="_blank">
+                                <figure class="image is-4by3 mb-3 mt-2">
+                                    <img alt="google" src="articles/carceri/images/carceri.png">
+                                </figure>
+                                <div class="article-title">Prisons in Italy are overcrowded. More than usual.</div>
+                        </h4>
+                        <p>After a reduction during the pandemic, Italian prisons are at emergency levels</a></p>
+                        <div class="tags"><strong>Tools:</strong>&nbsp;Web Scraping, D3, ObservablePlot
+                        </div>
+                        <div class="tags"><strong>Language:</strong>&nbsp;English</div>
+                    </div>
+                </div>
                 <div id="soccer" class="column is-one-third">
                     <div class="article p-3">
                         <h4>
-                            <a class="link" href="content/soccer.html"
+                            <a class="link" href="articles/soccer/soccer.html"
                                 aria-label="Go to and read the article about how we used to play soccer as kids!"
                                 target="_blank">
                                 <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="soccer" src="content/images/soccer.png">
+                                    <img alt="soccer" src="articles/soccer/images/soccer.png">
                                 </figure>
                                 <div class="article-title">Skinned knees, happy faces</div>
                         </h4>
@@ -304,11 +326,11 @@
                 <div id="maps" class="column is-one-third">
                     <div class="article p-3">
                         <h4>
-                            <a class="link" href="content/maps.html"
+                            <a class="link" href="articles/maps/maps.html"
                                 aria-label="A  random maps made mostly for educational purposes using QGIS and Mapbox"
                                 target="_blank">
                                 <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="map" src="content/images/downtown_heights.png">
+                                    <img alt="map" src="articles/maps/images/downtown_heights.png">
                                 </figure>
                                 <div class="article-title">Maps Maps Maps</div>
                         </h4>
@@ -321,11 +343,11 @@
                 <div id="swimming" class="column is-one-third">
                     <div class="article p-3">
                         <h4>
-                            <a class="link" href="content/swimming.html"
+                            <a class="link" href="articles/swimming/swimming.html"
                                 aria-label="Go to and read the article about how swimming evolved after the banning of tech swimsuits."
                                 target="_blank">
                                 <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="swimming graph" src="content/images/swimming.png">
+                                    <img alt="swimming graph" src="articles/swimming/images/swimming.png">
                                 </figure>
                                 <div class="article-title">After more than ten years, tech swimsuits are a thing of
                                     the past.</div>
@@ -358,7 +380,7 @@
                                 target="_blank">
                                 <figure class="image is-4by3 mb-3 mt-2">
                                     <img alt="visual representation of a migrant escaping detention."
-                                        src="content/images/migrants.png">
+                                        src="images/migrants.png">
                                 </figure>
                                 <div class="article-title">Forgotten in a Detention Center for Migrants in Italy</div>
                         </h4>
@@ -382,7 +404,7 @@
                                 aria-label="Go to and read the article about Brazil receiving illegally trafficked waste from the US"
                                 target="_blank">
                                 <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="illegally trafficked waste" src="content/images/icewatch.png">
+                                    <img alt="illegally trafficked waste" src="images/icewatch.png">
                                 </figure>
                                 <div class="article-title">Diritti a Sunset Park, dove è la polizia a essere «Wanted»
                                 </div>
@@ -404,7 +426,7 @@
                                 aria-label="Go to and read the article about Brazil receiving illegally trafficked waste from the US"
                                 target="_blank">
                                 <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="illegally trafficked waste" src="content/images/venezuela.png">
+                                    <img alt="illegally trafficked waste" src="images/venezuela.png">
                                 </figure>
                                 <div class="article-title">Le Speranze Sospese dei Migranti Venezuelani</div>
                         </h4>
@@ -437,7 +459,7 @@
                             <a class="link" href="https://github.com/marcodallastella/USCIS-check-case-status"
                                 aria-label="Go visit the repository of this tool." target="_blank">
                                 <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="USCIS visa case status." src="content/images/uscis.png">
+                                    <img alt="USCIS visa case status." src="images/uscis.png">
                                 </figure>
                                 <div class="article-title">USCIS case status check</div>
                         </h4>
@@ -459,7 +481,7 @@
                             <a class="link" href="https://github.com/marcodallastella/Lumen-Search-Tool"
                                 aria-label="Go visit the repository of this tool." target="_blank">
                                 <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="USCIS visa case status." src="content/images/lumen.png">
+                                    <img alt="USCIS visa case status." src="images/lumen.png">
                                 </figure>
                                 <div class="article-title">Lumen API Search Tool</div>
                         </h4>
@@ -490,6 +512,7 @@
         </div>
     </footer>
     </div>
+
 </body>
 
 </html>
