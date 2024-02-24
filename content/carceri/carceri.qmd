@@ -1,0 +1,94 @@
+
+<style type="text/css">
+  p {
+    color: black;
+  }
+
+  .miniature-image {
+    width: 200px; /* Adjust width as needed */
+    height: auto; /* Automatically adjust height while maintaining aspect ratio */
+    border: 1px solid #777; /* Optional: Add border for better visibility */
+    display: inline-block; /* Display images inline */
+    margin: 1px; /* Add margin for spacing between images */
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 14px;
+    color: #333
+  }
+</style>
+
+
+
+<h1> Prisons in Italy are overcrowded </h1>
+
+<p>The chart here below show prison overcrowding on a regional basis. Select the region from the drop-down menu to see how overcrowding has changed over the past five years.</p>
+
+
+<!-- <div class="gallery">
+  <img class="miniature-image" src="images/lazio.png" alt="lazio chart">
+  <p class="description">Lazio</p>
+  <img class="miniature-image" src="images/lombardia.png" alt="lombardia chart">
+  <p class="description">Lombardia</p>
+</div>
+<div class="gallery">
+  <img class="miniature-image" src="images/veneto.png" alt="veneto chart">
+  <p class="description">Veneto</p>
+  <img class="miniature-image" src="images/campania.png" alt="campania chart">
+  <p class="description">Campania</p>
+</div> -->
+
+
+
+```{ojs}
+//| echo: false
+rates = FileAttachment("outputs/occupancy_rates.csv").csv({typed: true})
+```
+
+```{ojs}
+//| echo: false
+options = ['Show All', 'Abruzzo', 'Basilicata', 'Calabria', 'Campania', 'Emilia Romagna', 'Friuli Venezia Giulia',
+'Lazio', 'Liguria', 'Lombardia', 'Marche', 'Molise', 'Piemonte', 'Puglia', 'Sardegna', 'Sicilia', 'Trentino Alto Adige',
+'Toscana', 'Umbria', "Valle d'Aosta", "Veneto"]
+
+viewof region = Inputs.select(options, {
+    value: "Show All",
+    label: "Selected Region"})
+```
+
+
+
+
+```{ojs}
+//| echo: false
+Plot.plot({
+  y: {
+    grid: true,
+    tickFormat: "+f",
+    label: "Prison overcrowding in Italy"
+  },
+  color: {
+    scheme: "PuRd",
+    legend: true
+  },
+marks: [
+  Plot.ruleY([0]),
+  Plot.dot(
+    region !== 'Show All' ? rates.filter(d => new RegExp(region, 'i').test(d.Region)) : rates, {
+    x: "Date",
+    y: "Occupancy Rate",
+    stroke: "Occupancy Rate"
+  }),
+    Plot.lineY(
+      rates.filter(d => new RegExp(region, 'i').test(d.Region)),
+      Plot.windowY(3, {x:"Date", y: "Occupancy Rate"})
+    )
+]
+})
+```

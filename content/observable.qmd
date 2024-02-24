@@ -1,0 +1,13 @@
+
+title: "this is a test"
+
+```{ojs}
+headlines = FileAttachment("data/headlines_years_d3.csv").csv({typed: true})
+headlines
+height = 500
+
+```
+margin = Object {top: 20, right: 30, bottom: 30,left: 40}
+```
+margin = ({top:20, right:30, bottom:30, left:40})
+

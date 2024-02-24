@@ -1,0 +1,503 @@
+Region,Month-Year,Number of Deaths
+Abruzzo,2018-03,2
+Abruzzo,2018-04,1
+Abruzzo,2018-05,1
+Abruzzo,2019-08,1
+Abruzzo,2020-07,1
+Abruzzo,2020-10,1
+Abruzzo,2020-12,1
+Abruzzo,2021-03,1
+Abruzzo,2021-04,1
+Abruzzo,2021-11,1
+Abruzzo,2022-02,1
+Abruzzo,2022-04,1
+Abruzzo,2022-12,2
+Abruzzo,2023-01,1
+Abruzzo,2023-02,1
+Abruzzo,2023-03,2
+Abruzzo,2023-05,1
+Abruzzo,2023-06,1
+Abruzzo,2023-07,1
+Abruzzo,2023-09,1
+Abruzzo,2023-11,1
+Abruzzo,2024-01,1
+Basilicata,2019-10,1
+Basilicata,2020-12,1
+Calabria,2018-03,1
+Calabria,2018-08,1
+Calabria,2019-01,1
+Calabria,2019-03,1
+Calabria,2019-06,1
+Calabria,2019-07,1
+Calabria,2020-07,1
+Calabria,2020-09,1
+Calabria,2021-02,1
+Calabria,2021-04,2
+Calabria,2021-05,1
+Calabria,2021-08,1
+Calabria,2021-09,1
+Calabria,2022-01,1
+Calabria,2022-03,1
+Calabria,2022-09,1
+Calabria,2022-11,1
+Calabria,2023-08,1
+Calabria,2023-11,1
+Calabria,2024-01,2
+Campania,2018-02,1
+Campania,2018-03,1
+Campania,2018-04,1
+Campania,2018-05,4
+Campania,2018-06,2
+Campania,2018-07,4
+Campania,2018-08,1
+Campania,2018-09,1
+Campania,2018-10,3
+Campania,2018-11,3
+Campania,2018-12,3
+Campania,2019-01,2
+Campania,2019-02,2
+Campania,2019-04,1
+Campania,2019-06,4
+Campania,2019-07,3
+Campania,2019-09,1
+Campania,2019-12,1
+Campania,2020-02,1
+Campania,2020-03,1
+Campania,2020-04,1
+Campania,2020-05,2
+Campania,2020-06,1
+Campania,2020-07,3
+Campania,2020-08,1
+Campania,2020-10,1
+Campania,2020-11,2
+Campania,2020-12,2
+Campania,2021-01,2
+Campania,2021-02,1
+Campania,2021-03,2
+Campania,2021-04,2
+Campania,2021-05,1
+Campania,2021-06,1
+Campania,2021-08,1
+Campania,2021-09,2
+Campania,2021-10,3
+Campania,2021-11,1
+Campania,2021-12,1
+Campania,2022-01,1
+Campania,2022-02,2
+Campania,2022-05,2
+Campania,2022-06,1
+Campania,2022-08,3
+Campania,2022-09,2
+Campania,2022-11,1
+Campania,2022-12,1
+Campania,2023-04,1
+Campania,2023-05,2
+Campania,2023-07,3
+Campania,2023-08,2
+Campania,2023-10,2
+Campania,2023-12,2
+Campania,2024-01,6
+Emilia Romagna,2018-01,1
+Emilia Romagna,2018-03,1
+Emilia Romagna,2018-11,2
+Emilia Romagna,2019-04,1
+Emilia Romagna,2019-05,2
+Emilia Romagna,2019-06,1
+Emilia Romagna,2019-07,1
+Emilia Romagna,2019-09,1
+Emilia Romagna,2019-11,1
+Emilia Romagna,2020-02,1
+Emilia Romagna,2020-03,8
+Emilia Romagna,2020-04,1
+Emilia Romagna,2020-09,3
+Emilia Romagna,2020-10,1
+Emilia Romagna,2020-11,1
+Emilia Romagna,2021-01,1
+Emilia Romagna,2021-02,1
+Emilia Romagna,2021-03,1
+Emilia Romagna,2021-04,1
+Emilia Romagna,2021-05,1
+Emilia Romagna,2021-07,1
+Emilia Romagna,2021-09,1
+Emilia Romagna,2021-11,2
+Emilia Romagna,2022-01,2
+Emilia Romagna,2022-02,1
+Emilia Romagna,2022-04,2
+Emilia Romagna,2022-05,1
+Emilia Romagna,2022-06,2
+Emilia Romagna,2022-08,3
+Emilia Romagna,2022-09,1
+Emilia Romagna,2023-01,1
+Emilia Romagna,2023-02,2
+Emilia Romagna,2023-03,2
+Emilia Romagna,2023-04,1
+Emilia Romagna,2023-05,2
+Emilia Romagna,2023-07,1
+Emilia Romagna,2023-08,1
+Emilia Romagna,2023-09,1
+Emilia Romagna,2023-11,1
+Friuli Venezia Giulia,2018-04,1
+Friuli Venezia Giulia,2018-07,1
+Friuli Venezia Giulia,2018-08,1
+Friuli Venezia Giulia,2018-09,1
+Friuli Venezia Giulia,2018-10,1
+Friuli Venezia Giulia,2019-03,1
+Friuli Venezia Giulia,2019-05,1
+Friuli Venezia Giulia,2019-08,1
+Friuli Venezia Giulia,2020-03,1
+Friuli Venezia Giulia,2020-07,1
+Friuli Venezia Giulia,2020-09,1
+Friuli Venezia Giulia,2020-12,1
+Friuli Venezia Giulia,2022-11,1
+Friuli Venezia Giulia,2023-11,1
+Lazio,2018-01,4
+Lazio,2018-02,1
+Lazio,2018-04,1
+Lazio,2018-05,1
+Lazio,2018-06,1
+Lazio,2018-07,1
+Lazio,2018-09,6
+Lazio,2018-11,4
+Lazio,2019-03,1
+Lazio,2019-05,1
+Lazio,2019-06,1
+Lazio,2019-10,1
+Lazio,2019-11,3
+Lazio,2019-12,1
+Lazio,2020-03,3
+Lazio,2020-04,1
+Lazio,2020-05,1
+Lazio,2020-06,3
+Lazio,2020-10,2
+Lazio,2020-11,1
+Lazio,2020-12,1
+Lazio,2021-01,1
+Lazio,2021-02,1
+Lazio,2021-06,1
+Lazio,2021-07,1
+Lazio,2021-08,2
+Lazio,2021-09,1
+Lazio,2021-10,1
+Lazio,2022-01,2
+Lazio,2022-02,2
+Lazio,2022-03,1
+Lazio,2022-04,1
+Lazio,2022-06,1
+Lazio,2022-07,3
+Lazio,2022-08,2
+Lazio,2022-09,1
+Lazio,2022-10,2
+Lazio,2022-11,1
+Lazio,2022-12,2
+Lazio,2023-01,1
+Lazio,2023-02,1
+Lazio,2023-03,3
+Lazio,2023-05,1
+Lazio,2023-06,3
+Lazio,2023-07,1
+Lazio,2023-08,1
+Lazio,2023-09,2
+Lazio,2023-10,1
+Lazio,2023-12,1
+Lazio,2024-01,1
+Liguria,2018-03,1
+Liguria,2018-07,1
+Liguria,2018-08,2
+Liguria,2018-09,1
+Liguria,2019-02,2
+Liguria,2019-04,1
+Liguria,2019-07,1
+Liguria,2019-10,3
+Liguria,2020-09,1
+Liguria,2020-12,2
+Liguria,2021-01,1
+Liguria,2021-05,1
+Liguria,2021-07,1
+Liguria,2021-11,1
+Liguria,2022-01,2
+Liguria,2022-04,1
+Liguria,2022-06,1
+Liguria,2023-02,1
+Liguria,2023-05,1
+Liguria,2023-08,1
+Liguria,2023-09,1
+Liguria,2023-11,1
+Liguria,2024-01,1
+Lombardia,2018-01,1
+Lombardia,2018-02,2
+Lombardia,2018-03,1
+Lombardia,2018-04,1
+Lombardia,2018-05,1
+Lombardia,2018-06,2
+Lombardia,2018-08,2
+Lombardia,2018-09,1
+Lombardia,2018-10,1
+Lombardia,2018-11,2
+Lombardia,2019-01,1
+Lombardia,2019-03,1
+Lombardia,2019-06,1
+Lombardia,2019-07,2
+Lombardia,2019-10,1
+Lombardia,2019-11,1
+Lombardia,2019-12,1
+Lombardia,2020-01,3
+Lombardia,2020-02,2
+Lombardia,2020-04,2
+Lombardia,2020-05,1
+Lombardia,2020-06,2
+Lombardia,2020-07,1
+Lombardia,2020-08,1
+Lombardia,2020-09,1
+Lombardia,2020-10,2
+Lombardia,2020-11,2
+Lombardia,2020-12,3
+Lombardia,2021-01,1
+Lombardia,2021-02,1
+Lombardia,2021-05,2
+Lombardia,2021-06,1
+Lombardia,2021-07,1
+Lombardia,2021-10,2
+Lombardia,2021-11,4
+Lombardia,2021-12,1
+Lombardia,2022-01,3
+Lombardia,2022-02,1
+Lombardia,2022-03,1
+Lombardia,2022-05,1
+Lombardia,2022-06,6
+Lombardia,2022-07,6
+Lombardia,2022-08,1
+Lombardia,2022-09,1
+Lombardia,2022-10,3
+Lombardia,2022-11,1
+Lombardia,2022-12,3
+Lombardia,2023-01,1
+Lombardia,2023-02,1
+Lombardia,2023-05,3
+Lombardia,2023-06,3
+Lombardia,2023-07,2
+Lombardia,2023-08,3
+Lombardia,2023-09,4
+Lombardia,2023-10,2
+Lombardia,2023-11,1
+Lombardia,2023-12,1
+Lombardia,2024-01,2
+Marche,2018-07,1
+Marche,2019-01,1
+Marche,2020-03,1
+Marche,2020-07,1
+Marche,2021-03,1
+Marche,2021-12,1
+Marche,2022-05,1
+Marche,2022-08,1
+Marche,2023-06,1
+Marche,2024-01,3
+Molise,2018-06,1
+Molise,2021-02,1
+Piemonte,2018-06,1
+Piemonte,2018-08,1
+Piemonte,2018-12,1
+Piemonte,2019-04,1
+Piemonte,2019-08,1
+Piemonte,2019-10,1
+Piemonte,2019-11,2
+Piemonte,2019-12,1
+Piemonte,2020-01,1
+Piemonte,2020-03,3
+Piemonte,2020-05,1
+Piemonte,2020-11,2
+Piemonte,2021-01,1
+Piemonte,2021-03,1
+Piemonte,2021-05,2
+Piemonte,2021-09,1
+Piemonte,2021-11,2
+Piemonte,2022-01,1
+Piemonte,2022-07,3
+Piemonte,2022-08,1
+Piemonte,2022-10,3
+Piemonte,2022-11,1
+Piemonte,2023-03,1
+Piemonte,2023-04,1
+Piemonte,2023-06,1
+Piemonte,2023-07,1
+Piemonte,2023-08,2
+Piemonte,2023-10,1
+Piemonte,2024-01,2
+Puglia,2018-02,1
+Puglia,2018-03,1
+Puglia,2018-09,1
+Puglia,2018-10,2
+Puglia,2018-11,1
+Puglia,2019-02,1
+Puglia,2019-05,1
+Puglia,2019-06,1
+Puglia,2020-08,1
+Puglia,2020-12,1
+Puglia,2021-03,1
+Puglia,2021-04,1
+Puglia,2021-06,1
+Puglia,2021-07,1
+Puglia,2021-08,1
+Puglia,2021-09,1
+Puglia,2022-01,2
+Puglia,2022-04,1
+Puglia,2022-05,2
+Puglia,2022-06,1
+Puglia,2022-08,1
+Puglia,2022-10,3
+Puglia,2022-11,2
+Puglia,2023-01,1
+Puglia,2023-09,1
+Puglia,2023-10,1
+Puglia,2024-01,1
+Puglila,2018-05,1
+Puglila,2018-06,1
+Puglila,2018-08,1
+Puglila,2019-01,1
+Puglila,2019-02,1
+Puglila,2019-05,1
+Puglila,2021-03,1
+Puglila,2021-04,1
+Puglila,2021-09,1
+Puglila,2022-04,1
+Puglila,2023-02,1
+Puglila,2023-04,3
+Puglila,2023-06,1
+Puglila,2023-08,1
+Sardegna,2018-01,1
+Sardegna,2018-03,1
+Sardegna,2018-05,1
+Sardegna,2018-12,1
+Sardegna,2019-02,2
+Sardegna,2019-05,2
+Sardegna,2019-10,1
+Sardegna,2019-11,1
+Sardegna,2020-02,1
+Sardegna,2020-08,1
+Sardegna,2020-12,1
+Sardegna,2021-04,1
+Sardegna,2021-08,1
+Sardegna,2021-10,1
+Sardegna,2021-11,1
+Sardegna,2021-12,1
+Sardegna,2022-07,1
+Sardegna,2022-09,1
+Sardegna,2022-10,2
+Sardegna,2023-01,1
+Sardegna,2023-04,2
+Sardegna,2023-07,2
+Sardegna,2023-09,1
+Sicilia,2018-01,1
+Sicilia,2018-02,1
+Sicilia,2018-10,1
+Sicilia,2018-11,2
+Sicilia,2018-12,3
+Sicilia,2019-01,1
+Sicilia,2019-03,3
+Sicilia,2019-09,2
+Sicilia,2019-10,1
+Sicilia,2019-12,3
+Sicilia,2020-01,1
+Sicilia,2020-02,1
+Sicilia,2020-04,1
+Sicilia,2020-08,5
+Sicilia,2020-10,2
+Sicilia,2021-01,3
+Sicilia,2021-03,1
+Sicilia,2021-05,1
+Sicilia,2021-10,1
+Sicilia,2021-12,1
+Sicilia,2022-02,3
+Sicilia,2022-03,1
+Sicilia,2022-04,4
+Sicilia,2022-07,1
+Sicilia,2022-08,2
+Sicilia,2022-09,2
+Sicilia,2022-10,2
+Sicilia,2023-01,1
+Sicilia,2023-03,1
+Sicilia,2023-04,2
+Sicilia,2023-05,2
+Sicilia,2023-07,1
+Sicilia,2023-08,2
+Sicilia,2023-10,1
+Sicilia,2023-11,1
+Sicilia,2024-01,3
+Toscana,2018-04,1
+Toscana,2018-06,1
+Toscana,2018-10,1
+Toscana,2018-12,2
+Toscana,2019-05,1
+Toscana,2020-03,1
+Toscana,2020-05,3
+Toscana,2020-06,1
+Toscana,2020-10,1
+Toscana,2021-09,2
+Toscana,2021-10,1
+Toscana,2021-11,1
+Toscana,2022-07,1
+Toscana,2022-09,1
+Toscana,2022-10,2
+Toscana,2022-11,1
+Toscana,2023-01,1
+Toscana,2023-02,1
+Toscana,2023-06,1
+Toscana,2023-07,1
+Toscana,2023-08,1
+Trentino Alto Adige,2018-11,1
+Trentino Alto Adige,2018-12,1
+Trentino Alto Adige,2020-01,1
+Trentino Alto Adige,2020-07,1
+Trentino Alto Adige,2021-03,1
+Trentino Alto Adige,2022-05,1
+Trentino Alto Adige,2023-12,1
+Umbria,2018-05,1
+Umbria,2018-09,1
+Umbria,2018-10,1
+Umbria,2019-02,1
+Umbria,2019-03,1
+Umbria,2019-06,2
+Umbria,2019-08,1
+Umbria,2019-12,1
+Umbria,2020-04,1
+Umbria,2020-12,1
+Umbria,2022-03,1
+Umbria,2022-08,2
+Umbria,2023-01,1
+Umbria,2023-03,1
+Umbria,2023-05,1
+Umbria,2023-06,1
+Umbria,2023-09,1
+Umbria,2024-01,1
+Veneto,2018-01,1
+Veneto,2018-04,1
+Veneto,2018-05,1
+Veneto,2018-07,1
+Veneto,2018-08,1
+Veneto,2018-09,1
+Veneto,2018-11,1
+Veneto,2019-02,1
+Veneto,2019-04,1
+Veneto,2019-06,1
+Veneto,2019-12,1
+Veneto,2020-02,1
+Veneto,2020-03,1
+Veneto,2020-07,1
+Veneto,2020-10,1
+Veneto,2020-11,1
+Veneto,2020-12,2
+Veneto,2021-05,1
+Veneto,2021-08,1
+Veneto,2021-09,1
+Veneto,2021-12,1
+Veneto,2022-06,1
+Veneto,2022-07,2
+Veneto,2022-08,1
+Veneto,2022-09,1
+Veneto,2022-12,1
+Veneto,2023-05,1
+Veneto,2023-06,3
+Veneto,2023-07,1
+Veneto,2023-08,1
+Veneto,2023-11,2
+Veneto,2023-12,3
+Veneto,2024-01,2
