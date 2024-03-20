@@ -2,534 +2,450 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Marco Dalla Stella</title>
-    <link rel="icon" href="images/hd.png">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-    <script src="https://kit.fontawesome.com/8a06a298d0.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.cdnfonts.com/css/borna" rel="stylesheet">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/wbx1xpf.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <style>
-        #container {
-            background-image: linear-gradient(#f4f4f4, #c2d4e1);
-        }
-
-        .content figure {
-            margin-left: 0;
-            margin-right: 0;
-        }
-
-        .hero {
-            font-family: Martel;
-            background-color: #f4f4f4;
-        }
-
-        .title {
-            color: black;
-            font-family: 'Garamond';
-            font-weight: 400;
-            letter-spacing: .05em;
-            margin-bottom: 5px;
-            font-size: 49px;
-        }
-
-        .subtitle {
-            color: #00111a;
-            font-family: "Garamond";
-            font-weight: 400;
-            font-size: 24px;
-        }
-
-        .category-title {
-            color: #333333;
-            font-family: "Garamond";
-            font-size: 22px;
-            font-weight: 400;
-        }
-
-        .link {
-            color: #333333;
-            font-family: "Garamond";
-        }
-
-        .footer {
-            font-family: "Garamond";
-            background-color: #c2d4e1;
-        }
-
-        .journalism {
-            color: #333333;
-            font-family: Source Sans Pro;
-            font-size: 40;
-        }
-
-        .tags {
-            font-family: Source Sans Pro;
-            font-size: 16px;
-        }
-
-        .article {
-            transition: transform 0.3s;
-            color: black;
-        }
-
-        a:hover {
-            color: #474747;
-        }
-
-        a {
-            color: black;
-            font-family: Martel;
-        }
-
-        img {
-            box-shadow: 0 1.5px 5px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.2);
-        }
-
-        img:hover {
-            transform: translateY(0px);
-            transform: scale(1.01);
-        }
-
-        .article-title {
-            font-family: Martel;
-            font-size: 18px;
-            font-weight: 700;
-        }
-
-        p {
-            font-family: Martel;
-            font-size: 16px;
-        }
-
-        .contact-info {
-            text-align: justify;
-        }
-
-        hr {
-           background-color: grey;
-            height: 1px;
-        }
-    </style>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marco Dalla Stella</title>
+  <!-- <link rel="icon" href="images/hd.png"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div id=container class="container.is-fullhd">
-
-        <!-- Introductory paragraph -->
-        <section id="about" class="hero is-halfheight">
-            <div class="hero-body">
-                <div class="column is-two-thirds-desktop is-half-tablet is-offset-one-fifth">
-                    <p class="title my-5 is-3">
-                        Marco Dalla Stella</p>
-                    <p class="title my-5 is-4">
-                        Data and Investigative Journalist</p>
-                    <br>
-                    <p class="subtitle is-5">I'm a data and investigative reporter who specializes in in-depth,
-                        data-driven projects with a cross-border element. I'm comfortable doing so in English,
-                        Spanish and Italian, but I mostly use Python. Here I publish some of my work and a few experiments in the way of learning some dataviz stuff. </p>
-                </div>
+  <!-- HERO -->
+  <section class="hero is-medium">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <nav class="navbar is-fixed-top" >
+        <!-- <div id="navbar" class="container"> -->
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <div class="name-container">
+                <h1 class="title">Marco Dalla Stella</h1>
+                <h2 class="subtitle">Data and Investigative Journalist</h2>
+              </div>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+              data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <!-- Your navbar items go here -->
+              <span class="navbar-item">
+                <span class="icon">
+                  <a href="mailto:md3934@columbia.edu?subject=Reaching%20out&body=Hi%20Marco%2C%0A%0A"
+                    aria-label="Send Marco an email" target="_blank">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </span>
+              </span>
+              <span class="navbar-item">
+                <span class="icon">
+                  <a href="https://github.com/marcodallastella" aria-label="Go to Marco's GitHub" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </span>
+              </span>
+              <span class="navbar-item">
+                <span class="icon">
+                  <a href="https://www.linkedin.com/in/dallastellamarco" aria-label="Go to Marco's linkedin profile"
+                    target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </span>
+              </span>
+              <span class="navbar-item">
+                <span class="icon">
+                  <a href="https://bsky.app/profile/mdallastella.bsky.social" aria-label="Go to Marco's BlueSky profile"
+                    target="_blank">
+                    <i class="fa-brands fa-mastodon"></i>
+                  </a>
+                </span>
+              </span>
             </div>
+            <div class="navbar-end">
+              </span>
+              <a class="navbar-item" href="#clips">
+                Clips
+              </a>
+              <a class="navbar-item" href="#projects">
+                Projects
+              </a>
+              <a class="navbar-item" href="#resume">
+                Resume
+              </a>
 
-            <!-- Social media links -->
-
-            <div class="contact mb-5">
-                <div class="contact-info has-text-centered">
-                    <a href="mailto:md3934@columbia.edu?subject=Reaching%20out&body=Hi%20Marco%2C%0A%0A"
-                        aria-label="Send Marco an email" target="_blank">
-                        <u>email</u>
-                    </a>&nbsp;
-                    <a href="https://github.com/marcodallastella" aria-label="Go to Marco's GitHub" target="_blank">
-                        <u>github</u>
-                    </a>&nbsp;
-                    <a href="https://www.linkedin.com/in/dallastellamarco" aria-label="Go to Marco's linkedin profile"
-                        target="_blank">
-                        <u>linkedin</u>
-                    </a> &nbsp;
-                    <a href="https://bsky.app/profile/mdallastella.bsky.social" aria-label="Go to Marco's BlueSky profile"
-                        target="_blank">
-                        <u>bluesky</u>
-                    </a> &nbsp;
-                    <a href="https://journa.host/@mdallastella" aria-label="Go to Marco's mastodon profile"
-                        target="_blank">
-                        <u>mastodon</u>
-                    </a> &nbsp;
-                </div>
             </div>
-        </section>
+          </div>
+      </nav>
     </div>
-<div id="container">
-        <!-- Links to journalistic work -->
-
-        <section id="investigations" class="section">
-            <div class="subtitle">
-                <div class="category-title">
-                    Investigations
-                </div>
-            </div>
-            <hr>
-            <!-- Articles with pictures and links -->
-            <div class="columns is-multiline content">
-                <div id="google" class="column is-one-third">
-                    <div class="article p-3">
-                        <h4>
-                            <a class="link"
-                                href="https://www.elclip.org/remocion-contenidos-google-censura-derecho-olvido-eliminalia/?lang=en"
-                                aria-label="Go to and read the article about how felons are erasing compromising news online"
-                                target="_blank">
-                                <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="cover clip" src="images/md-portada.png">
-                                </figure>
-                                <div class="article-title">Clean Slate: how felons are erasing compromising news
-                                    online</div>
-                        </h4>
-                        <p>Anonymous blogs got Google to remove from its search engine press articles about
-                            businessmen, politicians, and swindlers by falsely alleging plagiarism.</a></p>
-                        <div class="tags"><strong>Tools:</strong>&nbsp;API, Python, reporting,</div>
-                        <div class="tags"><strong>Language:</strong>&nbsp;Spanish, English</div>
-                    </div>
-                </div>
-                <div id="corsair" class="column is-one-third">
-                    <div class="article p-3">
-                        <h4>
-                            <a class="link" href="https://yle.fi/a/3-12587639"
-                                aria-label="Go to and read the article about a crazy multi-level marketing scheme mixing greenwashing and cryptocurrencies."
-                                target="_blank">
-                                <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="image of corsair group" src="images/corsair.png">
-                                </figure>
-                                <div class="article-title">MOT investigation finds suspicious details behind plastic
-                                    waste company's big promises</div>
-                        </h4>
-                        <p>A company led by a Finnish CEO says it will turn plastic into reusable oil in Thailand, but
-                            some specialists consider the company's methods to be unreliable.</a></p>
-                        <div class="tags"><strong>Tools:</strong>&nbsp;Reporting,</div>
-                        <div class="tags"><strong>Language:</strong>&nbsp;English, Finnish</div>
-                    </div>
-                </div>
-                <div id="waste" class="column is-one-third">
-                    <div class="article p-3">
-                        <h4>
-                            <a class="link"
-                                href="https://www.motherjones.com/politics/2022/05/what-will-brazil-do-with-illegally-trafficked-american-garbage/"
-                                aria-label="Go to and read the article about Brazil receiving illegally trafficked waste from the US"
-                                target="_blank">
-                                <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="illegally trafficked waste" src="images/waste.png">
-                                </figure>
-                                <div class="article-title">What Will Brazil Do With Illegally Trafficked American
-                                    Garbage?</div>
-                        </h4>
-                        <p>A plastic bottle half-filled with neon yellow liquid. Used geriatric diapers. Latex
-                            gloves. Surgical masks. All of these items reached Brazil from ports along the East
-                            Coast of the United States, arriving in shipping containers stuffed with moldy cardboard
-                            meant for recycling.</a></p>
-                        <div class="tags"><strong>Tools:</strong>&nbsp;maritime tracking, reporting</div>
-                        <div class="tags"><strong>Language:</strong>&nbsp;English</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="lede" class="section">
-            <div class="subtitle">
-                <div class="category-title">
-                    Data
-                </div>
-            </div>
-            <hr>
-            <!-- Articles with pictures and links -->
-
-            <div class="columns is-multiline content">
-                <div id="dmca" class="column is-one-third">
-                    <div class="article p-3">
-                        <h4>
-                            <a class="link" href="https://marcodallastella.github.io/prison_overcrowding/"
-                                aria-label="Prison overcrowding in Italy is getting worse."
-                                target="_blank">
-                                <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="google" src="images/schiacciati.png">
-                                </figure>
-                                <div class="article-title">Monitoring of Prison Overcrowding in Italy.</div>
-                        </h4>
-                        <p>Italy's detention centers are currently accomodating approximatey 10,000 more people than their intended capacity. This project collects, cleans, and make available the Official data of the Ministry of Justice in a structured format, along with a user-friendly webpage containing the main outtakes.</a></p>
-                        <div class="tags"><strong>Tools:</strong>&nbsp;Selenium, BeautifulSoup, Github Actions, NLTK, Datawrapper
-                        </div>
-                        <div class="tags"><strong>Language:</strong>&nbsp;English</div>
-                    </div>
-                </div>
-                <div id="dmca" class="column is-one-third">
-                    <div class="article p-3">
-                        <h4>
-                            <a class="link" href="https://marcodallastella.github.io/dmca-lede/"
-                                aria-label="Go to and read the article Google's removal of legit journalism from its search results."
-                                target="_blank">
-                                <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="google" src="images/google.gif">
-                                </figure>
-                                <div class="article-title">Google is still falling for an old trick.</div>
-                        </h4>
-                        <p>In 2023 Google removed legit journalism from its search results.</a></p>
-                        <div class="tags"><strong>Tools:</strong>&nbsp;API, Python/Pandas
-                        </div>
-                        <div class="tags"><strong>Language:</strong>&nbsp;English</div>
-                    </div>
-                </div>
-                <div id="prisons" class="column is-one-third">
-                    <div class="article p-3">
-                        <h4>
-                            <a class="link" href="https://marcodallastella.github.io/Prison-Overcrowding/"
-                                aria-label="Go to and read the article about prison overcrowding in Italy"
-                                target="_blank">
-                                <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="google" src="images/carceri.png"">
-                                </figure>
-                                <div class="article-title">Prisons in Italy are overcrowded. More than usual.</div>
-                        </h4>
-                        <p>After a reduction during the pandemic, Italian prisons are at emergency levels</a></p>
-                        <div class="tags"><strong>Tools:</strong>&nbsp;Web Scraping, D3, ObservablePlot
-                        </div>
-                        <div class="tags"><strong>Language:</strong>&nbsp;English</div>
-                    </div>
-                </div>
-                <div id="soccer" class="column is-one-third">
-                    <div class="article p-3">
-                        <h4>
-                            <a class="link" href="articles/soccer/soccer.html"
-                                aria-label="Go to and read the article about how we used to play soccer as kids!"
-                                target="_blank">
-                                <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="soccer" src="articles/soccer/images/soccer.png">
-                                </figure>
-                                <div class="article-title">Skinned knees, happy faces</div>
-                        </h4>
-                        <p>Despite aboundant soccer fields, Italian kids prefer parking lots</a></p>
-                        <div class="tags"><strong>Tools:</strong>&nbsp;Scrollama, Adobe Illustrator
-                        </div>
-                        <div class="tags"><strong>Language:</strong>&nbsp;English</div>
-                    </div>
-                </div>
-                <!-- <div id="berlusconi" class="column is-one-third">
-                    <div class="article p-3">
-                        <h4>
-                            <a class="link" href="content/berlusconi.html"
-                                aria-label="Go to and read the article about 40 years of headlines about Silvio Berlusconi."
-                                target="_blank">
-                                <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="berlusconi graph" src="content/images/berlusconi.png">
-                                </figure>
-                                <div class="article-title">Forty years of Berlusconi in the headlines.</div>
-                        </h4>
-                        <p>A review of more than 31,000 articles published by laRepubblica about Italian former
-                            Prime Minister.</a></p>
-                        <div class="tags"><strong>Tools:</strong>&nbsp;Web scraping, nlpk, ai2html, d3
-                        </div>
-                        <div class="tags"><strong>Language:</strong>&nbsp;English</div>
-                    </div>
-                </div> -->
-                <div id="maps" class="column is-one-third">
-                    <div class="article p-3">
-                        <h4>
-                            <a class="link" href="articles/maps/maps.html"
-                                aria-label="A  random maps made mostly for educational purposes using QGIS and Mapbox"
-                                target="_blank">
-                                <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="map" src="articles/maps/images/downtown_heights.png">
-                                </figure>
-                                <div class="article-title">Maps Maps Maps</div>
-                        </h4>
-                        <p>A few maps made mostly for educational purposes using QGIS and Mapbox.</a></p>
-                        <div class="tags"><strong>Tools:</strong>&nbsp;QGIS, Mapbox
-                        </div>
-                        <div class="tags"><strong>Language:</strong>&nbsp;English</div>
-                    </div>
-                </div>
-                <div id="swimming" class="column is-one-third">
-                    <div class="article p-3">
-                        <h4>
-                            <a class="link" href="https://marcodallastella.github.io/swimming/"
-                                aria-label="Go to and read the article about how swimming evolved after the banning of tech swimsuits."
-                                target="_blank">
-                                <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="swimming graph" src="images/swimming.png">
-                                </figure>
-                                <div class="article-title">After more than ten years, tech swimsuits are a thing of
-                                    the past.</div>
-                        </h4>
-                        <p>When tech swimsuits were banned in 2010, people thought it would be impossible to swim
-                            that fast again. They were wrong.</a></p>
-                        <div class="tags"><strong>Tools:</strong>&nbsp;Undocumented API, Python/Pandas, Flourish
-                        </div>
-                        <div class="tags"><strong>Language:</strong>&nbsp;English</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="other stories" class="section">
-            <div class="subtitle">
-                <div class="category-title">
-                    Other stories
-                </div>
-            </div>
-            <hr>
-            <!-- Articles with pictures and links -->
-            <div class="columns is-multiline content">
-                <div id="hidden" class="column is-one-third">
-                    <div class="article p-3">
-                        <h4>
-                            <a class="link"
-                                href="https://hidden.frontierenews.it/forgotten-in-a-detention-center-for-migrants-in-italy/"
-                                aria-label="Go to and read the article about detention center for migrants in Italy."
-                                target="_blank">
-                                <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="visual representation of a migrant escaping detention."
-                                        src="images/migrants.png">
-                                </figure>
-                                <div class="article-title">Forgotten in a Detention Center for Migrants in Italy</div>
-                        </h4>
-                        <p>
-                            Due to the pandemic, a Tunisian man living in Italy, Nadhimi Touir, lost his job and
-                            residence permit. Arrested last November, he was sent to the detention center for migrants
-                            located in Gradisca d’Isonzo, northern Italy. His cell had no mattresses or blankets, and
-                            the winter wind came in through a broken window. The Gradisca Permanence Center for
-                            Repatriation (Cpr) was reopened in January 2020 after being closed for three years due to a
-                            riot. Since then, two detainees have died. Touir is still waiting to be deported or
-                            released. “This place makes you crazy. We are not human anymore.”.</a></p>
-                        <div class="tags"><strong>Tools:</strong>&nbsp;reporting</div>
-                        <div class="tags"><strong>Language:</strong>&nbsp;English, Italian</div>
-                    </div>
-                </div>
-                <div id="icewatch" class="column is-one-third">
-                    <div class="article p-3">
-                        <h4>
-                            <a class="link"
-                                href="https://ilmanifesto.it/diritti-a-sunset-park-dove-e-la-polizia-a-essere-wanted"
-                                aria-label="Go to and read the article about Brazil receiving illegally trafficked waste from the US"
-                                target="_blank">
-                                <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="illegally trafficked waste" src="images/icewatch.png">
-                                </figure>
-                                <div class="article-title">Diritti a Sunset Park, dove è la polizia a essere «Wanted»
-                                </div>
-                        </h4>
-                        <p>Un’alba di pattuglia con gli attivisti di NYC ICE Wìatch, per impedire gli abusi dell’agenzia
-                            federale anti migranti irregolari, che nelle cosiddette «città santuario» non esita a
-                            operare sotto mentite spoglie per aggirare la legge. Una linea attiva 24 ore su 24 riceve
-                            segnalazioni, foto e video di elementi ritenuti «sospetti». Sempre pronto a intervenire,
-                            Chris confida nel fatto che essere bianco lo protegga. «Almeno lo spero»</a></p>
-                        <div class="tags"><strong>Tools:</strong>&nbsp;reporting</div>
-                        <div class="tags"><strong>Language:</strong>&nbsp;Italian</div>
-                    </div>
-                </div>
-                <div id="venezuela" class="column is-one-third">
-                    <div class="article p-3">
-                        <h4>
-                            <a class="link"
-                                href="https://frontierenews.it/2021/04/le-speranze-sospese-dei-migranti-venezuelani/"
-                                aria-label="Go to and read the article about Brazil receiving illegally trafficked waste from the US"
-                                target="_blank">
-                                <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="illegally trafficked waste" src="images/venezuela.png">
-                                </figure>
-                                <div class="article-title">Le Speranze Sospese dei Migranti Venezuelani</div>
-                        </h4>
-                        <p>Il presidente colombiano Iván Duque ha annunciato un nuovo statuto di protezione temporanea
-                            per il milione di migranti venezuelani irregolari residenti nel paese, costretti a vivere
-                            come fantasmi e a subire campagne xenofobe alimentate dalle dichiarazioni di alcuni politici
-                            locali.</a></p>
-                        <div class="tags"><strong>Tools:</strong>&nbsp;reporting</div>
-                        <div class="tags"><strong>Language:</strong>&nbsp;Italian</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="tools" class="section">
-            <div class="subtitle">
-                <div class="category-title">
-                    Tools
-                </div>
-            </div>
-            <hr>
-
-            <!-- Articles with pictures and links -->
-
-
-            <div class="columns is-multiline content">
-                <div id="uscis" class="column is-one-third">
-                    <div class="article p-3">
-                        <h4>
-                            <a class="link" href="https://github.com/marcodallastella/USCIS-check-case-status"
-                                aria-label="Go visit the repository of this tool." target="_blank">
-                                <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="USCIS visa case status." src="images/uscis.png">
-                                </figure>
-                                <div class="article-title">USCIS case status check</div>
-                        </h4>
-                        <p>
-                            If you are applying for a 🇺🇸US visa you might find yourself constantly checking the USCIS
-                            website for updates - which can be quite nerve-wracking. I searched for USCIS scrapers that
-                            could automatically notify me of any changes, but the ones I came across were outdated and
-                            no longer functional (at least didn’t work for me). I decided to give it a try with
-                            Selenium, GitHub Actions and SendGrid and ended up with a script that checks my status and
-                            sends me an email if anything changes.</a></p>
-                        <div class="tags"><strong>Tools:</strong>&nbsp;Selenium, GitHub Actions, Sendgrid</div>
-                        <div class="tags"><strong>Language:</strong>&nbsp;English</div>
-                    </div>
-                </div>
-
-                <div id="lumen" class="column is-one-third">
-                    <div class="article p-3">
-                        <h4>
-                            <a class="link" href="https://github.com/marcodallastella/Lumen-Search-Tool"
-                                aria-label="Go visit the repository of this tool." target="_blank">
-                                <figure class="image is-4by3 mb-3 mt-2">
-                                    <img alt="USCIS visa case status." src="images/lumen.png">
-                                </figure>
-                                <div class="article-title">Lumen API Search Tool</div>
-                        </h4>
-                        <p>
-                            Lumen is an independent research project managed by the Berkman Kein Center for Internet &
-                            Society at Harvard aw School. It publishes copies of online content takedown requests shared
-                            with Lumen by Google. This tool leverages the Lumen API to automate searches to study and
-                            identify networks of interconnected - likely fraudulent - takedown requests. It results of a
-                            previous search as a search term for a new search. </a></p>
-                        <div class="tags"><strong>Tools:</strong>&nbsp;API, Python</div>
-                        <div class="tags"><strong>Language:</strong>&nbsp;English</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-    </div>
-
-
-    </section>
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>
-                © 2024 – Marco Dalla Stella.
-            </p>
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column is-one-third">
+          <figure class="image is-fullwidth">
+            <img src="images/marco.png">
+          </figure>
         </div>
-    </footer>
+        <div class="column">
+          <p class="welcome">Welcome!</p>
+          <p>A native of Italy with a knack for languages (five human ones and counting!), I've traded humanitarian work
+            for journalism, what could go wrong?</p> <p>Now based in NYC, I seek out stories that matter. Coding is my newest
+            linguistic adventure, but I balance screen time with laps at the YMCA pool. This website is my digital
+            playground – a mix of investigations, code experiments, and maybe the occasional offbeat observation.</p>
+          <p>Read my <a href="#resume">work</a>, check out my <a href="https://github.com/marcodallastella"
+              target="_blank">GitHub</a> and
+            <a href="mailto:md3934@columbia.edu">reach out!</a>
+          </p>
+        </div>
+      </div>
     </div>
+  </section>
 
+  <main>
+    <section id="clips" class="section is-clear">
+      <div class="container">
+      <h1 class="title">Clips</h1>
+      <div class="columns is-multiline content">
+        <div class="column is-one-third">
+          <h2> <a href="https://www.elclip.org/remocion-contenidos-google-censura-derecho-olvido-eliminalia/?lang=en"
+              aria-label="Go to and read the article about how felons are erasing compromising news online"
+              target="_blank">Clean Slate: how felons are erasing compromising news
+              online</a></h2>
+          <p class="published-on">Latin American Center for Investigative Journalism</p>
+          <p>Anonymous blogs got Google to remove from its search engine press articles about
+            businessmen, politicians, and swindlers by falsely alleging plagiarism.
+          </p>
+          <div class="tags"><strong>Tools:</strong>&nbsp;API, Python, reporting,</div>
+          <div class="tags"><strong>Language:</strong>&nbsp;Spanish, English</div>
+        </div>
+        <div class="column is-one-third">
+          <h2> <a href="https://yle.fi/a/3-12587639"
+              aria-label="Go to and read the article about how felons are erasing compromising news online"
+              target="_blank">MOT investigation finds suspicious details behind plastic waste company's big promises</a>
+          </h2>
+          <p class="published-on">MOT</p>
+          <p>A company led by a Finnish CEO says it will turn plastic into reusable oil in Thailand, but some
+            specialists consider the company's methods to be unreliable.
+          </p>
+          <div class="tags"><strong>Tools:</strong>&nbsp;Reporting</div>
+          <div class="tags"><strong>Language:</strong>&nbsp;English</div>
+        </div>
+        <div class="column is-one-third">
+          <h2> <a href="https://www.motherjones.com/politics/2022/05/what-will-brazil-do-with-illegally-trafficked-american-garbage/"
+              aria-label="Go to and read the article about how felons are erasing compromising news online"
+              target="_blank">What Will Brazil Do With Illegally Trafficked American Garbage?</a></h2>
+          <p class="published-on">Mother jones, UOL</p>
+          <p>A plastic bottle half-filled with neon yellow liquid. Used geriatric diapers. Latex gloves. Surgical masks.
+            All of these items reached Brazil from ports along the East Coast of the United States, arriving in shipping
+            containers stuffed with moldy cardboard meant for recycling.
+          </p>
+          <div class="tags"><strong>Tools:</strong>&nbsp;Shipment tracking, Reporting</div>
+          <div class="tags"><strong>Language:</strong>&nbsp;English, Portuguese</div>
+        </div>
+        <div class="column is-one-third">
+          <h2> <a href="https://hidden.frontierenews.it/forgotten-in-a-detention-center-for-migrants-in-italy/"
+              aria-label="Go to and read the article about how felons are erasing compromising news online"
+              target="_blank">Forgotten in a Detention Center for Migrants in Italy</a></h2>
+          <p class="published-on">Frontiere News</p>
+          <p>Due to the pandemic, a Tunisian man living in Italy lost his job and residence permit. Arrested last
+            November. He was sent to a detention center for migrants, where his cell had no mattresses or blankets, and
+            the freezing winter wind came in through a broken window. “This place makes you crazy. We are not human
+            anymore.”
+          </p>
+          <div class="tags"><strong>Tools:</strong>&nbsp;Reporting</div>
+          <div class="tags"><strong>Language:</strong>&nbsp;English, Italian</div>
+        </div>
+        <div class="column is-one-third">
+          <h2> <a href="https://ilmanifesto.it/diritti-a-sunset-park-dove-e-la-polizia-a-essere-wanted"
+              aria-label="Go to and read the article about how felons are erasing compromising news online"
+              target="_blank">Diritti a Sunset Park, dove è la polizia a essere «Wanted»</a></h2>
+          <p class="published-on">Il Manifesto</p>
+          <p>Un’alba di pattuglia con gli attivisti di NYC ICE Watch, un gruppo nato per impedire gli abusi delle
+            autorità sui migranti irregolari. Una linea attiva 24 ore su 24 riceve segnalazioni, foto e video di
+            elementi ritenuti «sospetti».
+          </p>
+          <div class="tags"><strong>Tools:</strong>&nbsp;Reporting</div>
+          <div class="tags"><strong>Language:</strong>&nbsp;Italian</div>
+        </div>
+        <div class="column is-one-third">
+          <h2> <a href="https://frontierenews.it/2021/04/le-speranze-sospese-dei-migranti-venezuelani/"
+              aria-label="Go to and read the article about how felons are erasing compromising news online"
+              target="_blank">Le Speranze Sospese dei Migranti Venezuelani</a></h2>
+          <p class="published-on">Frontiere News</p>
+          <p>Il presidente colombiano Iván Duque ha annunciato un nuovo statuto di protezione temporanea per il milione
+            di migranti venezuelani irregolari residenti nel paese, costretti a vivere come fantasmi e a subire campagne
+            xenofobe alimentate dalle dichiarazioni di alcuni politici locali.
+          </p>
+          <div class="tags"><strong>Tools:</strong>&nbsp;Reporting</div>
+          <div class="tags"><strong>Language:</strong>&nbsp;Italian</div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section id="projects" class="section is-dark">
+      <div class="container">
+      <h1 class="title">Data Visualization and Programming Projects</h1>
+      <div class="columns is-multiline content">
+        <div class="column is-one-third item">
+          <a href="https://marcodallastella.github.io/prison_overcrowding/"
+            aria-label="Go to and read the article about how felons are erasing compromising news online"
+            target="_blank">
+            <figure class="image">
+              <img src="images/prisons.png" alt="A soccer field in a parking lot">
+            </figure>
+            <h2>Monitoring of Prison Overcrowding in Italy
+          </a></h2>
+          <p>A project to clean, and visualize data of the Italian Ministry of Justice in about prison overcrowding in
+            Italy, in collaboration with Associazione Antigone.
+          </p>
+          <div class="tags"><strong>Tools:</strong>&nbsp;Selenium, BeautifulSoup, Github Actions, D3</div>
+        </div>
+        <div class="column is-one-third item">
+          <a href="https://marcodallastella.github.io/articles/soccer/soccer.html"
+            aria-label="A story about kids playing soccer." target="_blank">
+            <figure class="image">
+              <img src="images/soccer.png" alt="A soccer field in a parking lot">
+            </figure>
+            <h2>Skinned knees, happy facess
+          </a></h2>
+          <p>Despite aboundant soccer fields, Italian kids prefer parking lots. A project to build my first scrollytelly
+            using Scrollama.
+          </p>
+          <div class="tags"><strong>Tools:</strong>&nbsp;Scrollama, Adobe Illustrator</div>
+        </div>
+        <div class="column is-one-third item">
+          <a href="https://marcodallastella.github.io/dmca-lede/"
+            aria-label="Go to and read the article about how felons are erasing compromising news online"
+            target="_blank">
+            <figure class="image">
+              <img src="images/google.png" alt="A soccer field in a parking lot">
+            </figure>
+            <h2>In 2023 Google removed legit journalism from its search results.
+          </a></h2>
+          <p>A final project for the 2023 Lede Program
+            in data journalism.
+          </p>
+          <div class="tags"><strong>Tools:</strong>&nbsp;Shipment tracking, Reporting</div>
+        </div>
+        <div class="column is-one-third item">
+          <a href="https://marcodallastella.github.io/articles/maps/maps.html"
+            aria-label="Go to and read the article about how felons are erasing compromising news online"
+            target="_blank">
+            <figure class="image">
+              <img src="images/maps.png" alt="A soccer field in a parking lot">
+            </figure>
+            <h2>Maps Maps Maps</h2>
+          </a>
+          <p>A collections of maps built for educational purposes.
+          </p>
+          <div class="tags"><strong>Tools:</strong>&nbsp;QGis, Mapbox</div>
+        </div>
+        <div class="column is-one-third item">
+          <a href="https://github.com/marcodallastella/USCIS-check-case-status"
+            aria-label="Go to and read the article about how felons are erasing compromising news online"
+            target="_blank">
+            <figure class="image">
+              <img src="images/uscis_check.png" alt="A soccer field in a parking lot">
+            </figure>
+            <h2>USCIS case status check</h2>
+          </a>
+          <p>If you are applying for a 🇺🇸US visa you might find yourself constantly checking the USCIS website for
+            updates - which can be quite nerve-wracking. I searched for USCIS scrapers that could automatically notify
+            me of any changes, but the ones I came across were outdated and no longer functional (at least didn’t work
+            for me). I decided to give it a try with Selenium, GitHub Actions and SendGrid and ended up with a script
+            that checks my status and sends me an email if anything changes.
+          </p>
+          <div class="tags"><strong>Tools:</strong>&nbsp;Selenium GitHub Actions, Sendgrid</div>
+        </div>
+        <div class="column is-one-third item">
+          <a href="https://github.com/marcodallastella/Lumen-Search-Tool"
+              aria-label="Go to and read the article about how felons are erasing compromising news online"
+              target="_blank"><figure class="image">
+                <img src="images/lumendb.png" alt="A soccer field in a parking lot">
+              </figure><h2>Lumen API Search Tool</h2></a>
+          <p>Lumen is an independent research project managed by the Berkman Kein Center for Internet & Society at
+            Harvard aw School. It publishes copies of online content takedown requests shared with Lumen by Google. This
+            tool leverages the Lumen API to automate searches to study and identify networks of interconnected - likely
+            fraudulent - takedown requests. It results of a previous search as a search term for a new search.
+          </p>
+          <div class="tags"><strong>Tools:</strong>&nbsp;API, Python</div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section id="resume" class="section is-clear">
+      <div class="main-content">
+      <h1 class="title">Resume</h1>
+      <div class="container">
+        <h2 class="subtitle">Experience</h2>
+        <hr>
+        <table class="table is-fullwidth">
+          <tr>
+            <td>
+              <p class="job-title">Reporter (data and investigative)</p><p class="workplace">, Latin American Center for Investigative Journalism</p><p>, Remote</p>
+            </td>
+            <td>
+              <p class="is-date">Mar - Jul 2023</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="job-title">Contributing Analyst</p><p class="workplace">, NewsGuard</p><p>, Remote</p>
+            </td>
+            <td>
+              <p class="is-date">May - Dec 2022</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="job-title">Project Coordinator</p><p class="workplace">, Latin American Center for Investigative Journalism</p><p>, Remote</p>
+            </td>
+            <td>
+              <p class="is-date">Mar - Jul 2022</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="job-title">Reporting Fellow</p><p class="workplace">, Columbia Journalism Investigations</p><p>, New York, NY</p>
+            </td>
+            <td>
+              <p class="is-date">Sep 2021 - Mar 2022</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="job-title">Grants Officer</p><p class="workplace">, COSV</p><p>, Maputo, Mozambique</p>
+            </td>
+            <td>
+              <p class="is-date">Dec 2018 - Jun 2020</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="job-title">Peace Corps</p><p class="workplace">, HIAS</p><p>, Quito, Ecuador</p>
+            </td>
+            <td>
+              <p class="is-date">Jun 2017 - Jun 2018</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="job-title">International Project Design Intern</p><p class="workplace">, Etimos</p><p>, Padua, Italy</p>
+            </td>
+            <td>
+              <p class="is-date">Nov 2016 - Apr 2017</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="job-title">Civilian Service</p><p class="workplace">, ENGIM Internazionale</p><p>, Aguascalientes, Mexico</p>
+            </td>
+            <td>
+              <p class="is-date">Sep 2015 - Sep 2016</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="job-title">European Voluntary Service</p><p class="workplace">, ENGIM Internazionale</p><p>, Mexico City, Mexico</p>
+            </td>
+            <td>
+              <p class="is-date">2015-2016</p>
+            </td>
+          </tr>
+        </table>
+        <h2 class="subtitle">Education</h2>
+        <hr>
+        <table class="table is-fullwidth">
+          <tr>
+            <td>
+              <p class="job-title">Columbia University Graduate School of Journalism</p><p class="workplace">, Lede Program</p><p>, New York, NY</p>
+            </td>
+            <td>
+              <p class="is-date">Aug 2023</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="job-title">Columbia University Graduate School of Journalism</p><p class="workplace">, Master of Science</p><p>, New York, NY</p>
+            </td>
+            <td>
+              <p class="is-date">May 2021</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="job-title">University of Padova</p><p class="workplace">, Master - Intercultural Studies</p><p>, Padua, Italy</p>
+            </td>
+            <td>
+              <p class="is-date">Dec 2014</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="job-title">Ca' Foscari University of Venice</p><p class="workplace">, Master of Science - International Relations</p><p>, Venice, Italy</p>
+            </td>
+            <td>
+              <p class="is-date">Feb 2013</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="job-title">Ca' Foscari University of Venice</p><p class="workplace">, Bachelor's - Translation and Interpreting</p><p>, Venice, Italy</p>
+            </td>
+            <td>
+              <p class="is-date">Sep 2010</p>
+            </td>
+          </tr>
+        </table>
+
+        <h2 class="subtitle">Skills</h2>
+        <hr>
+        <div class="columns">
+          <div class="column is-one-third">
+            <h3 class="subtitle">Languages</h3>
+            <ul>
+              <li>Italian (native)</li>
+              <li>English (fluent)</li>
+              <li>Spanish (fluent)</li>
+              <li>Portuguese (conversational)</li>
+              <li>French (conversational)</li>
+            </ul>
+          </div>
+          <div class="column is-one-third">
+            <h3 class="subtitle">Investigative</h3>
+            <ul>
+              <li>Advanced Online Search</li>
+              <li>FOIA requests</li>
+              <li>Public records</li>
+              <li>Maritime, container tracking</li>
+              <li>Geolocation</li>
+            </ul>
+          </div>
+          <div class="column is-one-third">
+            <h3 class="subtitle">Programming</h3>
+            <ul>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>HTML,CSS</li>
+              <li>QGis, Mapbox, Leaflets</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+  </main>
+  <footer class="footer is-dark">
+
+
+    <div class="content has-text-centered">
+      <p><span>&copy;</span> Marco Dalla Stella, 2024</p>
+    </div>
+  </footer>
 </body>
 
 </html>
