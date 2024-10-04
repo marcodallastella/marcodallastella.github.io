@@ -109,8 +109,7 @@
         </div>
         <div class="column">
           <p class="welcome">Welcome!</p>
-          <p>A native of Italy, I left a career in humanitarian aid to move to one of the most expensive cities in the world and pursue my passion for journalism, what could go wrong?</p> <p>Now based in Brooklyn, I seek out stories that matter. Coding is my newest
-            linguistic adventure, but I balance screen time with laps at the YMCA pool. This website is my digital
+          <p>A native of Italy, I left a career in humanitarian aid to move to one of the most expensive cities in the world and pursue my passion for journalism, what could go wrong?</p> <p>Now based in Brooklyn, I seek out stories that matter. Coding is my newest linguistic adventure, but I try to balance screen time with laps at the YMCA pool. This website is my digital
             playground – a mix of investigations, code experiments, and a few mistakes in the way of learning some dataviz stuff.</p>
           <!-- <p>Read my <a href="#resume">work</a>, check out my <a href="https://github.com/marcodallastella"
               target="_blank">GitHub</a> and
@@ -126,6 +125,16 @@
       <div class="container">
       <h1 class="title">Clips</h1>
       <div class="columns is-multiline content">
+        <div class="column is-one-third">
+          <h2> <a href="https://www.lamarea.com/2024/06/16/el-metodo-eliminalia-para-borrar-informacion-sigue-vigente/"
+              aria-label="Go to and read the article about how felons are erasing compromising news online"
+              target="_blank">El ‘método Eliminalia’ para borrar información sigue vigente</a></h2>
+          <p class="published-on">La Marea</p>
+          <p>Un año después de la publicación de Forbidden Stories sobre las técnicas fraudulentas usadas por esta empresa española para borrar datos de sus clientes en Google y «enterrar la verdad», una investigación de ‘La Marea’ prueba que sigue operando sin apenas cambios. Otras compañías del sector usan artimañas similares sin sufrir consecuencias legales.
+          </p>
+          <div class="tags"><strong>Tools:</strong>&nbsp;API, Python, reporting,</div>
+          <div class="tags"><strong>Language:</strong>&nbsp;Spanish, English</div>
+        </div>
         <div class="column is-one-third">
           <h2> <a href="https://www.elclip.org/remocion-contenidos-google-censura-derecho-olvido-eliminalia/?lang=en"
               aria-label="Go to and read the article about how felons are erasing compromising news online"
@@ -187,18 +196,6 @@
           <div class="tags"><strong>Tools:</strong>&nbsp;Reporting</div>
           <div class="tags"><strong>Language:</strong>&nbsp;Italian</div>
         </div>
-        <div class="column is-one-third">
-          <h2> <a href="https://frontierenews.it/2021/04/le-speranze-sospese-dei-migranti-venezuelani/"
-              aria-label="Go to and read the article about how felons are erasing compromising news online"
-              target="_blank">Le Speranze Sospese dei Migranti Venezuelani</a></h2>
-          <p class="published-on">Frontiere News</p>
-          <p>Il presidente colombiano Iván Duque ha annunciato un nuovo statuto di protezione temporanea per il milione
-            di migranti venezuelani irregolari residenti nel paese, costretti a vivere come fantasmi e a subire campagne
-            xenofobe alimentate dalle dichiarazioni di alcuni politici locali.
-          </p>
-          <div class="tags"><strong>Tools:</strong>&nbsp;Reporting</div>
-          <div class="tags"><strong>Language:</strong>&nbsp;Italian</div>
-        </div>
       </div>
     </div>
     </section>
@@ -211,14 +208,43 @@
             aria-label="Go to and read the article about how felons are erasing compromising news online"
             target="_blank">
             <figure class="image">
-              <img src="images/prisons.png" alt="A soccer field in a parking lot">
+              <img src="images/prisons.png" alt="A map of prison overcrowding in Italy.">
             </figure>
             <h2>Monitoring of Prison Overcrowding in Italy
           </a></h2>
-          <p>A project to clean, and visualize data of the Italian Ministry of Justice in about prison overcrowding in
-            Italy, in collaboration with Associazione Antigone.
+          <p>A project to scrape, clean, and visualize data of the Italian Ministry of Justice in about prison overcrowding in Italy, in collaboration with Associazione Antigone.
           </p>
           <div class="tags"><strong>Tools:</strong>&nbsp;Selenium, BeautifulSoup, Github Actions, D3</div>
+        </div>
+        <div class="column is-one-third item">
+          <a href="https://github.com/marcodallastella/USCIS-check-case-status"
+            aria-label="Go to and read the article about how felons are erasing compromising news online"
+            target="_blank">
+            <figure class="image">
+              <img src="images/uscis_check.png" alt="A soccer field in a parking lot">
+            </figure>
+            <h2>USCIS case status check</h2>
+          </a>
+          <p>If you are applying for a 🇺🇸US visa you might find yourself constantly checking the USCIS website for
+            updates - which can be quite nerve-wracking. I searched for USCIS scrapers that could automatically notify
+            me of any changes, but the ones I came across were outdated and no longer functional (at least didn’t work
+            for me). I decided to give it a try with Selenium, GitHub Actions and SendGrid and ended up with a script
+            that checks my status and sends me an email if anything changes.
+          </p>
+          <div class="tags"><strong>Tools:</strong>&nbsp;Selenium GitHub Actions, Sendgrid</div>
+        </div>
+        <div class="column is-one-third item">
+          <a href="https://github.com/marcodallastella/Lumen-Search-Tool"
+              aria-label="Go to and read the article about how felons are erasing compromising news online"
+              target="_blank"><figure class="image">
+                <img src="images/lumendb.png" alt="A soccer field in a parking lot">
+              </figure><h2>Lumen API Search Tool</h2></a>
+          <p>Lumen is an independent research project managed by the Berkman Kein Center for Internet & Society at
+            Harvard aw School. It publishes copies of online content takedown requests shared with Lumen by Google. This
+            tool leverages the Lumen API to automate searches to study and identify networks of interconnected - likely
+            fraudulent - takedown requests. It results of a previous search as a search term for a new search.
+          </p>
+          <div class="tags"><strong>Tools:</strong>&nbsp;API, Python</div>
         </div>
         <div class="column is-one-third item">
           <a href="https://marcodallastella.github.io/articles/soccer/soccer.html"
@@ -260,199 +286,9 @@
           </p>
           <div class="tags"><strong>Tools:</strong>&nbsp;QGis, Mapbox</div>
         </div>
-        <div class="column is-one-third item">
-          <a href="https://github.com/marcodallastella/USCIS-check-case-status"
-            aria-label="Go to and read the article about how felons are erasing compromising news online"
-            target="_blank">
-            <figure class="image">
-              <img src="images/uscis_check.png" alt="A soccer field in a parking lot">
-            </figure>
-            <h2>USCIS case status check</h2>
-          </a>
-          <p>If you are applying for a 🇺🇸US visa you might find yourself constantly checking the USCIS website for
-            updates - which can be quite nerve-wracking. I searched for USCIS scrapers that could automatically notify
-            me of any changes, but the ones I came across were outdated and no longer functional (at least didn’t work
-            for me). I decided to give it a try with Selenium, GitHub Actions and SendGrid and ended up with a script
-            that checks my status and sends me an email if anything changes.
-          </p>
-          <div class="tags"><strong>Tools:</strong>&nbsp;Selenium GitHub Actions, Sendgrid</div>
-        </div>
-        <div class="column is-one-third item">
-          <a href="https://github.com/marcodallastella/Lumen-Search-Tool"
-              aria-label="Go to and read the article about how felons are erasing compromising news online"
-              target="_blank"><figure class="image">
-                <img src="images/lumendb.png" alt="A soccer field in a parking lot">
-              </figure><h2>Lumen API Search Tool</h2></a>
-          <p>Lumen is an independent research project managed by the Berkman Kein Center for Internet & Society at
-            Harvard aw School. It publishes copies of online content takedown requests shared with Lumen by Google. This
-            tool leverages the Lumen API to automate searches to study and identify networks of interconnected - likely
-            fraudulent - takedown requests. It results of a previous search as a search term for a new search.
-          </p>
-          <div class="tags"><strong>Tools:</strong>&nbsp;API, Python</div>
-        </div>
       </div>
     </div>
     </section>
-    <!-- <section id="resume" class="section is-clear">
-      <div class="main-content">
-      <h1 class="title">Resume</h1>
-      <div class="container">
-        <h2 class="subtitle">Experience</h2>
-        <hr>
-        <table class="table is-fullwidth">
-          <tr>
-            <td>
-              <p class="job-title">Reporter (data and investigative)</p><p class="workplace">, Latin American Center for Investigative Journalism</p><p>, Remote</p>
-            </td>
-            <td>
-              <p class="is-date">Mar - Jul 2023</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="job-title">Contributing Analyst</p><p class="workplace">, NewsGuard</p><p>, Remote</p>
-            </td>
-            <td>
-              <p class="is-date">May - Dec 2022</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="job-title">Project Coordinator</p><p class="workplace">, Latin American Center for Investigative Journalism</p><p>, Remote</p>
-            </td>
-            <td>
-              <p class="is-date">Mar - Jul 2022</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="job-title">Reporting Fellow</p><p class="workplace">, Columbia Journalism Investigations</p><p>, New York, NY</p>
-            </td>
-            <td>
-              <p class="is-date">Sep 2021 - Mar 2022</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="job-title">Grants Officer</p><p class="workplace">, COSV</p><p>, Maputo, Mozambique</p>
-            </td>
-            <td>
-              <p class="is-date">Dec 2018 - Jun 2020</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="job-title">Peace Corps</p><p class="workplace">, HIAS</p><p>, Quito, Ecuador</p>
-            </td>
-            <td>
-              <p class="is-date">Jun 2017 - Jun 2018</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="job-title">International Project Design Intern</p><p class="workplace">, Etimos</p><p>, Padua, Italy</p>
-            </td>
-            <td>
-              <p class="is-date">Nov 2016 - Apr 2017</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="job-title">Civilian Service</p><p class="workplace">, ENGIM Internazionale</p><p>, Aguascalientes, Mexico</p>
-            </td>
-            <td>
-              <p class="is-date">Sep 2015 - Sep 2016</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="job-title">European Voluntary Service</p><p class="workplace">, ENGIM Internazionale</p><p>, Mexico City, Mexico</p>
-            </td>
-            <td>
-              <p class="is-date">2015-2016</p>
-            </td>
-          </tr>
-        </table>
-        <h2 class="subtitle">Education</h2>
-        <hr>
-        <table class="table is-fullwidth">
-          <tr>
-            <td>
-              <p class="job-title">Columbia University Graduate School of Journalism</p><p class="workplace">, Lede Program</p><p>, New York, NY</p>
-            </td>
-            <td>
-              <p class="is-date">Aug 2023</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="job-title">Columbia University Graduate School of Journalism</p><p class="workplace">, Master of Science</p><p>, New York, NY</p>
-            </td>
-            <td>
-              <p class="is-date">May 2021</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="job-title">University of Padova</p><p class="workplace">, Master - Intercultural Studies</p><p>, Padua, Italy</p>
-            </td>
-            <td>
-              <p class="is-date">Dec 2014</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="job-title">Ca' Foscari University of Venice</p><p class="workplace">, Master of Science - International Relations</p><p>, Venice, Italy</p>
-            </td>
-            <td>
-              <p class="is-date">Feb 2013</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="job-title">Ca' Foscari University of Venice</p><p class="workplace">, Bachelor's - Translation and Interpreting</p><p>, Venice, Italy</p>
-            </td>
-            <td>
-              <p class="is-date">Sep 2010</p>
-            </td>
-          </tr>
-        </table>
-
-        <h2 class="subtitle">Skills</h2>
-        <hr>
-        <div class="columns">
-          <div class="column is-one-third">
-            <h3 class="subtitle">Languages</h3>
-            <ul>
-              <li>Italian (native)</li>
-              <li>English (fluent)</li>
-              <li>Spanish (fluent)</li>
-              <li>Portuguese (conversational)</li>
-              <li>French (conversational)</li>
-            </ul>
-          </div>
-          <div class="column is-one-third">
-            <h3 class="subtitle">Investigative</h3>
-            <ul>
-              <li>Advanced Online Search</li>
-              <li>FOIA requests</li>
-              <li>Public records</li>
-              <li>Maritime, container tracking</li>
-              <li>Geolocation</li>
-            </ul>
-          </div>
-          <div class="column is-one-third">
-            <h3 class="subtitle">Data</h3>
-            <ul>
-              <li>Data analysis: Python, Excel, SQLite</li>
-              <li>Front-end development: HTML, CSS, JS (Libraries D3, Leaflet)</li>
-              <li>Mapping: QGIS, Tableau, Mapbox</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    </section> -->
   </main>
   <footer class="footer is-dark">
 
