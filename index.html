@@ -1,88 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Marco Dalla Stella | Data and Investigative Journalist, New York</title>
-
-  <meta name="description"
-    content="Marco Dalla Stella is a data and investigative journalist based in New York. Contact him for freelance assignments and collaborations." />
-  <meta property="og:title" content="Marco Dalla Stella | Data & Investigative Journalist, New York" />
-  <meta property="og:description"
-    content="Marco Dalla Stella is a data and investigative journalist based in New York. He has worked at Columbia Journalism Investigations and the Latin American Center for Investigative Journalism. He was a 2022 fellow of ICFJ's Disarming Disinformation initiative." />
-  <meta property="og:image" content="images/marco.png" />
-  <meta property="og:url" content="https://marcodallastella.github.io/" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-
-  <style>
-    .story-card {
-      transition: transform 0.2s ease-in-out;
-    }
-
-    .story-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .language-indicator {
-      font-family: monospace;
-      font-size: 0.8rem;
-      letter-spacing: 0.05em;
-    }
-
-    .nav-link {
-      position: relative;
-    }
-
-    .nav-link::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: -4px;
-      left: 0;
-      background-color: #2563eb;
-      transition: width 0.2s ease-in-out;
-    }
-
-    .nav-link:hover::after {
-      width: 100%;
-    }
-
-    .project-card img {
-      transition: transform 0.3s ease;
-    }
-
-    .project-card:hover img {
-      transform: scale(1.05);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Dalla Stella | Data & Investigative Journalism</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a1a1a;
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background: #1a1a1a;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .story-card {
+            transition: transform 0.2s ease;
+        }
+        .story-card:hover {
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 
-<body class="bg-gray-50">
-  <!-- Navigation -->
-  <nav class="bg-white/80 backdrop-blur-sm fixed w-full z-50 border-b border-gray-200">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="flex justify-between h-16">
-        <div class="flex items-center">
-          <a class="flex items-center space-x-3">
-            <div>
-              <h1 class="text-xl font-semibold text-gray-900">Marco Dalla Stella</h1>
-              <p class="text-sm text-gray-600">Data and Investigative Journalist</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="hidden md:flex items-center space-x-8">
-          <a href="#english" class="nav-link text-gray-600 hover:text-gray-900">English</a>
-          <a href="#spanish" class="nav-link text-gray-600 hover:text-gray-900">Español</a>
-          <a href="#italian" class="nav-link text-gray-600 hover:text-gray-900">Italiano</a>
-          <a href="#projects" class="nav-link text-gray-600 hover:text-gray-900">Data Projects</a>
-          <div class="flex items-center space-x-4 ml-4 border-l pl-4">
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div>
+                        <h1 class="text-lg font-medium">Marco Dalla Stella</h1>
+                        <p class="text-sm text-gray-600">Data & Investigative Journalism</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#english" class="nav-link text-sm">English</a>
+                    <a href="#spanish" class="nav-link text-sm">Español</a>
+                    <a href="#italian" class="nav-link text-sm">Italiano</a>
+                    <a href="#projects" class="nav-link text-sm">Data Projects</a>
+                    
+                    <div class="flex items-center space-x-4 ml-8 pl-8 border-l border-gray-200">
             <a href="mailto:m.dallastella@proton.me" class="text-gray-600 hover:text-gray-900 transition-colors">
               <i class="fa fa-envelope"></i>
             </a>
@@ -137,32 +105,23 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="pt-32 pb-16 px-4 bg-gradient-to-b from-white to-gray-50">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-      <div class="space-y-6">
-        <h2 class="text-4xl font-bold text-gray-900">Welcome! 👋</h2>
-        <p class="text-xl text-gray-600">
-          Italian journalist based in Brooklyn, specializing in data-driven investigations across three languages. My
-          work spans from digital rights and tech accountability to environmental issues and migration.
-        </p>
-        <div class="flex flex-wrap gap-4">
-          <a href="#english" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition shadow-sm">
-            View Stories
-          </a>
-          <a href="mailto:m.dallastella@proton.me"
-            class="border border-gray-300 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-50 transition shadow-sm">
-            Contact Me
-          </a>
-        </div>
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+          <div>
+              <h2 class="text-3xl font-medium mb-6">Data-driven investigations across languages and borders</h2>
+              <p class="text-gray-600 leading-relaxed mb-8">
+                  Italian journalist based in Brooklyn, specializing in cross-border investigations and data analysis. Focus on digital rights, environmental issues, and migration.
+              </p>
+              <div class="flex gap-4">
+                  <a href="#english" class="px-6 py-2 bg-black text-white text-sm">View Work</a>
+                  <a href="mailto:m.dallastella@proton.me" class="px-6 py-2 border border-gray-200 text-sm">Contact</a>
+              </div>
+          </div>
+          <div>
+              <img src="images/marco.png" alt="Marco Dalla Stella" class="w-full">
+          </div>
       </div>
-      <div class="relative">
-        <img src="images/marco.png" alt="Marco Dalla Stella" class="rounded-lg shadow-xl">
-        <div class="absolute -bottom-4 -right-4 bg-white py-2 px-4 rounded-lg shadow-lg">
-          <span class="text-sm font-medium text-gray-600">Based in New York 🗽</span>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- English Stories -->
@@ -322,7 +281,7 @@
 
         <!-- Italian elections -->
         <div class="bg-white rounded-xl shadow-sm project-card border border-gray-100 overflow-hidden">
-          <a href="https://github.com/marcodallastella/elezioni" class="block" target="_blank">
+          <a href="https://marcodallastella.github.io/elezioni/" class="block" target="_blank">
             <div class="h-48 overflow-hidden">
               <img src="images/elezioni.png" alt="Prison Overcrowding Monitor" class="w-full h-full object-cover">
             </div>
