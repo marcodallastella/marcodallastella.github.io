@@ -1,304 +1,303 @@
 <!DOCTYPE html>
 <html>
-
+<!-- Previous head content remains the same until style section -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Skinned knees, happy faces</title>
+  <title>Concrete Dreams: A Soccer Story</title>
 
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-  <link rel="stylesheet" href="../../styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+  
   <style>
+    /* Previous styles remain the same */
     body {
       margin: 0;
-      font-size: 1.1rem;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      text-rendering: optimizeLegibility;
+      font-family: 'Source Sans Pro', sans-serif;
+      line-height: 1.6;
+      color: #2c3e50;
+      background-color: #f8f9fa;
     }
 
-    .content {
-      max-width: 640px;
-      margin: auto;
-    }
-
-    .header {
-      padding: 3em 0;
-    }
-
-    a {
-      color: #f05349;
-    }
-
-    .footer {
-      background: #f4f4f4;
+    .intro {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      font-size: 0.8em;
-      margin-top: 4em;
-      padding: 4em 0;
-    }
-
-    figure {
-      margin: 0;
-      padding-bottom: 2em;
-    }
-
-    figcaption {
-      font-size: 0.8em;
-      text-align: center;
-      margin-top: 0.5em;
-      color: #666;
+      padding: 0 2rem;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/soccer.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
     }
 
     h1 {
-      font-family: 'Lora', Georgia, serif;
-      font-weight: bold;
-      font-size: 3em;
-      line-height: 1.1;
+      font-family: 'Lora', serif;
+      font-size: 3.5em;
+      margin-bottom: 0.5em;
+      line-height: 1.2;
     }
 
-    .subhead {
-      font-family: 'Lora', Georgia, serif;
-    }
-
-    img {
-      max-width: 100%;
-    }
-
-    p {
-      line-height: 1.6;
-      margin: 0;
-      padding-bottom: 1.2em;
-    }
-
-    ul {
-      margin: 0;
-      padding-bottom: 1em;
-      line-height: 1.6;
-    }
-
-    iframe {
-      padding-bottom: 1.2em;
-    }
-
-    .is-center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 60%
-    }
-
-    code {
-      font-family: 'Courier New', monospace;
-      background: #fff880;
-    }
-
-    /* margin on mobile */
-    @media (max-width: 640px) {
-      body {
-        font-size: 18px;
-      }
-
-      .content {
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-      }
+    .subtitle {
+      font-size: 1.5em;
+      font-style: italic;
+      max-width: 600px;
+      margin-bottom: 2em;
     }
 
     #scrolly {
       position: relative;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      background-color: transparent;
-      padding: 0.1rem;
-      padding-left: 0.2em;
-      padding-right: 0.2em;
-      margin-left: 3em;
-      margin-right: 3em;
-    }
-
-    #scrolly>* {
-      -webkit-box-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
+      background-color: #f8f9fa;
+      padding: 1rem;
     }
 
     article {
       position: relative;
-      padding: 0.1rem;
-      max-width: 50rem;
+      padding: 0 1rem;
+      max-width: 30rem;
+      margin: 0 auto;
     }
 
     .sticky-thing {
-      position: -webkit-sticky;
       position: sticky;
       width: 100%;
       margin: 0;
-      background-color: transparent;
-      z-index: 0;
       top: 12.5vh;
       height: 75vh;
-      /* Center everything inside */
       display: flex;
       align-items: center;
       justify-content: center;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
     }
 
-    .sticky-thing img {
-      max-width: 100%;
-      max-height: 100%;
+    /* New styles for image transition */
+    .image-container {
+      position: relative;
+      width: 90%;
+      height: 90%;
+      border-radius: 4px;
+    }
+
+    .image-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
+      border-radius: 4px;
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
     }
 
+    .image-container img.active {
+      opacity: 1;
+    }
+
+    /* Rest of the previous styles */
     .step {
-      margin: 0 auto 20rem auto;
-      background-color: transparent;
-      color: #3b3b3b;
-    }
-
-    .step:last-child {
-      margin-bottom: 10;
+      margin: 0 auto 80vh auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      opacity: 0.2;
+      transition: all 0.5s ease;
     }
 
     .step.is-active {
-      background-color: transparent;
-      color: #3b3b3b;
+      opacity: 1;
+      transform: translateX(0);
+      background-color: white;
     }
 
     .step p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 4px;
+      background: #3498db;
+      z-index: 1000;
+      transition: width 0.1s ease;
+    }
+
+    .footer {
       text-align: center;
-      padding: 1rem;
-      font-size: 1rem;
+      padding: 4rem 2rem;
+      background: #2c3e50;
+      color: white;
+    }
+
+    .footer a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .step {
+        margin-bottom: 60vh;
+      }
+      
+      h1 {
+        font-size: 2.5em;
+      }
+      
+      .subtitle {
+        font-size: 1.2em;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="is-center">
-    <figure>
-      <img src="images/soccer.png">
-      <figcaption>Painting of kids playing soccer in a parking lot, DALL-E 2</figcaption>
-    </figure>
-  </div>
-  <div class="content">
-    <div class="header">
-      <h1>Skinned knees, happy faces</h1>
-      <p class="subhead">Despite aboundant soccer fields, Italian kids opted for parking lots.</p>
-    </div>
-    <div class="byline">
-      <p>By <a href="https://marcodallastella.github.io">Marco Dalla Stella</a></p>
-    </div>
-    <p>Playing soccer in a field is pleasant, no doubt. There's the net, a green lawn, and white lines marking
-      boundaries and key areas. However, for some reason as a kid I would play much more often in the streets, where the
-      hard surface increases the risk of injury and cars passing by pose an immediate danger. For years,my friends and I would meet in the parking lot, where traffic hazards were reduced and parked cars added an element of unpredictability to the game.</p>
+  <div class="progress-bar"></div>
+  
+  <section class="intro">
+    <h1>Concrete Dreams</h1>
+    <p class="subtitle">Where Italian kids turned parking lots into soccer stadiums</p>
+  </section>
 
-    <p>During a recent trip back to Italy for Christmas, I spent a month with my parents in the house where I grew up.
-      It was strange to see the parking lot with no kids playing around, reduced to its most basic function of holding vehicles.
-      Children in my neighborhood, like in the rest of Italy, are becoming rare because of an increasingly aging population.</p>
-
-  </div>
   <main>
-
     <section id="scrolly">
       <article>
         <div class="step" data-step="1">
-          <p>My neighborhood is an unremarkable residential area made of terraced houses. It is delimited by a stone wall no taller than six or seven feet, built during the Napoleonic Era. As a kid, I misinterpreted this notion and I would proudly explain to friends coming over that Napoleon himself made that wall. Within walking distance, we had a playground and a real soccer field, but we rarely went there.</p>
-
+          <p>My childhood neighborhood in northern Italy was an unremarkable residential area, dotted with terracotta-roofed houses and narrow streets. As seen from above, it was a typical Italian suburb: orderly rows of homes, small gardens, and — within walking distance — both a playground and a proper soccer field. Everything a kid could want, neatly arranged in a small corner of the world.</p>
         </div>
+
         <div class="step" data-step="2">
-          <p>Growing up, I had two best friends: Alex and Simone (Alex was my favorite because he had a swimming pool). Our houses were next to each other, and every other day, one of us would ring a bell asking to come out and play. Right in the middle was the parking lot, which made for the most logical meeting point.
-          </p>
-
+          <p>My childhood revolved around two best friends: Alex (who held the coveted status of 'favorite' thanks to his family's swimming pool) and Simone.
+          Our houses formed a triangle, with the parking lot at its center—our daily stage for adventure. To the north it was bordered by Napoleon-era walls, and as a child, I'd proudly tell visitors that Napoleon himself had built them (he did not). </p>
         </div>
+        
         <div class="step" data-step="3">
-          <p>The parking lot was the most awesome thing. It provided a space large enough to run, cars were the best hiding spots for hide and seek, and fruit trees from the nearby backyards gave us plenty of fruits to eat fresh (including pomegranades!).</p>
-
+          <p>This was our real world - a simple parking lot between our houses. Between the parked cars and concrete surface, it wasn't much to look at. Two sewer covers marked our goal posts, and the uneven surface added an element of unpredictability to every game. But to us, it was perfect.</p>
         </div>
+        
         <div class="step" data-step="4">
-          <p>Of the many games we played in the parking lot, soccer was our favorite.</p>
-
+          <p>While a regulation field could contain our makeshift pitch about forty times over, we created our own soccer field right here in the parking lot. We mapped out our field between the cars, using whatever space was available. Our imagination filled in what the concrete lacked.</p>
         </div>
+        
         <div class="step" data-step="5">
+          <p>This wasn't just any parking lot - it was our arena. The space between parked cars became shooting lanes, and every game was a World Cup final in our minds, even if our stadium was just a few square meters of concrete.</p>
+        </div>
 
-          <p>And for that, the parking lot was perfect. Goal posts were marked by sewer covers (ideally, you would want a bag or some kind of object on top of them to avoid harsh debates on whether that was a goal or post). Parked cars played a role too: they provided a bouncing surface for added unpredictability, and dirty knees when the ball would get stuck under one of them.</p>
-        </div>
         <div class="step" data-step="6">
-          <p>A real playing field would have contained our pitch about 40 times. Still, for the three of us playing intensively for two  to three hours, that was still quite a lot of running! Also, our goal was only about six feet shorter than a professional one. </p>
+          <p>Looking at it now, maybe the reason was obvious: location, location, location. The parking lot sat at the perfect intersection of our lives - my house on one side, Alex's (with his coveted swimming pool) below, and Simone's on the other side. It was our natural meeting point, our everyday stadium.</p>
         </div>
+
         <div class="step" data-step="7">
-          <p>While the goal size was indisputable (that's the distance between the sewers!) we would often argue about the height of the goal, which would vary according to who was the goalkeeper at that moment. The general consensus was that if the ball was too high to be reasonably caught, that was a miss.</p>
+          <p>Above us, an ancient stone wall from the Napoleonic era watched over our games like a silent guardian. I used to tell visitors, with a child's misunderstanding of history, that Napoleon himself had built that wall. Between that historical backdrop and the fruit trees that provided our post-game snacks, our humble parking lot was more than just a place to play - it was our own piece of paradise.</p>
         </div>
       </article>
 
       <div class="sticky-thing">
-        <img src="images/1_field.png" alt="Field Image 1">
+        <div class="image-container">
+          <!-- We'll populate these images via JavaScript -->
+        </div>
       </div>
     </section>
-
-    <section id="outro"></section>
   </main>
 
-  <!-- <div class='debug'></div> -->
+  <div class="footer">
+    <p>Story by Marco Dalla Stella | Inspired by <a href="https://atd124.github.io/stickball/">How can you not be romantic about stickball?</a> by Anthony D'Arrigo</p>
+  </div>
+
   <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
   <script src="https://unpkg.com/scrollama"></script>
   <script>
-    // using d3 for convenience
-    var main = document.querySelector("main");
-    var scrolly = main.querySelector("#scrolly");
-    var sticky = scrolly.querySelector(".sticky-thing");
-    var article = scrolly.querySelector("article");
-    var steps = article.querySelectorAll(".step");
+    // Initialize scrollama
+    const scroller = scrollama();
+    
+    // DOM elements
+    const main = document.querySelector("main");
+    const scrolly = main.querySelector("#scrolly");
+    const sticky = scrolly.querySelector(".sticky-thing");
+    const imageContainer = sticky.querySelector(".image-container");
+    const article = scrolly.querySelector("article");
+    const steps = article.querySelectorAll(".step");
+    const progressBar = document.querySelector(".progress-bar");
 
-    // initialize the scrollama
-    var scroller = scrollama();
+    // Preload images
+    function preloadImages() {
+      // Create all image elements at start
+      for (let i = 1; i <= steps.length; i++) {
+        const img = document.createElement('img');
+        img.src = `images/${i}_field.png`;
+        img.alt = `Field visualization ${i}`;
+        img.className = i === 1 ? 'active' : ''; // Make first image active
+        imageContainer.appendChild(img);
+      }
+    }
 
-    // scrollama event handlers
+    // Generic window resize listener
+    function handleResize() {
+      scroller.resize();
+    }
+
+    // Scrollama event handlers
     function handleStepEnter(response) {
-      // response = { element, direction, index }
-      var el = response.element;
-      var stepIndex = el.dataset.step;
+      const el = response.element;
+      const stepIndex = el.dataset.step;
+      
+      // Update progress bar
+      const progress = (stepIndex / steps.length) * 100;
+      progressBar.style.width = `${progress}%`;
 
-      // update graphic based on step
-      var imgSrc = `images/${stepIndex}_field.png`; // Construct the image source based on step
-      sticky.querySelector("img").src = imgSrc; // Update the image source
+      // Update image visibility
+      const images = imageContainer.querySelectorAll('img');
+      images.forEach(img => img.classList.remove('active'));
+      images[stepIndex - 1].classList.add('active');
 
-      // remove is-active from all steps
-      // then add is-active to this step
+      // Update active step
       steps.forEach(step => step.classList.remove('is-active'));
       el.classList.add('is-active');
     }
 
     function init() {
+      // Preload images
+      preloadImages();
+
+      // Set up Scrollama
       scroller
         .setup({
           step: "#scrolly article .step",
-          offset: 0.50,
+          offset: 0.5,
           debug: false
         })
         .onStepEnter(handleStepEnter);
 
-      // setup resize event
-      window.addEventListener("resize", scroller.resize);
+      // Setup resize event
+      window.addEventListener("resize", handleResize);
     }
 
-    // kick things off
+    // Start everything
     init();
+
+    // Add smooth scroll progress bar
+    window.addEventListener('scroll', () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      progressBar.style.width = scrolled + "%";
+    });
   </script>
-  <br>
-  <br>
-
-
-  <div class="footer">
-    <div class="content">
-      <p>This story was inspired by <a href="https://atd124.github.io/stickball/">"How can you not be romantic about
-          stickball?</a> by Anthony D'Arrigo"</p>
-    </div>
 </body>
-
 </html>
