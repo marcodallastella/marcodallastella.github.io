@@ -1,76 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marco Dalla Stella | Data & Investigative Journalism</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #1a1a1a;
-        }
-        .nav-link::after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 1px;
-            background: #1a1a1a;
-            transition: width 0.3s;
-        }
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        .story-card {
-            transition: transform 0.2s ease;
-        }
-        .story-card:hover {
-            transform: translateY(-2px);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marco Dalla Stella | Data & Investigative Journalism</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1a1a1a;
+    }
+
+    .nav-link::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 1px;
+      background: #1a1a1a;
+      transition: width 0.3s;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .story-card {
+      transition: transform 0.2s ease;
+    }
+
+    .story-card:hover {
+      transform: translateY(-2px);
+    }
+  </style>
 </head>
 
 <body class="bg-white">
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="flex justify-between h-20">
-                <div class="flex items-center">
-                    <div>
-                        <h1 class="text-lg font-medium">Marco Dalla Stella</h1>
-                        <p class="text-sm text-gray-600">Data & Investigative Journalism</p>
-                    </div>
-                </div>
-                
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#english" class="nav-link text-sm">English</a>
-                    <a href="#spanish" class="nav-link text-sm">Español</a>
-                    <a href="#italian" class="nav-link text-sm">Italiano</a>
-                    <a href="#projects" class="nav-link text-sm">Data Projects</a>
-                    
-                    <div class="flex items-center space-x-4 ml-8 pl-8 border-l border-gray-200">
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex justify-between h-20">
+        <div class="flex items-center">
+          <div>
+            <h1 class="text-lg font-medium">Marco Dalla Stella</h1>
+            <p class="text-sm text-gray-600">Data & Investigative Journalism</p>
+          </div>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#english" class="nav-link text-sm">English</a>
+          <a href="#spanish" class="nav-link text-sm">Español</a>
+          <a href="#italian" class="nav-link text-sm">Italiano</a>
+          <a href="#projects" class="nav-link text-sm">Data Projects</a>
+
+          <div class="flex items-center space-x-4 ml-8 pl-8 border-l border-gray-200">
             <a href="mailto:m.dallastella@proton.me" class="text-gray-600 hover:text-gray-900 transition-colors">
               <i class="fa fa-envelope"></i>
             </a>
-            <a href="https://github.com/marcodallastella" class="text-gray-600 hover:text-gray-900 transition-colors" target="_blank">
+            <a href="https://github.com/marcodallastella" class="text-gray-600 hover:text-gray-900 transition-colors"
+              target="_blank">
               <i class="fa-brands fa-github"></i>
             </a>
             <a href="https://www.linkedin.com/in/dallastellamarco"
               class="text-gray-600 hover:text-gray-900 transition-colors" target="_blank">
               <i class="fa-brands fa-linkedin"></i>
-              <a href="https://signal.me/#eu/vTRqAQ4I0rMFoYNtXvcj2SaMJtfAtK5AMVtQodBddJe8B4Pk7VhPiqrR_I5M0WwO" class="text-gray-600 hover:text-gray-900 transition-colors" target="_blank">
+              <a href="https://signal.me/#eu/vTRqAQ4I0rMFoYNtXvcj2SaMJtfAtK5AMVtQodBddJe8B4Pk7VhPiqrR_I5M0WwO"
+                class="text-gray-600 hover:text-gray-900 transition-colors" target="_blank">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="inline-block">
-                    <path d="M12.012 2.598c-5.22 0-9.452 3.9-9.452 8.709 0 3.016 1.219 5.301 3.155 6.774H5.71l.234 3.042v.004c0 .017 0 .031.004.046v.006c.024.144.15.255.301.255.053 0 .1-.015.144-.035l.011-.008L9.3 19.717c.854.196 1.767.299 2.71.299 5.22 0 9.452-3.899 9.452-8.71 0-4.81-4.233-8.709-9.454-8.709l.004.001zM10.39.72c.525-.065 1.061-.104 1.605-.104.38 0 .75.02 1.119.052l.057-.614C12.781.019 12.392 0 11.997 0c-.57 0-1.135.036-1.691.109l.083.612.001-.001zm3.797.094c.915.165 1.785.436 2.61.795l.252-.567c-.132-.056-.263-.112-.397-.165-.762-.3-1.551-.524-2.355-.671l-.11.608zm9.169 10.556c-.015.915-.155 1.806-.405 2.655l.59.175c.267-.903.416-1.854.431-2.831l-.616.001zM6.745 1.814c.811-.389 1.678-.698 2.586-.902L9.196.308c-.631.141-1.251.329-1.853.569-.297.117-.586.245-.867.381l.269.556zm13.65 1.399c-.706-.649-1.485-1.207-2.329-1.673l-.311.541c.811.445 1.561.981 2.224 1.596l.416-.462v-.002zm-5.244 18.838c.945-.24 1.845-.591 2.686-1.03l-.315-.533c-.786.413-1.631.738-2.521.967l.15.596zM3.677 4.005c.63-.638 1.347-1.2 2.13-1.675l-.327-.529c-.698.422-1.35.914-1.945 1.473-.102.094-.2.191-.3.289l.439.441.003.001zm19.48 11.28l-.568-.236c-.349.833-.803 1.614-1.354 2.332l.495.369c.577-.758 1.061-1.586 1.424-2.465h.003zM20.726 4.433c.606.675 1.122 1.425 1.534 2.228l.555-.275c-.435-.852-.979-1.645-1.627-2.366l-.465.413h.003zm2.554 3.003l-.568.244c.313.828.521 1.703.604 2.61l.615-.061c-.088-.956-.305-1.892-.651-2.793zM6.386 22.849l-.969.425-.332-1.025-.585.19.438 1.347c.029.083.09.151.167.188.041.017.083.026.126.026s.084-.009.123-.026l1.283-.563-.251-.562zm3.823-1.193c-.078-.016-.157-.027-.237-.041l-.465-.079c-.061-.009-.12 0-.172.023l-1.951.853.271.554 1.845-.803c.125.021.25.041.371.059.068.017.139.026.209.038l.129-.604zm3.728.02c-.633.104-1.281.156-1.942.156-.273 0-.525-.015-.772-.038l-.019.615c.251.024.511.04.791.04.698 0 1.383-.058 2.048-.166l-.104-.606-.002-.001zM1.517 7.116c.37-.825.852-1.598 1.425-2.302l-.47-.407c-.61.745-1.116 1.557-1.508 2.427l-.01.021.563.261zM20.532 18.21c-.612.651-1.31 1.229-2.07 1.728l.339.515c.806-.524 1.541-1.14 2.19-1.829l-.459-.414zM.97 14.551c-.188-.796-.293-1.676-.323-2.671H.031c.03 1.071.145 2.005.345 2.843l.594-.172zM.538 7.925c-.297.91-.468 1.853-.51 2.813l.615.03c.042-.923.209-1.816.487-2.662l-.592-.181zm4.199 13.26l-.59-1.815c-.02-.06-.056-.109-.105-.147-.232-.182-.449-.366-.66-.558l-.422.446c.194.184.408.362.629.541l.561 1.717.587-.184zm-2.105-3.292c-.591-.691-1.037-1.449-1.355-2.315l-.573.229c.041.107.083.216.126.322.33.796.771 1.509 1.342 2.175l.46-.411z"/>
+                  <path
+                    d="M12.012 2.598c-5.22 0-9.452 3.9-9.452 8.709 0 3.016 1.219 5.301 3.155 6.774H5.71l.234 3.042v.004c0 .017 0 .031.004.046v.006c.024.144.15.255.301.255.053 0 .1-.015.144-.035l.011-.008L9.3 19.717c.854.196 1.767.299 2.71.299 5.22 0 9.452-3.899 9.452-8.71 0-4.81-4.233-8.709-9.454-8.709l.004.001zM10.39.72c.525-.065 1.061-.104 1.605-.104.38 0 .75.02 1.119.052l.057-.614C12.781.019 12.392 0 11.997 0c-.57 0-1.135.036-1.691.109l.083.612.001-.001zm3.797.094c.915.165 1.785.436 2.61.795l.252-.567c-.132-.056-.263-.112-.397-.165-.762-.3-1.551-.524-2.355-.671l-.11.608zm9.169 10.556c-.015.915-.155 1.806-.405 2.655l.59.175c.267-.903.416-1.854.431-2.831l-.616.001zM6.745 1.814c.811-.389 1.678-.698 2.586-.902L9.196.308c-.631.141-1.251.329-1.853.569-.297.117-.586.245-.867.381l.269.556zm13.65 1.399c-.706-.649-1.485-1.207-2.329-1.673l-.311.541c.811.445 1.561.981 2.224 1.596l.416-.462v-.002zm-5.244 18.838c.945-.24 1.845-.591 2.686-1.03l-.315-.533c-.786.413-1.631.738-2.521.967l.15.596zM3.677 4.005c.63-.638 1.347-1.2 2.13-1.675l-.327-.529c-.698.422-1.35.914-1.945 1.473-.102.094-.2.191-.3.289l.439.441.003.001zm19.48 11.28l-.568-.236c-.349.833-.803 1.614-1.354 2.332l.495.369c.577-.758 1.061-1.586 1.424-2.465h.003zM20.726 4.433c.606.675 1.122 1.425 1.534 2.228l.555-.275c-.435-.852-.979-1.645-1.627-2.366l-.465.413h.003zm2.554 3.003l-.568.244c.313.828.521 1.703.604 2.61l.615-.061c-.088-.956-.305-1.892-.651-2.793zM6.386 22.849l-.969.425-.332-1.025-.585.19.438 1.347c.029.083.09.151.167.188.041.017.083.026.126.026s.084-.009.123-.026l1.283-.563-.251-.562zm3.823-1.193c-.078-.016-.157-.027-.237-.041l-.465-.079c-.061-.009-.12 0-.172.023l-1.951.853.271.554 1.845-.803c.125.021.25.041.371.059.068.017.139.026.209.038l.129-.604zm3.728.02c-.633.104-1.281.156-1.942.156-.273 0-.525-.015-.772-.038l-.019.615c.251.024.511.04.791.04.698 0 1.383-.058 2.048-.166l-.104-.606-.002-.001zM1.517 7.116c.37-.825.852-1.598 1.425-2.302l-.47-.407c-.61.745-1.116 1.557-1.508 2.427l-.01.021.563.261zM20.532 18.21c-.612.651-1.31 1.229-2.07 1.728l.339.515c.806-.524 1.541-1.14 2.19-1.829l-.459-.414zM.97 14.551c-.188-.796-.293-1.676-.323-2.671H.031c.03 1.071.145 2.005.345 2.843l.594-.172zM.538 7.925c-.297.91-.468 1.853-.51 2.813l.615.03c.042-.923.209-1.816.487-2.662l-.592-.181zm4.199 13.26l-.59-1.815c-.02-.06-.056-.109-.105-.147-.232-.182-.449-.366-.66-.558l-.422.446c.194.184.408.362.629.541l.561 1.717.587-.184zm-2.105-3.292c-.591-.691-1.037-1.449-1.355-2.315l-.573.229c.041.107.083.216.126.322.33.796.771 1.509 1.342 2.175l.46-.411z" />
                 </svg>
+              </a>
             </a>
-            </a>
-            <a href="https://bsky.app/profile/mdallastella.bsky.social" class="text-gray-600 hover:text-gray-900 transition-colors" target="_blank">
+            <a href="https://bsky.app/profile/mdallastella.bsky.social"
+              class="text-gray-600 hover:text-gray-900 transition-colors" target="_blank">
               <svg width="16" height="16" viewBox="0 0 64 64" fill="currentColor" class="inline-block">
-                  <path d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"/>
+                <path
+                  d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z" />
               </svg>
-          </a>
+            </a>
           </div>
         </div>
 
@@ -99,31 +109,33 @@
           </a>
           <a href="https://bsky.app/profile/mdallastella.bsky.social" class="text-gray-600 hover:text-gray-900">
             <svg width="16" height="16" viewBox="0 0 64 64" fill="currentColor" class="inline-block">
-              <path d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"/>
-          </svg>
+              <path
+                d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z" />
+            </svg>
           </a>
         </div>
       </div>
     </div>
   </nav>
 
-    <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-6">
-      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-          <div>
-              <h2 class="text-3xl font-medium mb-6">Data-driven investigations across languages and borders</h2>
-              <p class="text-gray-600 leading-relaxed mb-8">
-                  Italian journalist based in Brooklyn, specializing in cross-border investigations and data analysis. Focus on digital rights, environmental issues, and migration.
-              </p>
-              <div class="flex gap-4">
-                  <a href="#english" class="px-6 py-2 bg-black text-white text-sm">View Work</a>
-                  <a href="mailto:m.dallastella@proton.me" class="px-6 py-2 border border-gray-200 text-sm">Contact</a>
-              </div>
-          </div>
-          <div>
-              <img src="images/marco.png" alt="Marco Dalla Stella" class="w-full">
-          </div>
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <div>
+        <h2 class="text-3xl font-medium mb-6">Data-driven investigations across languages and borders</h2>
+        <p class="text-gray-600 leading-relaxed mb-8">
+          Italian journalist based in Brooklyn, specializing in cross-border investigations and data analysis. Focus on
+          digital rights, environmental issues, and migration.
+        </p>
+        <div class="flex gap-4">
+          <a href="#english" class="px-6 py-2 bg-black text-white text-sm">View Work</a>
+          <a href="mailto:m.dallastella@proton.me" class="px-6 py-2 border border-gray-200 text-sm">Contact</a>
+        </div>
       </div>
+      <div>
+        <img src="images/marco.png" alt="Marco Dalla Stella" class="w-full">
+      </div>
+    </div>
   </section>
 
   <!-- English Stories -->
@@ -190,12 +202,12 @@
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white rounded-xl shadow-sm story-card border border-gray-100">
-          <a href="https://climatica.coop/la-batalla-de-thacker-pass/"
-            class="block p-6" target="_blank">
+          <a href="https://climatica.coop/la-batalla-de-thacker-pass/" class="block p-6" target="_blank">
             <span class="text-sm font-medium text-blue-600">La Marea</span>
             <h3 class="text-xl font-semibold mt-2 mb-3">La batalla de Thacker Pass
             </h3>
-            <p class="text-gray-600 mb-4">Según el proyecto avanzado por Lithium Americas, la mina llegará a producir 66 mil toneladas de carbonato de litio cada año</p>
+            <p class="text-gray-600 mb-4">Según el proyecto avanzado por Lithium Americas, la mina llegará a producir 66
+              mil toneladas de carbonato de litio cada año</p>
             <div class="flex flex-wrap gap-2">
               <span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm">Longform</span>
               <span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm">Environment</span>
@@ -210,7 +222,10 @@
             <span class="text-sm font-medium text-blue-600">La Marea</span>
             <h3 class="text-xl font-semibold mt-2 mb-3">El 'método Eliminalia' para borrar información sigue vigente
             </h3>
-            <p class="text-gray-600 mb-4">Un año después de la publicación de Forbidden Stories sobre las técnicas fraudulentas usadas por esta empresa española para borrar datos de sus clientes en Google y «enterrar la verdad», una investigación de ‘La Marea’ prueba que sigue operando sin apenas cambios. Otras compañías del sector usan artimañas similares sin sufrir consecuencias legales.</p>
+            <p class="text-gray-600 mb-4">Un año después de la publicación de Forbidden Stories sobre las técnicas
+              fraudulentas usadas por esta empresa española para borrar datos de sus clientes en Google y «enterrar la
+              verdad», una investigación de ‘La Marea’ prueba que sigue operando sin apenas cambios. Otras compañías del
+              sector usan artimañas similares sin sufrir consecuencias legales.</p>
             <div class="flex flex-wrap gap-2">
               <span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm">Investigation</span>
               <span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm">Disinformation</span>
@@ -222,9 +237,12 @@
           <a href="https://www.lamarea.com/2024/06/16/el-metodo-eliminalia-para-borrar-informacion-sigue-vigente/"
             class="block p-6" target="_blank">
             <span class="text-sm font-medium text-blue-600">Centro Latinoaméricano de Investigación Periodística</span>
-            <h3 class="text-xl font-semibold mt-2 mb-3">Cómo se hace remoción fraudulenta de notas periodísticas de Google
+            <h3 class="text-xl font-semibold mt-2 mb-3">Cómo se hace remoción fraudulenta de notas periodísticas de
+              Google
             </h3>
-            <p class="text-gray-600 mb-4">Blogs anónimos pidieron a Google retirar de su buscador artículos de prensa sobre hombres de negocios, políticos y estafadores. No reclaman derecho al olvido, sino que alegan falsamente que hubo plagio. Aun así la plataforma les hizo caso y los retiró.</p>
+            <p class="text-gray-600 mb-4">Blogs anónimos pidieron a Google retirar de su buscador artículos de prensa
+              sobre hombres de negocios, políticos y estafadores. No reclaman derecho al olvido, sino que alegan
+              falsamente que hubo plagio. Aun así la plataforma les hizo caso y los retiró.</p>
             <div class="flex flex-wrap gap-2">
               <span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm">Investigation</span>
               <span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm">Disinformation</span>
@@ -248,7 +266,8 @@
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white rounded-xl shadow-sm story-card border border-gray-100">
-          <a href="https://ilmanifesto.it/diritti-a-sunset-park-dove-e-la-polizia-a-essere-wanted" class="block p-6" target="_blank">
+          <a href="https://ilmanifesto.it/diritti-a-sunset-park-dove-e-la-polizia-a-essere-wanted" class="block p-6"
+            target="_blank">
             <span class="text-sm font-medium text-blue-600">Il Manifesto</span>
             <h3 class="text-xl font-semibold mt-2 mb-3">Diritti a Sunset Park, dove è la polizia a essere «Wanted»</h3>
             <p class="text-gray-600 mb-4">Un'alba di pattuglia con gli attivisti di NYC ICE Watch, un gruppo nato per
@@ -259,10 +278,12 @@
           </a>
         </div>
         <div class="bg-white rounded-xl shadow-sm story-card border border-gray-100">
-          <a href="https://ilmanifesto.it/diritti-a-sunset-park-dove-e-la-polizia-a-essere-wanted" class="block p-6" target="_blank">
+          <a href="https://ilmanifesto.it/diritti-a-sunset-park-dove-e-la-polizia-a-essere-wanted" class="block p-6"
+            target="_blank">
             <span class="text-sm font-medium text-blue-600">Il Tascabile</span>
             <h3 class="text-xl font-semibold mt-2 mb-3">La nuova vita delle FARC</h3>
-            <p class="text-gray-600 mb-4">Da organizzazione guerrigliera a partito politico: la complessa transizione dell'ex gruppo combattente colombiano.</p>
+            <p class="text-gray-600 mb-4">Da organizzazione guerrigliera a partito politico: la complessa transizione
+              dell'ex gruppo combattente colombiano.</p>
             <div class="flex flex-wrap gap-2">
               <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm">Reporting</span>
             </div>
@@ -283,13 +304,31 @@
 
         <!-- Italian elections -->
         <div class="bg-white rounded-xl shadow-sm project-card border border-gray-100 overflow-hidden">
+          <a href="https://marcodallastella.github.io/chiamate-1522/" class="block" target="_blank">
+            <div class="h-48 overflow-hidden">
+              <img src="images/1522.gif" alt="Prison Overcrowding Monitor" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3">Calls for help</h3>
+              <p class="text-gray-600 mb-4">Used data about calls to 1522, the Italian hotline for victims of gender-based violence and stalking, to visualize an animated map.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm">D3</span>
+                <span class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm">React</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Italian elections -->
+        <div class="bg-white rounded-xl shadow-sm project-card border border-gray-100 overflow-hidden">
           <a href="https://marcodallastella.github.io/elezioni/" class="block" target="_blank">
             <div class="h-48 overflow-hidden">
               <img src="images/elezioni.png" alt="Prison Overcrowding Monitor" class="w-full h-full object-cover">
             </div>
             <div class="p-6">
               <h3 class="text-xl font-semibold mb-3">Real-Time Tracker: Italian Regional Elections 2024</h3>
-              <p class="text-gray-600 mb-4">Reverse-engineered the Italian Ministry of Interior's hidden API to automatically collect and show election results as votes were being counted.</p>
+              <p class="text-gray-600 mb-4">Reverse-engineered the Italian Ministry of Interior's hidden API to
+                automatically collect and show election results as votes were being counted.</p>
               <div class="flex flex-wrap gap-2">
                 <span class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm">API</span>
                 <span class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm">Python</span>
@@ -309,7 +348,8 @@
             </div>
             <div class="p-6">
               <h3 class="text-xl font-semibold mb-3">Prison Overcrowding Monitor</h3>
-              <p class="text-gray-600 mb-4">Data scraping and visualization project tracking prison conditions in Italy</p>
+              <p class="text-gray-600 mb-4">Data scraping and visualization project tracking prison conditions in Italy
+              </p>
               <div class="flex flex-wrap gap-2">
                 <span class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm">Playwright</span>
                 <span class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm">BeautifulSoup</span>
@@ -364,7 +404,8 @@
             </div>
             <div class="p-6">
               <h3 class="text-xl font-semibold mb-3">Google is still falling for an old trick.</h3>
-              <p class="text-gray-600 mb-4">A review of 2023 DMCA notices reveals legit journalism gets hidden from search results.
+              <p class="text-gray-600 mb-4">A review of 2023 DMCA notices reveals legit journalism gets hidden from
+                search results.
               </p>
               <div class="flex flex-wrap gap-2">
                 <span class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm">API</span>
@@ -387,14 +428,17 @@
         <a href="https://github.com/marcodallastella" class="hover:text-blue-400 transition-colors" target="_blank">
           <i class="fa-brands fa-github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/dallastellamarco" class="hover:text-blue-400 transition-colors" target="_blank">
+        <a href="https://www.linkedin.com/in/dallastellamarco" class="hover:text-blue-400 transition-colors"
+          target="_blank">
           <i class="fa-brands fa-linkedin"></i>
         </a>
-        <a href="https://bsky.app/profile/mdallastella.bsky.social" class="hover:text-blue-400 transition-colors" target="_blank">
+        <a href="https://bsky.app/profile/mdallastella.bsky.social" class="hover:text-blue-400 transition-colors"
+          target="_blank">
           <svg width="16" height="16" viewBox="0 0 64 64" fill="currentColor" class="inline-block">
-              <path d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"/>
+            <path
+              d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z" />
           </svg>
-      </a>
+        </a>
       </div>
       <p class="text-gray-400">&copy; <span id="current-year"></span> Marco Dalla Stella. Brooklyn, NY</p>
     </div>
@@ -439,50 +483,50 @@
   <scritp>
     <script>
       // Initialize sliders for each language section
-      document.addEventListener('DOMContentLoaded', function() {
-          const sliderOptions = {
-              items: 1,
-              slideBy: 1,
-              loop: false,
-              nav: true,
-              controls: true,
-              mouseDrag: true,
-              preventScrollOnTouch: 'auto',
-              responsive: {
-                  640: {
-                      items: 2
-                  },
-                  1024: {
-                      items: 3
-                  }
-              }
-          };
-  
-          // English slider
-          let englishSlider = tns({
-              container: '.english-slider',
-              ...sliderOptions,
-              prevButton: '.english-prev',
-              nextButton: '.english-next'
-          });
-  
-          // Spanish slider
-          let spanishSlider = tns({
-              container: '.spanish-slider',
-              ...sliderOptions,
-              prevButton: '.spanish-prev',
-              nextButton: '.spanish-next'
-          });
-  
-          // Italian slider
-          let italianSlider = tns({
-              container: '.italian-slider',
-              ...sliderOptions,
-              prevButton: '.italian-prev',
-              nextButton: '.italian-next'
-          });
+      document.addEventListener('DOMContentLoaded', function () {
+        const sliderOptions = {
+          items: 1,
+          slideBy: 1,
+          loop: false,
+          nav: true,
+          controls: true,
+          mouseDrag: true,
+          preventScrollOnTouch: 'auto',
+          responsive: {
+            640: {
+              items: 2
+            },
+            1024: {
+              items: 3
+            }
+          }
+        };
+
+        // English slider
+        let englishSlider = tns({
+          container: '.english-slider',
+          ...sliderOptions,
+          prevButton: '.english-prev',
+          nextButton: '.english-next'
+        });
+
+        // Spanish slider
+        let spanishSlider = tns({
+          container: '.spanish-slider',
+          ...sliderOptions,
+          prevButton: '.spanish-prev',
+          nextButton: '.spanish-next'
+        });
+
+        // Italian slider
+        let italianSlider = tns({
+          container: '.italian-slider',
+          ...sliderOptions,
+          prevButton: '.italian-prev',
+          nextButton: '.italian-next'
+        });
       });
-  </script>
+    </script>
   </scritp>
 </body>
 
