@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
+    rel="stylesheet">
 
   <style>
     :root {
@@ -27,7 +29,11 @@
       --font-body: 'DM Sans', -apple-system, sans-serif;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
       font-family: var(--font-body);
@@ -257,7 +263,7 @@
 
     .article-card:hover {
       transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
     }
 
     .article-card a {
@@ -328,7 +334,7 @@
 
     .project-card:hover {
       transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
     }
 
     .project-card a {
@@ -423,8 +429,15 @@
 
     /* ── ANIMATIONS ── */
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(16px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .fade-in {
@@ -432,17 +445,36 @@
       animation: fadeUp 0.6s ease forwards;
     }
 
-    .fade-in:nth-child(1) { animation-delay: 0.05s; }
-    .fade-in:nth-child(2) { animation-delay: 0.12s; }
-    .fade-in:nth-child(3) { animation-delay: 0.19s; }
-    .fade-in:nth-child(4) { animation-delay: 0.26s; }
+    .fade-in:nth-child(1) {
+      animation-delay: 0.05s;
+    }
+
+    .fade-in:nth-child(2) {
+      animation-delay: 0.12s;
+    }
+
+    .fade-in:nth-child(3) {
+      animation-delay: 0.19s;
+    }
+
+    .fade-in:nth-child(4) {
+      animation-delay: 0.26s;
+    }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
-      .site-header { padding: 2.5rem 0 2rem; }
-      .site-header h1 { font-size: 1.6rem; }
+      .site-header {
+        padding: 2.5rem 0 2rem;
+      }
 
-      .nav-inner { display: none; }
+      .site-header h1 {
+        font-size: 1.6rem;
+      }
+
+      .nav-inner {
+        display: none;
+      }
+
       .mobile-nav {
         display: block;
         max-width: 64rem;
@@ -483,10 +515,13 @@
         gap: 1.25rem;
       }
 
-      section { padding: 2.5rem 0; }
+      section {
+        padding: 2.5rem 0;
+      }
     }
 
     @media (max-width: 480px) {
+
       .article-grid,
       .project-grid {
         grid-template-columns: 1fr;
@@ -500,7 +535,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LG88HS04X3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-LG88HS04X3');
@@ -555,13 +590,20 @@
           </div>
           <div class="bio-text">
             <p>
-              I'm Marco, an Italian journalist based in Brooklyn. I specialize in cross-border investigations with a data component.
+              I'm Marco, an Italian journalist based in Brooklyn. I specialize in cross-border investigations with a
+              data component.
             </p>
             <p>
-              My work has been published in outlets including the <strong>Latin American Center for Investigative Journalism</strong>, <strong>Mother Jones</strong>, <strong>La Marea</strong>, and <strong>IrpiMedia</strong>. I thrive in collaborative, cross-border investigations and enjoy working with diverse teams to uncover complex stories.
+              My work has been published in outlets including the <strong>Latin American Center for Investigative
+                Journalism</strong>, <strong>Mother Jones</strong>, <strong>La Marea</strong>, and
+              <strong>IrpiMedia</strong>. I thrive in collaborative, cross-border investigations and enjoy working with
+              diverse teams to uncover complex stories.
             </p>
             <p>
-              I was trained at the <strong>Columbia Journalism School</strong> and specialized in data at the <strong>Lede Program</strong>. Other training includes Next-IJ, DFRLab's Digital Sherlocks, and Finance Uncovered/CLIP's course on Understanding Company Accounts. I've been a Columbia Journalism Investigations fellow, an ICFJ Disarming Disinformation grantee, and a JournalismFund grantee.
+              I was trained at the <strong>Columbia Journalism School</strong> and specialized in data at the
+              <strong>Lede Program</strong>. Other training includes Next-IJ, DFRLab's Digital Sherlocks, and Finance
+              Uncovered/CLIP's course on Understanding Company Accounts. I've been a Columbia Journalism Investigations
+              fellow, an ICFJ Disarming Disinformation grantee, and a JournalismFund grantee.
             </p>
           </div>
         </div>
@@ -577,8 +619,26 @@
           <h2>English</h2>
         </div>
         <div class="article-grid">
+
           <div class="article-card fade-in">
-            <a href="https://web.archive.org/web/20250402162419/https://worldcrunch.com/culture-society/gestlife-surrogacy-investigation/" target="_blank">
+            <a href="https://www.occrp.org/en/investigation/conflict-tainted-venezuelan-gold-entered-world-market-through-caribbean-island-documents-indicate"
+              target="_blank">
+              <div class="card-image">
+                <img src="https://www.occrp.org/processed/containers/assets/investigations/venezuelan-gold/venezula-gold-banner.jpg/ed60b4cb664e4f78a013cdc437de8620/venezula-gold-banner.jpg" alt="gold curcao venezuela"
+                  onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22250%22%3E%3Crect fill=%22%23e8e6e1%22 width=%22400%22 height=%22250%22/%3E%3C/svg%3E'">
+              </div>
+              <div class="card-body">
+                <div class="card-outlet">OCCRP</div>
+                <div class="card-title">Conflict-Tainted Venezuelan Gold Entered World Market Through Caribbean Island, Documents Indicate</div>
+                <div class="card-year">2026</div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="article-card fade-in">
+            <a href="https://web.archive.org/web/20250402162419/https://worldcrunch.com/culture-society/gestlife-surrogacy-investigation/"
+              target="_blank">
               <div class="card-image">
                 <img src="images/surrogacy.png" alt="Gestlife investigation"
                   onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22250%22%3E%3Crect fill=%22%23e8e6e1%22 width=%22400%22 height=%22250%22/%3E%3C/svg%3E'">
@@ -592,7 +652,8 @@
           </div>
 
           <div class="article-card fade-in">
-            <a href="https://web.archive.org/web/20250402162419/https://worldcrunch.com/culture-society/gestlife-surrogacy-investigation/" target="_blank">
+            <a href="https://web.archive.org/web/20250402162419/https://worldcrunch.com/culture-society/gestlife-surrogacy-investigation/"
+              target="_blank">
               <div class="card-image">
                 <img src="images/gestlife-placeholder.png" alt="Gestlife investigation"
                   onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22250%22%3E%3Crect fill=%22%23e8e6e1%22 width=%22400%22 height=%22250%22/%3E%3C/svg%3E'">
@@ -620,7 +681,8 @@
           </div> -->
 
           <div class="article-card fade-in">
-            <a href="https://www.elclip.org/remocion-contenidos-google-censura-derecho-olvido-eliminalia/?lang=en" target="_blank">
+            <a href="https://www.elclip.org/remocion-contenidos-google-censura-derecho-olvido-eliminalia/?lang=en"
+              target="_blank">
               <div class="card-image">
                 <img src="images/google-placeholder.png" alt="Google censorship investigation"
                   onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22250%22%3E%3Crect fill=%22%23e8e6e1%22 width=%22400%22 height=%22250%22/%3E%3C/svg%3E'">
@@ -646,9 +708,11 @@
         </div>
         <div class="article-grid">
           <div class="article-card fade-in">
-            <a href="https://armando.info/el-oro-de-guayana-llego-incluso-a-silicon-valley-con-sello-suizo//" target="_blank">
+            <a href="https://armando.info/el-oro-de-guayana-llego-incluso-a-silicon-valley-con-sello-suizo//"
+              target="_blank">
               <div class="card-image">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Yd2GDAzqI9OlAKDC_E4JIH7IB-6kg6w7Hw&s" alt="Oro imagen chatarra"
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Yd2GDAzqI9OlAKDC_E4JIH7IB-6kg6w7Hw&s"
+                  alt="Oro imagen chatarra"
                   onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22250%22%3E%3Crect fill=%22%23e8e6e1%22 width=%22400%22 height=%22250%22/%3E%3C/svg%3E'">
               </div>
               <div class="card-body">
@@ -688,7 +752,8 @@
           </div>
 
           <div class="article-card fade-in">
-            <a href="https://www.lamarea.com/2024/06/16/el-metodo-eliminalia-para-borrar-informacion-sigue-vigente/" target="_blank">
+            <a href="https://www.lamarea.com/2024/06/16/el-metodo-eliminalia-para-borrar-informacion-sigue-vigente/"
+              target="_blank">
               <div class="card-image">
                 <img src="images/eliminalia-placeholder.png" alt="Eliminalia investigation"
                   onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22250%22%3E%3Crect fill=%22%23e8e6e1%22 width=%22400%22 height=%22250%22/%3E%3C/svg%3E'">
@@ -702,7 +767,8 @@
           </div>
 
           <div class="article-card fade-in">
-            <a href="https://www.elclip.org/remocion-contenidos-google-censura-derecho-olvido-eliminalia/" target="_blank">
+            <a href="https://www.elclip.org/remocion-contenidos-google-censura-derecho-olvido-eliminalia/"
+              target="_blank">
               <div class="card-image">
                 <img src="images/md-portada.png" alt="Google CLIP investigation"
                   onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22250%22%3E%3Crect fill=%22%23e8e6e1%22 width=%22400%22 height=%22250%22/%3E%3C/svg%3E'">
@@ -730,12 +796,14 @@
           <div class="article-card fade-in">
             <a href="https://irpimedia.irpi.eu/oro-sporco-venezuela-italia/" target="_blank">
               <div class="card-image">
-                <img src="https://irpimedia.irpi.eu/public/uploads/2026/02/oro-sporco-venezuela-italia_cover.webp" alt="Dirty gold"
+                <img src="https://irpimedia.irpi.eu/public/uploads/2026/02/oro-sporco-venezuela-italia_cover.webp"
+                  alt="Dirty gold"
                   onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22250%22%3E%3Crect fill=%22%23e8e6e1%22 width=%22400%22 height=%22250%22/%3E%3C/svg%3E'">
               </div>
               <div class="card-body">
                 <div class="card-outlet">IrpiMedia</div>
-                <div class="card-title">Oro sporco. Come decine di tonnellate di oro venezuelano sono arrivate in Europa</div>
+                <div class="card-title">Oro sporco. Come decine di tonnellate di oro venezuelano sono arrivate in Europa
+                </div>
                 <div class="card-year">2026</div>
               </div>
             </a>
@@ -756,7 +824,8 @@
           </div>
 
           <div class="article-card fade-in">
-            <a href="https://frontierenews.it/2021/05/dimenticato-in-un-centro-di-detenzione-per-migranti/" target="_blank">
+            <a href="https://frontierenews.it/2021/05/dimenticato-in-un-centro-di-detenzione-per-migranti/"
+              target="_blank">
               <div class="card-image">
                 <img src="images/migrants.png" alt="Detention centers for migrants in Italy"
                   onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22250%22%3E%3Crect fill=%22%23e8e6e1%22 width=%22400%22 height=%22250%22/%3E%3C/svg%3E'">
@@ -842,15 +911,19 @@
       <div class="social-links">
         <a href="https://signal.me/#eu/vTRqAQ4I0rMFoYNtXvcj2SaMJtfAtK5AMVtQodBddJe8B4Pk7VhPiqrR_I5M0WwO" title="Signal">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12.012 2.598c-5.22 0-9.452 3.9-9.452 8.709 0 3.016 1.219 5.301 3.155 6.774H5.71l.234 3.042v.004c0 .017 0 .031.004.046v.006c.024.144.15.255.301.255.053 0 .1-.015.144-.035l.011-.008L9.3 19.717c.854.196 1.767.299 2.71.299 5.22 0 9.452-3.899 9.452-8.71 0-4.81-4.233-8.709-9.454-8.709l.004.001z"/>
+            <path
+              d="M12.012 2.598c-5.22 0-9.452 3.9-9.452 8.709 0 3.016 1.219 5.301 3.155 6.774H5.71l.234 3.042v.004c0 .017 0 .031.004.046v.006c.024.144.15.255.301.255.053 0 .1-.015.144-.035l.011-.008L9.3 19.717c.854.196 1.767.299 2.71.299 5.22 0 9.452-3.899 9.452-8.71 0-4.81-4.233-8.709-9.454-8.709l.004.001z" />
           </svg>
         </a>
         <a href="mailto:m.dallastella@pm.me" title="Email"><i class="fa fa-envelope"></i></a>
-        <a href="https://github.com/marcodallastella" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/dallastellamarco" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/marcodallastella" target="_blank" title="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/dallastellamarco" target="_blank" title="LinkedIn"><i
+            class="fa-brands fa-linkedin"></i></a>
         <a href="https://bsky.app/profile/mdallastella.bsky.social" target="_blank" title="Bluesky">
           <svg width="14" height="14" viewBox="0 0 64 64" fill="currentColor">
-            <path d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"/>
+            <path
+              d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z" />
           </svg>
         </a>
       </div>
@@ -887,4 +960,5 @@
   </script>
 
 </body>
+
 </html>
