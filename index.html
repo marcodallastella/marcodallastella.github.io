@@ -427,6 +427,65 @@
       color: var(--color-light);
     }
 
+    /* ── CONTACT ── */
+    .contact-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 36rem;
+      margin: 0 auto;
+    }
+
+    .contact-text {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--color-body);
+      margin-bottom: 2rem;
+    }
+
+    .contact-methods {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.85rem;
+    }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.25rem;
+      border: 1px solid var(--color-rule);
+      border-radius: 2rem;
+      background: var(--color-card-bg);
+      color: var(--color-ink);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: all 0.25s ease;
+    }
+
+    .contact-btn:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-btn svg,
+    .contact-btn i {
+      width: 16px;
+      height: 16px;
+      font-size: 16px;
+    }
+
+    .contact-btn.pgp-key {
+      background: var(--color-bg);
+      border-style: dashed;
+      /* Optional: gives it a "technical" feel */
+    }
+
     /* ── ANIMATIONS ── */
     @keyframes fadeUp {
       from {
@@ -594,7 +653,8 @@
               data component.
             </p>
             <p>
-              My work has been published in outlets including <strong>OCCRP</strong>, the <strong>Latin American Center for Investigative
+              My work has been published in outlets including <strong>OCCRP</strong>, the <strong>Latin American Center
+                for Investigative
                 Journalism</strong>, <strong>Mother Jones</strong>, <strong>La Marea</strong>, and
               <strong>IrpiMedia</strong>. I thrive in collaborative, cross-border investigations and enjoy working with
               diverse teams to uncover complex stories.
@@ -624,12 +684,15 @@
             <a href="https://www.occrp.org/en/investigation/conflict-tainted-venezuelan-gold-entered-world-market-through-caribbean-island-documents-indicate"
               target="_blank">
               <div class="card-image">
-                <img src="https://www.occrp.org/processed/containers/assets/investigations/venezuelan-gold/venezula-gold-banner.jpg/ed60b4cb664e4f78a013cdc437de8620/venezula-gold-banner.jpg" alt="gold curcao venezuela"
+                <img
+                  src="https://www.occrp.org/processed/containers/assets/investigations/venezuelan-gold/venezula-gold-banner.jpg/ed60b4cb664e4f78a013cdc437de8620/venezula-gold-banner.jpg"
+                  alt="gold curcao venezuela"
                   onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22250%22%3E%3Crect fill=%22%23e8e6e1%22 width=%22400%22 height=%22250%22/%3E%3C/svg%3E'">
               </div>
               <div class="card-body">
                 <div class="card-outlet">OCCRP</div>
-                <div class="card-title">Conflict-Tainted Venezuelan Gold Entered World Market Through Caribbean Island, Documents Indicate</div>
+                <div class="card-title">Conflict-Tainted Venezuelan Gold Entered World Market Through Caribbean Island,
+                  Documents Indicate</div>
                 <div class="card-year">2026</div>
               </div>
             </a>
@@ -865,6 +928,17 @@
         </div>
         <div class="project-grid">
           <div class="project-card fade-in">
+            <a href="https://marcodallastella.com/referendum2026/" target="_blank">
+              <div class="card-image">
+                <img src="images/referendum2026.png" alt="Risultati referendum 2026">
+              </div>
+              <div class="card-body">
+                <div class="card-label">Data Tracker</div>
+                <div class="card-desc">Referendum results at municipality level in almost real time.</div>
+              </div>
+            </a>
+          </div>
+          <div class="project-card fade-in">
             <a href="https://www.sovraffollamentocarcerario.it/" target="_blank">
               <div class="card-image">
                 <img src="images/sovraffollamento.png" alt="Prison overcrowding in Italy">
@@ -905,8 +979,10 @@
 
   </main>
 
+
+
   <!-- FOOTER -->
-  <footer id="contact" class="site-footer">
+  <!-- <footer id="contact" class="site-footer">
     <div class="container">
       <div class="social-links">
         <a href="https://signal.me/#eu/vTRqAQ4I0rMFoYNtXvcj2SaMJtfAtK5AMVtQodBddJe8B4Pk7VhPiqrR_I5M0WwO" title="Signal">
@@ -915,7 +991,7 @@
               d="M12.012 2.598c-5.22 0-9.452 3.9-9.452 8.709 0 3.016 1.219 5.301 3.155 6.774H5.71l.234 3.042v.004c0 .017 0 .031.004.046v.006c.024.144.15.255.301.255.053 0 .1-.015.144-.035l.011-.008L9.3 19.717c.854.196 1.767.299 2.71.299 5.22 0 9.452-3.899 9.452-8.71 0-4.81-4.233-8.709-9.454-8.709l.004.001z" />
           </svg>
         </a>
-        <a href="mailto:m.dallastella@pm.me" title="Email"><i class="fa fa-envelope"></i></a>
+        <a href="mailto:m.dallastella@proton.me" title="Email"><i class="fa fa-envelope"></i></a>
         <a href="https://github.com/marcodallastella" target="_blank" title="GitHub"><i
             class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/dallastellamarco" target="_blank" title="LinkedIn"><i
@@ -925,11 +1001,87 @@
             <path
               d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z" />
           </svg>
-        </a>
+          <a href="https://threema.id/BCDRUHTF" target="_blank" title="Threema">
+            <svg width="14" height="14" viewBox="0 0 48 48" fill="currentColor">
+              <path
+                d="M24 4.5C13.92 4.5 5.74 10.82 5.74 18.61c0 4.01 1.94 7.65 5.06 9.73L7.34 35l10.2-3.21c2.03.6 4.2.93 6.46.93 10.08 0 18.26-6.31 18.26-14.1S34.08 4.5 24 4.5z" />
+              <path
+                d="M24 8.65a5 5 0 0 1 5 5v4.15h.71c.52 0 .95.43.95.95V26c0 .52-.43.95-.95.95H18.31a.95.95 0 0 1-.95-.95V18.73c0-.52.43-.95.95-.95H19V13.63a5 5 0 0 1 5-4.98z" />
+              <circle cx="13.63" cy="40.6" r="2.2" />
+              <circle cx="24" cy="40.6" r="2.2" />
+              <circle cx="34.37" cy="40.6" r="2.2" />
+            </svg>
+          </a>
       </div>
       <!-- <div class="footer-location">Brooklyn, NY</div> -->
+  <!-- </div>
+  </footer> -->
+
+  <hr class="section-divider">
+
+<section id="contact">
+  <div class="container">
+    <div class="section-header">
+      <h2>Contact</h2>
+    </div>
+    <div class="contact-wrapper fade-in">
+      <p class="contact-text">
+        I am available for freelance investigations, data projects, and collaborations. 
+        For sensitive tips and materials, please reach out via my encrypted channels.
+      </p>
+      <div class="contact-methods">
+        <a href="mailto:m.dallastella@proton.me" class="contact-btn" title="ProtonMail">
+          <i class="fa fa-envelope"></i> Email
+        </a>
+        <a href="https://signal.me/#eu/vTRqAQ4I0rMFoYNtXvcj2SaMJtfAtK5AMVtQodBddJe8B4Pk7VhPiqrR_I5M0WwO" class="contact-btn" title="Signal">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.012 2.598c-5.22 0-9.452 3.9-9.452 8.709 0 3.016 1.219 5.301 3.155 6.774H5.71l.234 3.042v.004c0 .017 0 .031.004.046v.006c.024.144.15.255.301.255.053 0 .1-.015.144-.035l.011-.008L9.3 19.717c.854.196 1.767.299 2.71.299 5.22 0 9.452-3.899 9.452-8.71 0-4.81-4.233-8.709-9.454-8.709l.004.001z"/></svg> Signal
+        </a>
+        <a href="https://threema.id/BCDRUHTF" class="contact-btn" target="_blank" title="Threema">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2.25c5.385 0 9.75 4.365 9.75 9.75 0 5.385-4.365 9.75-9.75 9.75-5.385 0-9.75-4.365-9.75-9.75 0-5.385 4.365-9.75 9.75-9.75zm3.62 6.094c-.655 0-1.22.404-1.455.986l-2.028 1.115a1.597 1.597 0 0 0-.274-.025 1.6 1.6 0 0 0-1.577 1.332l-2.222.753c-.22-.387-.636-.649-1.11-.649-.714 0-1.294.58-1.294 1.294s.58 1.294 1.294 1.294c.552 0 1.025-.347 1.21-.836l2.19.742a1.603 1.603 0 0 0 1.583 1.353 1.603 1.603 0 0 0 1.601-1.601 1.6 1.6 0 0 0-.05-.395l2.062-1.134a1.558 1.558 0 0 0 1.524 1.227c.861 0 1.56-.699 1.56-1.56s-.699-1.56-1.56-1.56c-.524 0-.987.26-1.266.657l-1.996-1.097c.057-.176.088-.363.088-.557 0-.861-.699-1.56-1.56-1.56z"/></svg> Threema
+        </a>
+        <a href="keys/publickey.m.dallastella.asc" class="contact-btn pgp-key" download title="PGP Public Key">
+          <i class="fa fa-key"></i> PGP Key
+        </a>
+      </div>
+      <div style="width: 100%; margin-top: 1.5rem;">
+        <p style="font-size: 0.65rem; color: var(--color-muted); font-family: monospace; letter-spacing: 0.05em; text-transform: uppercase;">
+          Fingerprint: F3F4 2BBF F4B7 2B6B E8AF 4C7C 9BE8 8F42 5312 C340
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="social-links">
+      <a href="https://bsky.app/profile/mdallastella.bsky.social" target="_blank" title="Bluesky">
+        <svg width="14" height="14" viewBox="0 0 64 64" fill="currentColor"><path d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"/></svg>
+      </a>
+      <a href="https://journa.host/@mdallastella" target="_blank" rel="me" title="Mastodon">
+        <i class="fa-brands fa-mastodon"></i>
+      </a>
+      <a href="https://www.instagram.com/_mdallastella" target="_blank" title="Instagram">
+  <i class="fa-brands fa-instagram"></i>
+</a>
+      <a href="https://www.linkedin.com/in/dallastellamarco" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/marcodallastella" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+    </div>
+    
+    <div class="footer-location">Based in Brooklyn, NY</div>
+    <div class="ornament" style="margin-top: 1rem;"><span>◆</span></div>
+  </div>
+</footer>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-location">Based in Brooklyn, NY</div>
+      <div class="ornament" style="margin-top: 1rem;"><span>◆</span></div>
     </div>
   </footer>
+
 
   <script>
     // Mobile nav
